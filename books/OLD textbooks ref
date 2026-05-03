@@ -1,0 +1,1594 @@
+{
+    "CPU": {
+        "The purpose and function of the CPU": {
+            "Robson & P M Heathcote": "page 3",
+            "G Rouse, L Pearcey, Craddock": "page 2"
+        },
+        "Common CPU components: ALU, CU, Cache, registers": {
+            "Robson & P M Heathcote": "page 4",
+            "G Rouse, L Pearcey, Craddock": "page 3"
+        }
+    },
+    "von": {
+        "The definition of Von Neumann architecture": {
+            "Robson & P M Heathcote": "page 3",
+            "G Rouse, L Pearcey, Craddock": "page 4"
+        }
+    },
+    "fetch": {
+        "The fetch-decode-execute cycle and the CPU registers (PC, MAR, MDR, ACC)": {
+            "Robson & P M Heathcote": "page 3",
+            "G Rouse, L Pearcey, Craddock": "page 4"
+        }
+    },
+    "PC": {
+        "Both roles of the PC (Program counter) Stores address and increments every cycle": {
+            "Robson & P M Heathcote": "page 4",
+            "G Rouse, L Pearcey, Craddock": "page 4"
+        }
+    },
+    "MAR": {
+        "The role of the MAR (Memory Address Register) and what it stores": {
+            "Robson & P M Heathcote": "page 4",
+            "G Rouse, L Pearcey, Craddock": "page 4"
+        }
+    },
+    "MDR": {
+        "The role of the MDR (Memory Data Register) and what it stores": {
+            "Robson & P M Heathcote": "page 4",
+            "G Rouse, L Pearcey, Craddock": "page 4"
+        }
+    },
+    "ACC": {
+        "The role of the ACC (Accumulator) and what it stores": {
+            "Robson & P M Heathcote": "page 4",
+            "G Rouse, L Pearcey, Craddock": "page 4"
+        }
+    },
+    "Accumulator": {
+        "The role of the ACC (Accumulator) and what it stores": {
+            "Robson & P M Heathcote": "page 4",
+            "G Rouse, L Pearcey, Craddock": "page 4"
+        }
+    },
+    "CU": {
+        "The roles of the CU (Control unit)": {
+            "Robson & P M Heathcote": "page 4",
+            "G Rouse, L Pearcey, Craddock": "page 3"
+        }
+    },
+    "ALU": {
+        "The roles of the ALU (Arithmatic and logic unit)": {
+            "Robson & P M Heathcote": "page 4",
+            "G Rouse, L Pearcey, Craddock": "page 3"
+        }
+    },
+    "Clock": {
+        "How common characteristics of CPUs affect performance: clock speed, cache size, number of cores": {
+            "Robson & P M Heathcote": "page 5-6",
+            "G Rouse, L Pearcey, Craddock": "page 3, 6 & 7"
+        },
+        "Clock speed is measured in \"hertz\" which is \"cycles per second\" Example: 1MHz = 1 million cycles per second and 1GHz is 1 billion cycles per second": {
+            "Robson & P M Heathcote": "page 5",
+            "G Rouse, L Pearcey, Craddock": "page 6"
+        }
+    },
+    "Cache": {
+        "The location of cache in the CPU": {
+            "Robson & P M Heathcote": "page 5",
+            "G Rouse, L Pearcey, Craddock": "page 6"
+        },
+        "A desecripton of what cache is ": {
+            "Robson & P M Heathcote": "page 5",
+            "G Rouse, L Pearcey, Craddock": "page 6"
+        }
+    },
+    "Core": {
+        "Explanation of more cores in a CPU increases \"parallel processing\" but this does not always mean faster performance as some data or instructions cannot be split between multiple cores": {
+            "Robson & P M Heathcote": "page 6",
+            "G Rouse, L Pearcey, Craddock": "page 7"
+        }
+    },
+    "embedded": {
+        "Embedded systems: A description of what an embedded system is: A combination of hardware and software, fixed in capability, built in to a larger system, designed for one function": {
+            "Robson & P M Heathcote": "page 7",
+            "G Rouse, L Pearcey, Craddock": "page 7 & 8"
+        }
+    },
+    "RAM": {
+        "The purpose of RAM (Random access memory)": {
+            "Robson & P M Heathcote": "page 8",
+            "G Rouse, L Pearcey, Craddock": "page 12"
+        },
+        "RAM is volatile (include description of volatile)": {
+            "Robson & P M Heathcote": "page 9",
+            "G Rouse, L Pearcey, Craddock": "page 13"
+        }
+    },
+    "ROM": {
+        "The purpose of ROM (Read only memory) (ROM holds the data and instructions required to boot a computer)": {
+            "Robson & P M Heathcote": "page 9",
+            "G Rouse, L Pearcey, Craddock": "page 13"
+        }
+    },
+    "Virtual": {
+        "Description of Virtual memory that includes RAM and Secondary storage": {
+            "Robson & P M Heathcote": "page 8",
+            "G Rouse, L Pearcey, Craddock": "page 14"
+        }
+    },
+    "primary": {
+        "The need for primary storage": {
+            "Robson & P M Heathcote": "page 8",
+            "G Rouse, L Pearcey, Craddock": "page 12"
+        }
+    },
+    "secondary": {
+        "Secondary storage: Description (optical, magnetic, solid state)": {
+            "Robson & P M Heathcote": "page 10 to 13",
+            "G Rouse, L Pearcey, Craddock": "page 16 to 18"
+        }
+    },
+    "Optical": {
+        "Common types of storage:(optical, magnetic, solid state)": {
+            "Robson & P M Heathcote": "page 13",
+            "G Rouse, L Pearcey, Craddock": "page 18"
+        }
+    },
+    "Magnetic": {
+        "Common types of storage:(optical, magnetic, solid state)": {
+            "Robson & P M Heathcote": "page 10",
+            "G Rouse, L Pearcey, Craddock": "page 15"
+        }
+    },
+    "Solid": {
+        "Common types of storage:(optical, magnetic, solid state)": {
+            "Robson & P M Heathcote": "page 11",
+            "G Rouse, L Pearcey, Craddock": "page 17"
+        }
+    },
+    "SSD": {
+        "Common types of storage:(optical, magnetic, solid state)": {
+            "Robson & P M Heathcote": "page 11",
+            "G Rouse, L Pearcey, Craddock": "page 17"
+        }
+    },
+    "BIT": {
+        "The units of data storage:": {
+            "Robson & P M Heathcote": "page 17",
+            "G Rouse, L Pearcey, Craddock": "page 20"
+        }
+    },
+    "nibble": {
+        "The units of data storage:": {
+            "Robson & P M Heathcote": "page 17",
+            "G Rouse, L Pearcey, Craddock": "page 20"
+        }
+    },
+    "byte": {
+        "The units of data storage:": {
+            "Robson & P M Heathcote": "page 17",
+            "G Rouse, L Pearcey, Craddock": "page 20"
+        }
+    },
+    "kilobyte": {
+        "The units of data storage:": {
+            "Robson & P M Heathcote": "page 17",
+            "G Rouse, L Pearcey, Craddock": "page 20"
+        }
+    },
+    "megabyte": {
+        "The units of data storage:": {
+            "Robson & P M Heathcote": "page 17",
+            "G Rouse, L Pearcey, Craddock": "page 20"
+        }
+    },
+    "gigabyte": {
+        "The units of data storage:": {
+            "Robson & P M Heathcote": "page 17",
+            "G Rouse, L Pearcey, Craddock": "page 20"
+        }
+    },
+    "terabyte": {
+        "The units of data storage:": {
+            "Robson & P M Heathcote": "page 17",
+            "G Rouse, L Pearcey, Craddock": "page 20"
+        }
+    },
+    "petabyte": {
+        "The units of data storage:": {
+            "Robson & P M Heathcote": "page 17",
+            "G Rouse, L Pearcey, Craddock": "page 20"
+        }
+    },
+    "binary": {
+        "How data needs to be converted into a binary format to be processed by a computer": {
+            "Robson & P M Heathcote": "page 18",
+            "G Rouse, L Pearcey, Craddock": "page 22"
+        }
+    },
+    "binary addition": {
+        "How to add two binary integers together (up to and including 8 bits)": {
+            "Robson & P M Heathcote": "page 20",
+            "G Rouse, L Pearcey, Craddock": "page 25"
+        }
+    },
+    "hex": {
+        "How to convert positive denary whole numbers into 2-digit hexadecimal numbers": {
+            "Robson & P M Heathcote": "page 22 to 23",
+            "G Rouse, L Pearcey, Craddock": "page 25 to 28"
+        }
+    },
+    "hexadecimal": {
+        "How to convert positive denary whole numbers into 2-digit hexadecimal numbers": {
+            "Robson & P M Heathcote": "page 22 to 23",
+            "G Rouse, L Pearcey, Craddock": "page 25 to 28"
+        }
+    },
+    "binary shift": {
+        "Binary shifts": {
+            "Robson & P M Heathcote": "page 20",
+            "G Rouse, L Pearcey, Craddock": "page 27"
+        }
+    },
+    "shift": {
+        "Binary shifts": {
+            "Robson & P M Heathcote": "page 20",
+            "G Rouse, L Pearcey, Craddock": "page 27"
+        }
+    },
+    "ascii": {
+        "The relationship between the number of bits per character in a character set, and the number of characters which can be represented": {
+            "Robson & P M Heathcote": "page 24",
+            "G Rouse, L Pearcey, Craddock": "page 31"
+        }
+    },
+    "Unicode": {
+        "The relationship between the number of bits per character in a character set, and the number of characters which can be represented": {
+            "Robson & P M Heathcote": "page 25",
+            "G Rouse, L Pearcey, Craddock": "page 32"
+        }
+    },
+    "Images": {
+        "How an image is represented as a series of pixels, represented in binary": {
+            "Robson & P M Heathcote": "page 25",
+            "G Rouse, L Pearcey, Craddock": "page 33"
+        }
+    },
+    "Metadata": {
+        "Metadata defined": {
+            "Robson & P M Heathcote": "page 27",
+            "G Rouse, L Pearcey, Craddock": "page 34"
+        }
+    },
+    "colour depth": {
+        "The effect of colour depth on an image": {
+            "Robson & P M Heathcote": "page 26",
+            "G Rouse, L Pearcey, Craddock": "page 35"
+        }
+    },
+    "resolution": {
+        "The effect of resolution on an image": {
+            "Robson & P M Heathcote": "page 26",
+            "G Rouse, L Pearcey, Craddock": "page 35"
+        }
+    },
+    "The quality of the image": {
+        "Images": {
+            "Robson & P M Heathcote": "page 26",
+            "G Rouse, L Pearcey, Craddock": "page 35"
+        }
+    },
+    "The size of an image file": {
+        "Images": {
+            "Robson & P M Heathcote": "page 26",
+            "G Rouse, L Pearcey, Craddock": "page 35"
+        }
+    },
+    "Sound": {
+        "How sound can be sampled and stored in digital form": {
+            "Robson & P M Heathcote": "page 28",
+            "G Rouse, L Pearcey, Craddock": "page 36"
+        }
+    },
+    "The playback quality": {
+        "How sound can be sampled and stored in digital form": {
+            "Robson & P M Heathcote": "page 29",
+            "G Rouse, L Pearcey, Craddock": "page 36"
+        }
+    },
+    "The size of a sound file": {
+        "How sound can be sampled and stored in digital form": {
+            "Robson & P M Heathcote": "page 29",
+            "G Rouse, L Pearcey, Craddock": "page 36"
+        }
+    },
+    "compression": {
+        "The need for compression": {
+            "Robson & P M Heathcote": "page 29",
+            "G Rouse, L Pearcey, Craddock": "page 39"
+        }
+    },
+    "Lossy": {
+        "Types of compression": {
+            "Robson & P M Heathcote": "page 30",
+            "G Rouse, L Pearcey, Craddock": "page 39"
+        }
+    },
+    "Lossless": {
+        "Types of compression": {
+            "Robson & P M Heathcote": "page 31",
+            "G Rouse, L Pearcey, Craddock": "page 40"
+        }
+    },
+    "LAN": {
+        "Types of network": {
+            "Robson & P M Heathcote": "page 38",
+            "G Rouse, L Pearcey, Craddock": "page 52"
+        }
+    },
+    "WAN": {
+        "Types of network": {
+            "Robson & P M Heathcote": "page 37",
+            "G Rouse, L Pearcey, Craddock": "page 53"
+        }
+    },
+    "Factors that affect the performance of networks": {
+        "Network performance": {
+            "Robson & P M Heathcote": "page 48",
+            "G Rouse, L Pearcey, Craddock": "page 54"
+        }
+    },
+    "peer": {
+        "peer-to-peer network": {
+            "Robson & P M Heathcote": "page 45",
+            "G Rouse, L Pearcey, Craddock": "page 55"
+        }
+    },
+    "The hardware needed to connect stand-alone computers into a Local Area Network:": {
+        "stand-alone computers ": {
+            "Robson & P M Heathcote": "page 45",
+            "G Rouse, L Pearcey, Craddock": "page 55"
+        }
+    },
+    "stand-alone": {
+        "The hardware needed to connect stand-alone computers into a Local Area Network:": {
+            "G Rouse, L Pearcey, Craddock": "page 57"
+        }
+    },
+    "Wireless access points": {
+        "WAP": {
+            "Robson & P M Heathcote": "page 43",
+            "G Rouse, L Pearcey, Craddock": "page 58"
+        }
+    },
+    "wap": {
+        "Wireless access points": {
+            "Robson & P M Heathcote": "page 43",
+            "G Rouse, L Pearcey, Craddock": "page 58"
+        }
+    },
+    "Routers": {
+        "Details about routers": {
+            "Robson & P M Heathcote": "page 41",
+            "G Rouse, L Pearcey, Craddock": "page 58"
+        }
+    },
+    "Router": {
+        "Details about routers": {
+            "Robson & P M Heathcote": "page 41",
+            "G Rouse, L Pearcey, Craddock": "page 58"
+        }
+    },
+    "Switches": {
+        "Details about switches": {
+            "Robson & P M Heathcote": "page 41",
+            "G Rouse, L Pearcey, Craddock": "page 58"
+        }
+    },
+    "Switch": {
+        "Details about switches": {
+            "Robson & P M Heathcote": "page 41",
+            "G Rouse, L Pearcey, Craddock": "page 58"
+        }
+    },
+    "nic": {
+        "NIC card explained": {
+            "Robson & P M Heathcote": "page 41",
+            "G Rouse, L Pearcey, Craddock": "page 57"
+        }
+    },
+    "Network Interface Controller": {
+        "NIC card explained": {
+            "Robson & P M Heathcote": "page 41",
+            "G Rouse, L Pearcey, Craddock": "page 57"
+        }
+    },
+    "Network Interface Card": {
+        "NIC card explained": {
+            "Robson & P M Heathcote": "page 41",
+            "G Rouse, L Pearcey, Craddock": "page 57"
+        }
+    },
+    "NIC (Network Interface Controller/Card)": {
+        "NIC card explained": {
+            "Robson & P M Heathcote": "page 41",
+            "G Rouse, L Pearcey, Craddock": "page 57"
+        }
+    },
+    "Transmission media": {
+        "aka the cables": {
+            "Robson & P M Heathcote": "page 42",
+            "G Rouse, L Pearcey, Craddock": "page 57"
+        }
+    },
+    "dns": {
+        "Domain Name Server": {
+            "Robson & P M Heathcote": "page 36",
+            "G Rouse, L Pearcey, Craddock": "page 59"
+        }
+    },
+    "Domain Name Server": {
+        "DNS": {
+            "Robson & P M Heathcote": "page 36",
+            "G Rouse, L Pearcey, Craddock": "page 59"
+        }
+    },
+    "Hosting": {
+        "Hosting explained": {
+            "Robson & P M Heathcote": "page 46",
+            "G Rouse, L Pearcey, Craddock": "page 60"
+        }
+    },
+    "The Cloud": {
+        "The Cloud explained": {
+            "Robson & P M Heathcote": "page 47",
+            "G Rouse, L Pearcey, Craddock": "page 60"
+        }
+    },
+    "cloud": {
+        "The Cloud explained": {
+            "Robson & P M Heathcote": "page 47",
+            "G Rouse, L Pearcey, Craddock": "page 60"
+        }
+    },
+    "Web servers and clients": {
+        "Definitions": {
+            "Robson & P M Heathcote": "page 45",
+            "G Rouse, L Pearcey, Craddock": "page 60"
+        }
+    },
+    "star": {
+        "The star topology": {
+            "Robson & P M Heathcote": "page 39",
+            "G Rouse, L Pearcey, Craddock": "page 61"
+        }
+    },
+    "mesh": {
+        "The mesh topology": {
+            "Robson & P M Heathcote": "page 39",
+            "G Rouse, L Pearcey, Craddock": "page 61"
+        }
+    },
+    "Star and Mesh network topologies": {
+        "Topologies for this GCSE": {
+            "Robson & P M Heathcote": "page 39",
+            "G Rouse, L Pearcey, Craddock": "page 61"
+        }
+    },
+    "star topology": {
+        "The star topology": {
+            "Robson & P M Heathcote": "page 39",
+            "G Rouse, L Pearcey, Craddock": "page 61"
+        }
+    },
+    "mesh topology": {
+        "The mesh topology": {
+            "Robson & P M Heathcote": "page 39",
+            "G Rouse, L Pearcey, Craddock": "page 61"
+        }
+    },
+    "Modes of connection": {
+        "wired and wireless": {
+            "Robson & P M Heathcote": "page 42",
+            "G Rouse, L Pearcey, Craddock": "page 63"
+        }
+    },
+    "wired": {
+        "wired connections": {
+            "Robson & P M Heathcote": "page 42",
+            "G Rouse, L Pearcey, Craddock": "page 63"
+        }
+    },
+    "Ethernet": {
+        "wired connections": {
+            "Robson & P M Heathcote": "page 42",
+            "G Rouse, L Pearcey, Craddock": "page 63"
+        }
+    },
+    "Wireless": {
+        "wireless connections": {
+            "Robson & P M Heathcote": "page 42",
+            "G Rouse, L Pearcey, Craddock": "page 63"
+        }
+    },
+    "Wi-Fi": {
+        "wireless connections": {
+            "Robson & P M Heathcote": "page 43",
+            "G Rouse, L Pearcey, Craddock": "page 63"
+        }
+    },
+    "Wifi": {
+        "wireless connections": {
+            "Robson & P M Heathcote": "page 43",
+            "G Rouse, L Pearcey, Craddock": "page 63"
+        }
+    },
+    "Bluetooth": {
+        "wireless connections": {
+            "Robson & P M Heathcote": "page 43",
+            "G Rouse, L Pearcey, Craddock": "page 64"
+        }
+    },
+    "Encryption": {
+        "definition": {
+            "Robson & P M Heathcote": "page 44",
+            "G Rouse, L Pearcey, Craddock": "page 64"
+        }
+    },
+    "IP": {
+        "Description": {
+            "Robson & P M Heathcote": "page 36",
+            "G Rouse, L Pearcey, Craddock": "page 64"
+        }
+    },
+    "IP addressing": {
+        "Description": {
+            "Robson & P M Heathcote": "page 35",
+            "G Rouse, L Pearcey, Craddock": "page 64"
+        }
+    },
+    "IP address": {
+        "Description": {
+            "Robson & P M Heathcote": "page 35",
+            "G Rouse, L Pearcey, Craddock": "page 64"
+        }
+    },
+    "MAC addressing": {
+        "Description": {
+            "Robson & P M Heathcote": "page 37",
+            "G Rouse, L Pearcey, Craddock": "page 65"
+        }
+    },
+    "MAC": {
+        "Description": {
+            "Robson & P M Heathcote": "page 37",
+            "G Rouse, L Pearcey, Craddock": "page 65"
+        }
+    },
+    "Media Access Control": {
+        "Description": {
+            "Robson & P M Heathcote": "page 37",
+            "G Rouse, L Pearcey, Craddock": "page 65"
+        }
+    },
+    "Standards": {
+        "Description": {
+            "Robson & P M Heathcote": "page 48",
+            "G Rouse, L Pearcey, Craddock": "page 65"
+        }
+    },
+    "TCP/IP": {
+        "Description": {
+            "Robson & P M Heathcote": "page 49",
+            "G Rouse, L Pearcey, Craddock": "page 66"
+        }
+    },
+    "TCP-IP": {
+        "Description": {
+            "Robson & P M Heathcote": "page 49",
+            "G Rouse, L Pearcey, Craddock": "page 66"
+        }
+    },
+    "TCPIP": {
+        "Description": {
+            "Robson & P M Heathcote": "page 49",
+            "G Rouse, L Pearcey, Craddock": "page 66"
+        }
+    },
+    "Transmission Control Protocol/Internet Protocol": {
+        "Description": {
+            "Robson & P M Heathcote": "page 49",
+            "G Rouse, L Pearcey, Craddock": "page 66"
+        }
+    },
+    "HTTP": {
+        "Description": {
+            "Robson & P M Heathcote": "page 49",
+            "G Rouse, L Pearcey, Craddock": "page 66"
+        }
+    },
+    "Hyper Text Transfer Protocol": {
+        "Description": {
+            "Robson & P M Heathcote": "page 49",
+            "G Rouse, L Pearcey, Craddock": "page 66"
+        }
+    },
+    "HTTPS": {
+        "Description": {
+            "Robson & P M Heathcote": "page 49",
+            "G Rouse, L Pearcey, Craddock": "page 66"
+        }
+    },
+    "Hyper Text Transfer Protocol Secure": {
+        "Description": {
+            "Robson & P M Heathcote": "page 49",
+            "G Rouse, L Pearcey, Craddock": "page 66"
+        }
+    },
+    "ftp": {
+        "Description": {
+            "Robson & P M Heathcote": "page 49",
+            "G Rouse, L Pearcey, Craddock": "page 66"
+        }
+    },
+    "File Transfer Protocol": {
+        "Description": {
+            "Robson & P M Heathcote": "page 49",
+            "G Rouse, L Pearcey, Craddock": "page 66"
+        }
+    },
+    "pop": {
+        "Description": {
+            "Robson & P M Heathcote": "page 49",
+            "G Rouse, L Pearcey, Craddock": "page 66"
+        }
+    },
+    "pop3": {
+        "Description": {
+            "Robson & P M Heathcote": "page 49",
+            "G Rouse, L Pearcey, Craddock": "page 66"
+        }
+    },
+    "Post Office Protocol": {
+        "Description": {
+            "Robson & P M Heathcote": "page 49",
+            "G Rouse, L Pearcey, Craddock": "page 66"
+        }
+    },
+    "imap": {
+        "Description": {
+            "Robson & P M Heathcote": "page 49",
+            "G Rouse, L Pearcey, Craddock": "page 66"
+        }
+    },
+    "internet Message Access Protocol": {
+        "Description": {
+            "Robson & P M Heathcote": "page 49",
+            "G Rouse, L Pearcey, Craddock": "page 66"
+        }
+    },
+    "SMTP": {
+        "Description": {
+            "Robson & P M Heathcote": "page 50",
+            "G Rouse, L Pearcey, Craddock": "page 66"
+        }
+    },
+    "Simple Mail Transfer Protocol": {
+        "Description": {
+            "Robson & P M Heathcote": "page 50",
+            "G Rouse, L Pearcey, Craddock": "page 66"
+        }
+    },
+    "The concept of layers": {
+        "Description": {
+            "Robson & P M Heathcote": "page 50",
+            "G Rouse, L Pearcey, Craddock": "page 67"
+        }
+    },
+    "layers": {
+        "Why have layers?": {
+            "Robson & P M Heathcote": "page 50",
+            "G Rouse, L Pearcey, Craddock": "page 67"
+        }
+    },
+    "Forms of attack:": {
+        "Forms of attack": {
+            "Robson & P M Heathcote": "page 54",
+            "G Rouse, L Pearcey, Craddock": "page 73"
+        }
+    },
+    "Malware": {
+        "Forms of attack": {
+            "Robson & P M Heathcote": "page 54",
+            "G Rouse, L Pearcey, Craddock": "page 73"
+        }
+    },
+    "Social engineering": {
+        "Forms of attack": {
+            "Robson & P M Heathcote": "page 54",
+            "G Rouse, L Pearcey, Craddock": "page 74"
+        }
+    },
+    " Social engineering, e.g. phishing, people as the ‘weak point’": {
+        "Forms of attack": {
+            "Robson & P M Heathcote": "page 54",
+            "G Rouse, L Pearcey, Craddock": "page 74"
+        }
+    },
+    "Brute-force attacks": {
+        "Forms of attack": {
+            "Robson & P M Heathcote": "page 56",
+            "G Rouse, L Pearcey, Craddock": "page 75"
+        }
+    },
+    "Brute": {
+        "Forms of attack": {
+            "Robson & P M Heathcote": "page x",
+            "G Rouse, L Pearcey, Craddock": "page x"
+        }
+    },
+    "Denial of service attacks": {
+        "Forms of attack": {
+            "Robson & P M Heathcote": "page 57",
+            "G Rouse, L Pearcey, Craddock": "page 75"
+        }
+    },
+    "Denial": {
+        "Forms of attack": {
+            "Robson & P M Heathcote": "page 57",
+            "G Rouse, L Pearcey, Craddock": "page 75"
+        }
+    },
+    "dos": {
+        "Forms of attack": {
+            "Robson & P M Heathcote": "page 57",
+            "G Rouse, L Pearcey, Craddock": "page 75"
+        }
+    },
+    "ddos": {
+        "Forms of attack": {
+            "Robson & P M Heathcote": "page 57",
+            "G Rouse, L Pearcey, Craddock": "page 75"
+        }
+    },
+    "Data interception and theft": {
+        "Forms of attack": {
+            "Robson & P M Heathcote": "page 57",
+            "G Rouse, L Pearcey, Craddock": "page 76"
+        }
+    },
+    "Data interception": {
+        "Forms of attack": {
+            "Robson & P M Heathcote": "page 57",
+            "G Rouse, L Pearcey, Craddock": "page 76"
+        }
+    },
+    "The concept of SQL injection": {
+        "Forms of attack": {
+            "Robson & P M Heathcote": "page 57",
+            "G Rouse, L Pearcey, Craddock": "page 76"
+        }
+    },
+    "SQL injection": {
+        "": {
+            "Robson & P M Heathcote": "page 57",
+            "G Rouse, L Pearcey, Craddock": "page 76"
+        }
+    },
+    "Common prevention methods:": {
+        "Examples": {
+            "Robson & P M Heathcote": "page 58",
+            "G Rouse, L Pearcey, Craddock": "page 77"
+        }
+    },
+    "Penetration testing": {
+        "Common prevention methods:": {
+            "Robson & P M Heathcote": "page 58",
+            "G Rouse, L Pearcey, Craddock": "page 77"
+        }
+    },
+    "Penetration": {
+        "Common prevention methods:": {
+            "Robson & P M Heathcote": "page 58",
+            "G Rouse, L Pearcey, Craddock": "page 77"
+        }
+    },
+    "Anti-malware software": {
+        "Common prevention methods:": {
+            "Robson & P M Heathcote": "page 59",
+            "G Rouse, L Pearcey, Craddock": "page 77"
+        }
+    },
+    "Anti-malware": {
+        "Common prevention methods:": {
+            "Robson & P M Heathcote": "page 59",
+            "G Rouse, L Pearcey, Craddock": "page 77"
+        }
+    },
+    "Firewalls": {
+        "Common prevention methods:": {
+            "Robson & P M Heathcote": "page 59",
+            "G Rouse, L Pearcey, Craddock": "page 78"
+        }
+    },
+    "Firewall": {
+        "Common prevention methods:": {
+            "Robson & P M Heathcote": "page 59",
+            "G Rouse, L Pearcey, Craddock": "page 78"
+        }
+    },
+    "User access levels": {
+        "Common prevention methods:": {
+            "Robson & P M Heathcote": "page 60",
+            "G Rouse, L Pearcey, Craddock": "page 78"
+        }
+    },
+    "access levels": {
+        "Common prevention methods:": {
+            "Robson & P M Heathcote": "page 60",
+            "G Rouse, L Pearcey, Craddock": "page 78"
+        }
+    },
+    "Password": {
+        "Common prevention methods:": {
+            "Robson & P M Heathcote": "page 60",
+            "G Rouse, L Pearcey, Craddock": "page 78"
+        }
+    },
+    "Physical security": {
+        "Common prevention methods:": {
+            "Robson & P M Heathcote": "page 61",
+            "G Rouse, L Pearcey, Craddock": "page 79"
+        }
+    },
+    "The purpose and functionality of operating systems": {
+        "Explanation": {
+            "Robson & P M Heathcote": "page 61",
+            "G Rouse, L Pearcey, Craddock": "page 83"
+        }
+    },
+    "operating systems": {
+        "Explanation": {
+            "Robson & P M Heathcote": "page 61",
+            "G Rouse, L Pearcey, Craddock": "page 83"
+        }
+    },
+    "User interface": {
+        "Explanation": {
+            "Robson & P M Heathcote": "page 62",
+            "G Rouse, L Pearcey, Craddock": "page 84"
+        }
+    },
+    "Memory management and multitasking": {
+        "Explanation": {
+            "Robson & P M Heathcote": "page 62",
+            "G Rouse, L Pearcey, Craddock": "page 84"
+        }
+    },
+    "Memory management": {
+        "Explanation": {
+            "Robson & P M Heathcote": "page 62",
+            "G Rouse, L Pearcey, Craddock": "page 84"
+        }
+    },
+    "multitasking": {
+        "Explanation": {
+            "Robson & P M Heathcote": "page 62",
+            "G Rouse, L Pearcey, Craddock": "page 84"
+        }
+    },
+    "Peripheral management and drivers": {
+        "Explanation": {
+            "Robson & P M Heathcote": "page 63",
+            "G Rouse, L Pearcey, Craddock": "page 85"
+        }
+    },
+    "Peripheral management": {
+        "Explanation": {
+            "Robson & P M Heathcote": "page 63",
+            "G Rouse, L Pearcey, Craddock": "page 85"
+        }
+    },
+    "drivers": {
+        "Explanation": {
+            "Robson & P M Heathcote": "page 63",
+            "G Rouse, L Pearcey, Craddock": "page 85"
+        }
+    },
+    "User management": {
+        "Explanation": {
+            "Robson & P M Heathcote": "page 63",
+            "G Rouse, L Pearcey, Craddock": "page 85"
+        }
+    },
+    "File management": {
+        "Explanation": {
+            "Robson & P M Heathcote": "page 64",
+            "G Rouse, L Pearcey, Craddock": "page 85"
+        }
+    },
+    "The purpose and functionality of utility software": {
+        "Explanation": {
+            "Robson & P M Heathcote": "page 64",
+            "G Rouse, L Pearcey, Craddock": "page 86"
+        }
+    },
+    "utility software": {
+        "Explanation": {
+            "Robson & P M Heathcote": "page 64",
+            "G Rouse, L Pearcey, Craddock": "page 86"
+        }
+    },
+    "Encryption software": {
+        "Explanation": {
+            "Robson & P M Heathcote": "page 64",
+            "G Rouse, L Pearcey, Craddock": "page 86"
+        }
+    },
+    "Defragmentation": {
+        "Explanation": {
+            "Robson & P M Heathcote": "page 64",
+            "G Rouse, L Pearcey, Craddock": "page 86"
+        }
+    },
+    "Defrag": {
+        "Explanation": {
+            "Robson & P M Heathcote": "page 64",
+            "G Rouse, L Pearcey, Craddock": "page 86"
+        }
+    },
+    "Data compression": {
+        "Explanation": {
+            "Robson & P M Heathcote": "page 65",
+            "G Rouse, L Pearcey, Craddock": "page 87"
+        }
+    },
+    "Impacts of digital technology on wider society including:": {
+        "Examples": {
+            "Robson & P M Heathcote": "page 72",
+            "G Rouse, L Pearcey, Craddock": "page 91"
+        }
+    },
+    "Ethical issues": {
+        "Examples": {
+            "Robson & P M Heathcote": "page 72",
+            "G Rouse, L Pearcey, Craddock": "page 91"
+        }
+    },
+    "ethics": {
+        "Examples": {
+            "Robson & P M Heathcote": "page 72",
+            "G Rouse, L Pearcey, Craddock": "page 91"
+        }
+    },
+    "Legal issues": {
+        "Examples": {
+            "Robson & P M Heathcote": "page 76",
+            "G Rouse, L Pearcey, Craddock": "page 93"
+        }
+    },
+    "Legal": {
+        "Examples": {
+            "Robson & P M Heathcote": "page 76",
+            "G Rouse, L Pearcey, Craddock": "page 93"
+        }
+    },
+    "Cultural issues": {
+        "Examples": {
+            "Robson & P M Heathcote": "page 72",
+            "G Rouse, L Pearcey, Craddock": "page 93"
+        }
+    },
+    "Cultural": {
+        "Examples": {
+            "Robson & P M Heathcote": "page 72",
+            "G Rouse, L Pearcey, Craddock": "page 93"
+        }
+    },
+    "Environmental issues": {
+        "Examples": {
+            "Robson & P M Heathcote": "page 72",
+            "G Rouse, L Pearcey, Craddock": "page 95"
+        }
+    },
+    "Environmental": {
+        "Examples": {
+            "Robson & P M Heathcote": "page 72",
+            "G Rouse, L Pearcey, Craddock": "page 95"
+        }
+    },
+    "Privacy issues": {
+        "Examples": {
+            "Robson & P M Heathcote": "page 78",
+            "G Rouse, L Pearcey, Craddock": "page 96"
+        }
+    },
+    "Privacy": {
+        "Examples": {
+            "Robson & P M Heathcote": "page 78",
+            "G Rouse, L Pearcey, Craddock": "page 96"
+        }
+    },
+    "Legislation relevant to Computer Science:": {
+        "Examples": {
+            "Robson & P M Heathcote": "page 76",
+            "G Rouse, L Pearcey, Craddock": "page 97"
+        }
+    },
+    "Legislation": {
+        "Examples": {
+            "Robson & P M Heathcote": "page 76",
+            "G Rouse, L Pearcey, Craddock": "page 97"
+        }
+    },
+    "Laws": {
+        "Legislation relevant to Computer Science:": {
+            "Robson & P M Heathcote": "page 76",
+            "G Rouse, L Pearcey, Craddock": "page 97"
+        }
+    },
+    "the data protection act 2018": {
+        "Legislation relevant to Computer Science:": {
+            "Robson & P M Heathcote": "page 76",
+            "G Rouse, L Pearcey, Craddock": "page 97"
+        }
+    },
+    "Data Protection Act": {
+        "Legislation relevant to Computer Science:": {
+            "Robson & P M Heathcote": "page 76",
+            "G Rouse, L Pearcey, Craddock": "page 97"
+        }
+    },
+    "Computer Misuse Act 1990": {
+        "Legislation relevant to Computer Science:": {
+            "Robson & P M Heathcote": "page 76",
+            "G Rouse, L Pearcey, Craddock": "page 99"
+        }
+    },
+    "Computer Misuse Act": {
+        "Legislation relevant to Computer Science:": {
+            "Robson & P M Heathcote": "page 76",
+            "G Rouse, L Pearcey, Craddock": "page 99"
+        }
+    },
+    "Copyright Designs and Patents Act 1988": {
+        "Legislation relevant to Computer Science:": {
+            "Robson & P M Heathcote": "page 77",
+            "G Rouse, L Pearcey, Craddock": "page 99"
+        }
+    },
+    "Copyright": {
+        "Legislation relevant to Computer Science:": {
+            "Robson & P M Heathcote": "page 77",
+            "G Rouse, L Pearcey, Craddock": "page 99"
+        }
+    },
+    "Software licences (i.e. open source and proprietary)": {
+        "Examples": {
+            "Robson & P M Heathcote": "page 77",
+            "G Rouse, L Pearcey, Craddock": "page 99"
+        }
+    },
+    "licence": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 77",
+            "G Rouse, L Pearcey, Craddock": "page 99"
+        }
+    },
+    "open source": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 77",
+            "G Rouse, L Pearcey, Craddock": "page 99"
+        }
+    },
+    "proprietary": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 77",
+            "G Rouse, L Pearcey, Craddock": "page 99"
+        }
+    },
+    "Principles of computational thinking": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 82",
+            "G Rouse, L Pearcey, Craddock": "page 106"
+        }
+    },
+    "Abstraction": {
+        "Definition": {
+            "Robson & P M Heathcote": "page 83",
+            "G Rouse, L Pearcey, Craddock": "page 106"
+        }
+    },
+    "Decomposition": {
+        "Definition": {
+            "Robson & P M Heathcote": "page 83",
+            "G Rouse, L Pearcey, Craddock": "page 106"
+        }
+    },
+    "Algorithmic thinking": {
+        "Definition": {
+            "Robson & P M Heathcote": "page 84",
+            "G Rouse, L Pearcey, Craddock": "page 106"
+        }
+    },
+    "Algorithm": {
+        "Definition": {
+            "Robson & P M Heathcote": "page 84",
+            "G Rouse, L Pearcey, Craddock": "page 106"
+        }
+    },
+    "Identify the inputs, processes, and outputs for a problem": {
+        "Explained": {
+            "G Rouse, L Pearcey, Craddock": "page 108"
+        }
+    },
+    "Structure diagrams": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 83",
+            "G Rouse, L Pearcey, Craddock": "page 108"
+        }
+    },
+    "Create, interpret, correct, complete, and refine algorithms using": {
+        "Examples": {
+            "Robson & P M Heathcote": "page 94",
+            "G Rouse, L Pearcey, Craddock": "page 111"
+        }
+    },
+    "Pseudocode": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 94",
+            "G Rouse, L Pearcey, Craddock": "page 111"
+        }
+    },
+    "Flowcharts": {
+        "FLowcharts explained": {
+            "Robson & P M Heathcote": "page 92",
+            "G Rouse, L Pearcey, Craddock": "page 109"
+        }
+    },
+    "Reference language/high-level programming language": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 94",
+            "G Rouse, L Pearcey, Craddock": "page 111"
+        }
+    },
+    "Reference language": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 94",
+            "G Rouse, L Pearcey, Craddock": "page 111"
+        }
+    },
+    "Identify common errors": {
+        "Examples": {
+            "Robson & P M Heathcote": "page 138",
+            "G Rouse, L Pearcey, Craddock": "page 111"
+        }
+    },
+    "Trace tables": {
+        "Examples": {
+            "Robson & P M Heathcote": "page 143",
+            "G Rouse, L Pearcey, Craddock": "page 111"
+        }
+    },
+    "Standard searching algorithms": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 86",
+            "G Rouse, L Pearcey, Craddock": "page 116"
+        }
+    },
+    "Binary search": {
+        "Standard searching algorithms": {
+            "Robson & P M Heathcote": "page 86",
+            "G Rouse, L Pearcey, Craddock": "page 116"
+        }
+    },
+    "Linear search": {
+        "Standard searching algorithms": {
+            "Robson & P M Heathcote": "page 85",
+            "G Rouse, L Pearcey, Craddock": "page 116"
+        }
+    },
+    "Linear": {
+        "Standard searching algorithms": {
+            "Robson & P M Heathcote": "page 85",
+            "G Rouse, L Pearcey, Craddock": "page 116"
+        }
+    },
+    "Standard sorting algorithms": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 87",
+            "G Rouse, L Pearcey, Craddock": "page 112"
+        }
+    },
+    "Bubble sort": {
+        "Algorithms explained": {
+            "Robson & P M Heathcote": "page 87",
+            "G Rouse, L Pearcey, Craddock": "page 112"
+        }
+    },
+    "Bubble": {
+        "Algorithms explained": {
+            "Robson & P M Heathcote": "page 87",
+            "G Rouse, L Pearcey, Craddock": "page 112"
+        }
+    },
+    "Merge sort": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 91",
+            "G Rouse, L Pearcey, Craddock": "page 114"
+        }
+    },
+    "Merge": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 91",
+            "G Rouse, L Pearcey, Craddock": "page 114"
+        }
+    },
+    "Insertion sort": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 89",
+            "G Rouse, L Pearcey, Craddock": "page 113"
+        }
+    },
+    "Insertion": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 89",
+            "G Rouse, L Pearcey, Craddock": "page 113"
+        }
+    },
+    "The use of variables, constants, operators, inputs, outputs and assignments": {
+        "Introduced": {
+            "Robson & P M Heathcote": "page 106",
+            "G Rouse, L Pearcey, Craddock": "page 125"
+        }
+    },
+    "The use of the three basic programming constructs used to control the flow of a program": {
+        "Introduced": {
+            "Robson & P M Heathcote": "page 94",
+            "G Rouse, L Pearcey, Craddock": "page 127"
+        }
+    },
+    "Sequence": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 94",
+            "G Rouse, L Pearcey, Craddock": "page 127"
+        }
+    },
+    "Selection": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 95",
+            "G Rouse, L Pearcey, Craddock": "page 127"
+        }
+    },
+    "Iteration": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 96",
+            "G Rouse, L Pearcey, Craddock": "page 129"
+        }
+    },
+    "The common arithmetic operators": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 108",
+            "G Rouse, L Pearcey, Craddock": "page 131"
+        }
+    },
+    "The common Boolean operators AND, OR and NOT": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 112",
+            "G Rouse, L Pearcey, Craddock": "page 132"
+        }
+    },
+    "The use of data types:": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 113",
+            "G Rouse, L Pearcey, Craddock": "page 134"
+        }
+    },
+    "Integer": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 113",
+            "G Rouse, L Pearcey, Craddock": "page 134"
+        }
+    },
+    "Boolean": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 113",
+            "G Rouse, L Pearcey, Craddock": "page 134"
+        }
+    },
+    "Character and string and slicing": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 110",
+            "G Rouse, L Pearcey, Craddock": "page 134"
+        }
+    },
+    "Casting": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 109",
+            "G Rouse, L Pearcey, Craddock": "page 135"
+        }
+    },
+    "The use of basic string manipulation": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 110",
+            "G Rouse, L Pearcey, Craddock": "page 136"
+        }
+    },
+    "The use of basic file handling operations:": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 126",
+            "G Rouse, L Pearcey, Craddock": "page 138"
+        }
+    },
+    "Read": {
+        "Reading text files explained": {
+            "Robson & P M Heathcote": "page 127",
+            "G Rouse, L Pearcey, Craddock": "page 138"
+        }
+    },
+    "write": {
+        "Writing to files explained": {
+            "Robson & P M Heathcote": "page 126",
+            "G Rouse, L Pearcey, Craddock": "page 138"
+        }
+    },
+    "close": {
+        "Closing files explained": {
+            "Robson & P M Heathcote": "page 126",
+            "G Rouse, L Pearcey, Craddock": "page 138"
+        }
+    },
+    "The use of records to store data": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 124",
+            "G Rouse, L Pearcey, Craddock": "page 139"
+        }
+    },
+    "The use of SQL to search for data": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 125",
+            "G Rouse, L Pearcey, Craddock": "page 139"
+        }
+    },
+    "The use of arrays (or equivalent) when solving problems, including": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 117",
+            "G Rouse, L Pearcey, Craddock": "page 141"
+        }
+    },
+    "both one-dimensional (1D) and two-dimensional arrays (2D)": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 118",
+            "G Rouse, L Pearcey, Craddock": "page 141"
+        }
+    },
+    "How to use sub programs (functions and procedures) to produce structured code": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 120",
+            "G Rouse, L Pearcey, Craddock": "page 142"
+        }
+    },
+    "Random number generation": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 122",
+            "G Rouse, L Pearcey, Craddock": "page 145"
+        }
+    },
+    "Defensive design considerations:": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 135",
+            "G Rouse, L Pearcey, Craddock": "page 152"
+        }
+    },
+    "Anticipating misuse": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 135",
+            "G Rouse, L Pearcey, Craddock": "page 152"
+        }
+    },
+    "Authentication": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 136",
+            "G Rouse, L Pearcey, Craddock": "page 153"
+        }
+    },
+    "Input validation": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 136",
+            "G Rouse, L Pearcey, Craddock": "page 154"
+        }
+    },
+    "Maintainability:": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 137",
+            "G Rouse, L Pearcey, Craddock": "page 155"
+        }
+    },
+    "Use of sub programs": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 137",
+            "G Rouse, L Pearcey, Craddock": "page 155"
+        }
+    },
+    "Naming conventions": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 137",
+            "G Rouse, L Pearcey, Craddock": "page 155"
+        }
+    },
+    "Indentation": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 138",
+            "G Rouse, L Pearcey, Craddock": "page 155"
+        }
+    },
+    "Commenting": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 138",
+            "G Rouse, L Pearcey, Craddock": "page 156"
+        }
+    },
+    "The purpose of testing": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 140",
+            "G Rouse, L Pearcey, Craddock": "page 157"
+        }
+    },
+    "Types of testing:": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 140",
+            "G Rouse, L Pearcey, Craddock": "page 157"
+        }
+    },
+    "Iterative": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 140",
+            "G Rouse, L Pearcey, Craddock": "page 157"
+        }
+    },
+    "Final": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 140",
+            "G Rouse, L Pearcey, Craddock": "page 157"
+        }
+    },
+    "terminal": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 140",
+            "G Rouse, L Pearcey, Craddock": "page 157"
+        }
+    },
+    "Identify syntax and logic errors": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 138",
+            "G Rouse, L Pearcey, Craddock": "page 158"
+        }
+    },
+    "Selecting and using suitable test data:": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 141",
+            "G Rouse, L Pearcey, Craddock": "page 159"
+        }
+    },
+    "normal": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 141",
+            "G Rouse, L Pearcey, Craddock": "page 159"
+        }
+    },
+    "Boundary": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 141",
+            "G Rouse, L Pearcey, Craddock": "page 159"
+        }
+    },
+    "Erroneous": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 141",
+            "G Rouse, L Pearcey, Craddock": "page 159"
+        }
+    },
+    "invalid": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 141",
+            "G Rouse, L Pearcey, Craddock": "page 159"
+        }
+    },
+    "Refining algorithms": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 142",
+            "G Rouse, L Pearcey, Craddock": "page 160"
+        }
+    },
+    "Simple logic diagrams using the operators AND, OR and NOT": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 132",
+            "G Rouse, L Pearcey, Craddock": "page 164"
+        }
+    },
+    "Truth tables": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 133",
+            "G Rouse, L Pearcey, Craddock": "page 164"
+        }
+    },
+    "Combining Boolean operators using AND, OR and NOT": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 134",
+            "G Rouse, L Pearcey, Craddock": "page 165"
+        }
+    },
+    "Applying logical operators in truth tables to solve problems": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 134",
+            "G Rouse, L Pearcey, Craddock": "page 166"
+        }
+    },
+    "Characteristics and purpose of different levels of programming language:": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 144",
+            "G Rouse, L Pearcey, Craddock": "page 175"
+        }
+    },
+    "High level languages": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 144",
+            "G Rouse, L Pearcey, Craddock": "page 175"
+        }
+    },
+    "Low level languages": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 144",
+            "G Rouse, L Pearcey, Craddock": "page 175"
+        }
+    },
+    "The purpose of translators": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 145",
+            "G Rouse, L Pearcey, Craddock": "page 176"
+        }
+    },
+    "the characteristics of a compiler and an interpreter": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 146",
+            "G Rouse, L Pearcey, Craddock": "page 176"
+        }
+    },
+    "xxx": {
+        "xxx": {
+            "Robson & P M Heathcote": "page x",
+            "G Rouse, L Pearcey, Craddock": "page x"
+        }
+    },
+    "common tools and facilities available in an Integrated Development Environment (IDE)": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 146",
+            "G Rouse, L Pearcey, Craddock": "page 177"
+        }
+    },
+    "editor": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 146",
+            "G Rouse, L Pearcey, Craddock": "page 178"
+        }
+    },
+    "error diagnostics": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 147",
+            "G Rouse, L Pearcey, Craddock": "page 178"
+        }
+    },
+    "run-time environment": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 148",
+            "G Rouse, L Pearcey, Craddock": "page 179"
+        }
+    },
+    "translators": {
+        "Explained": {
+            "Robson & P M Heathcote": "page 145",
+            "G Rouse, L Pearcey, Craddock": "page 179"
+        }
+    }
+}
