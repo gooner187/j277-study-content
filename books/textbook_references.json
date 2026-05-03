@@ -1,0 +1,564 @@
+{
+  "topics": [
+    {
+      "id": "cpu-purpose",
+      "topic": "1.1 System architecture",
+      "description": "The purpose and function of the CPU",
+      "keywords": ["cpu", "processor", "central processing unit", "purpose of the cpu"],
+      "books": {
+        "Robson & Heathcote": "page 3",
+        "Rouse, Pearcey & Craddock": "page 2"
+      }
+    },
+    {
+      "id": "cpu-components",
+      "topic": "1.1 System architecture",
+      "description": "Common CPU components: ALU, CU, cache and registers",
+      "keywords": ["alu", "arithmetic logic unit", "cu", "control unit", "cache", "register", "cpu components"],
+      "books": {
+        "Robson & Heathcote": "page 4",
+        "Rouse, Pearcey & Craddock": "page 3"
+      }
+    },
+    {
+      "id": "von-neumann",
+      "topic": "1.1 System architecture",
+      "description": "Von Neumann architecture",
+      "keywords": ["von neumann", "von", "neumann", "stored program"],
+      "books": {
+        "Robson & Heathcote": "page 3",
+        "Rouse, Pearcey & Craddock": "page 4"
+      }
+    },
+    {
+      "id": "fde-cycle",
+      "topic": "1.1 System architecture",
+      "description": "The fetch-decode-execute cycle and CPU registers (PC, MAR, MDR, ACC)",
+      "keywords": ["fetch", "decode", "execute", "fde", "fetch-decode-execute", "fetch decode execute", "pc", "program counter", "mar", "memory address register", "mdr", "memory data register", "acc", "accumulator"],
+      "books": {
+        "Robson & Heathcote": "page 3",
+        "Rouse, Pearcey & Craddock": "page 4"
+      }
+    },
+    {
+      "id": "cpu-performance",
+      "topic": "1.1 System architecture",
+      "description": "How CPU characteristics affect performance: clock speed, cache size, number of cores",
+      "keywords": ["clock speed", "clock", "hertz", "ghz", "mhz", "cycles per second", "cores", "core", "multicore", "multi-core", "parallel processing", "cpu performance"],
+      "books": {
+        "Robson & Heathcote": "pages 5–6",
+        "Rouse, Pearcey & Craddock": "pages 3, 6 & 7"
+      }
+    },
+    {
+      "id": "embedded-systems",
+      "topic": "1.1 System architecture",
+      "description": "Embedded systems: hardware and software fixed in capability, built into a larger system",
+      "keywords": ["embedded", "embedded system", "embedded systems"],
+      "books": {
+        "Robson & Heathcote": "page 7",
+        "Rouse, Pearcey & Craddock": "pages 7–8"
+      }
+    },
+    {
+      "id": "ram-rom",
+      "topic": "1.2 Memory and storage",
+      "description": "The purpose of RAM and ROM, including volatile and non-volatile memory",
+      "keywords": ["ram", "random access memory", "rom", "read only memory", "volatile", "non-volatile"],
+      "books": {
+        "Robson & Heathcote": "pages 8–9",
+        "Rouse, Pearcey & Craddock": "pages 12–13"
+      }
+    },
+    {
+      "id": "virtual-memory",
+      "topic": "1.2 Memory and storage",
+      "description": "Virtual memory and how it uses RAM and secondary storage",
+      "keywords": ["virtual memory", "virtual"],
+      "books": {
+        "Robson & Heathcote": "page 8",
+        "Rouse, Pearcey & Craddock": "page 14"
+      }
+    },
+    {
+      "id": "primary-storage",
+      "topic": "1.2 Memory and storage",
+      "description": "The need for primary storage",
+      "keywords": ["primary storage", "primary memory"],
+      "books": {
+        "Robson & Heathcote": "page 8",
+        "Rouse, Pearcey & Craddock": "page 12"
+      }
+    },
+    {
+      "id": "secondary-storage",
+      "topic": "1.2 Memory and storage",
+      "description": "Secondary storage types: optical, magnetic and solid state",
+      "keywords": ["secondary storage", "secondary", "optical", "magnetic", "solid state", "ssd", "hard drive", "hdd", "hard disk"],
+      "books": {
+        "Robson & Heathcote": "pages 10–13",
+        "Rouse, Pearcey & Craddock": "pages 15–18"
+      }
+    },
+    {
+      "id": "data-units",
+      "topic": "1.2 Memory and storage",
+      "description": "Units of data storage: bit, nibble, byte, kilobyte, megabyte, gigabyte, terabyte, petabyte",
+      "keywords": ["bit", "nibble", "byte", "kilobyte", "megabyte", "gigabyte", "terabyte", "petabyte", "units of storage", "data units"],
+      "books": {
+        "Robson & Heathcote": "page 17",
+        "Rouse, Pearcey & Craddock": "page 20"
+      }
+    },
+    {
+      "id": "binary",
+      "topic": "1.2 Memory and storage",
+      "description": "Binary and how data is converted into binary format for processing",
+      "keywords": ["binary", "binary number", "denary", "decimal", "convert", "base 2"],
+      "books": {
+        "Robson & Heathcote": "page 18",
+        "Rouse, Pearcey & Craddock": "page 22"
+      }
+    },
+    {
+      "id": "binary-addition",
+      "topic": "1.2 Memory and storage",
+      "description": "Binary addition of two integers up to 8 bits",
+      "keywords": ["binary addition", "add binary", "adding binary"],
+      "books": {
+        "Robson & Heathcote": "page 20",
+        "Rouse, Pearcey & Craddock": "page 25"
+      }
+    },
+    {
+      "id": "binary-shift",
+      "topic": "1.2 Memory and storage",
+      "description": "Binary shifts (left and right)",
+      "keywords": ["binary shift", "shift", "left shift", "right shift"],
+      "books": {
+        "Robson & Heathcote": "page 20",
+        "Rouse, Pearcey & Craddock": "page 27"
+      }
+    },
+    {
+      "id": "hexadecimal",
+      "topic": "1.2 Memory and storage",
+      "description": "Converting between denary and hexadecimal",
+      "keywords": ["hex", "hexadecimal", "base 16", "denary to hex", "hex to denary"],
+      "books": {
+        "Robson & Heathcote": "pages 22–23",
+        "Rouse, Pearcey & Craddock": "pages 25–28"
+      }
+    },
+    {
+      "id": "character-sets",
+      "topic": "1.2 Memory and storage",
+      "description": "Character sets: ASCII and Unicode, bits per character and number of characters represented",
+      "keywords": ["ascii", "unicode", "character set", "character sets", "characters represented"],
+      "books": {
+        "Robson & Heathcote": "pages 24–25",
+        "Rouse, Pearcey & Craddock": "pages 31–32"
+      }
+    },
+    {
+      "id": "images",
+      "topic": "1.2 Memory and storage",
+      "description": "Image representation: pixels, resolution, colour depth, file size and metadata",
+      "keywords": ["image", "images", "pixel", "pixels", "resolution", "colour depth", "color depth", "image file size", "metadata", "bitmap"],
+      "books": {
+        "Robson & Heathcote": "pages 25–27",
+        "Rouse, Pearcey & Craddock": "pages 33–35"
+      }
+    },
+    {
+      "id": "sound",
+      "topic": "1.2 Memory and storage",
+      "description": "Sound representation: sampling, sample rate, bit depth, file size and playback quality",
+      "keywords": ["sound", "audio", "sampling", "sample rate", "bit depth", "sound file size", "playback quality", "digital sound"],
+      "books": {
+        "Robson & Heathcote": "pages 28–29",
+        "Rouse, Pearcey & Craddock": "pages 36–37"
+      }
+    },
+    {
+      "id": "compression",
+      "topic": "1.2 Memory and storage",
+      "description": "Compression: the need for compression, lossy and lossless compression",
+      "keywords": ["compression", "compress", "lossy", "lossless", "run length encoding", "rle", "huffman"],
+      "books": {
+        "Robson & Heathcote": "pages 29–31",
+        "Rouse, Pearcey & Craddock": "pages 39–40"
+      }
+    },
+    {
+      "id": "network-types",
+      "topic": "1.3 Networks",
+      "description": "Types of network: LAN and WAN",
+      "keywords": ["lan", "wan", "local area network", "wide area network", "network types", "types of network"],
+      "books": {
+        "Robson & Heathcote": "pages 37–38",
+        "Rouse, Pearcey & Craddock": "pages 52–53"
+      }
+    },
+    {
+      "id": "network-performance",
+      "topic": "1.3 Networks",
+      "description": "Factors that affect network performance",
+      "keywords": ["network performance", "bandwidth", "latency", "factors affecting network"],
+      "books": {
+        "Robson & Heathcote": "page 48",
+        "Rouse, Pearcey & Craddock": "page 54"
+      }
+    },
+    {
+      "id": "client-server",
+      "topic": "1.3 Networks",
+      "description": "Client-server and peer-to-peer network models",
+      "keywords": ["client server", "client-server", "peer to peer", "peer-to-peer", "p2p", "server"],
+      "books": {
+        "Robson & Heathcote": "page 45",
+        "Rouse, Pearcey & Craddock": "page 55"
+      }
+    },
+    {
+      "id": "network-hardware",
+      "topic": "1.3 Networks",
+      "description": "Hardware needed for a LAN: routers, switches, WAPs, NICs and transmission media",
+      "keywords": ["router", "routers", "switch", "switches", "wireless access point", "wap", "nic", "network interface card", "network interface controller", "transmission media", "ethernet cable", "network hardware"],
+      "books": {
+        "Robson & Heathcote": "pages 41–43",
+        "Rouse, Pearcey & Craddock": "pages 57–58"
+      }
+    },
+    {
+      "id": "internet-services",
+      "topic": "1.3 Networks",
+      "description": "Internet services: DNS, hosting, the cloud, web servers and clients",
+      "keywords": ["dns", "domain name server", "domain name system", "hosting", "cloud", "the cloud", "web server", "web client"],
+      "books": {
+        "Robson & Heathcote": "pages 36, 45–47",
+        "Rouse, Pearcey & Craddock": "pages 59–60"
+      }
+    },
+    {
+      "id": "topologies",
+      "topic": "1.3 Networks",
+      "description": "Star and mesh network topologies",
+      "keywords": ["topology", "topologies", "star topology", "mesh topology", "star network", "mesh network"],
+      "books": {
+        "Robson & Heathcote": "page 39",
+        "Rouse, Pearcey & Craddock": "page 61"
+      }
+    },
+    {
+      "id": "connection-methods",
+      "topic": "1.3 Networks",
+      "description": "Wired and wireless connection methods: ethernet, wi-fi, bluetooth",
+      "keywords": ["wired", "wireless", "ethernet", "wi-fi", "wifi", "bluetooth", "connection methods", "modes of connection"],
+      "books": {
+        "Robson & Heathcote": "pages 42–43",
+        "Rouse, Pearcey & Craddock": "pages 63–64"
+      }
+    },
+    {
+      "id": "ip-mac",
+      "topic": "1.3 Networks",
+      "description": "IP addressing and MAC addressing",
+      "keywords": ["ip address", "ip addressing", "ipv4", "ipv6", "mac address", "mac addressing", "media access control"],
+      "books": {
+        "Robson & Heathcote": "pages 35–37",
+        "Rouse, Pearcey & Craddock": "pages 64–65"
+      }
+    },
+    {
+      "id": "protocols",
+      "topic": "1.3 Networks",
+      "description": "Network protocols: TCP/IP, HTTP, HTTPS, FTP, POP3, IMAP, SMTP and protocol layers",
+      "keywords": ["protocol", "protocols", "tcp", "tcp/ip", "http", "https", "ftp", "file transfer protocol", "pop", "pop3", "post office protocol", "imap", "smtp", "simple mail transfer protocol", "layers", "protocol layers"],
+      "books": {
+        "Robson & Heathcote": "pages 49–50",
+        "Rouse, Pearcey & Craddock": "pages 66–67"
+      }
+    },
+    {
+      "id": "encryption",
+      "topic": "1.3 Networks",
+      "description": "Encryption for securing data in transit",
+      "keywords": ["encryption", "encrypt", "decrypt", "decryption"],
+      "books": {
+        "Robson & Heathcote": "page 44",
+        "Rouse, Pearcey & Craddock": "page 64"
+      }
+    },
+    {
+      "id": "forms-of-attack",
+      "topic": "1.4 Network security",
+      "description": "Forms of attack: malware, social engineering, phishing, brute force, DoS, data interception, SQL injection",
+      "keywords": ["malware", "virus", "worm", "ransomware", "spyware", "social engineering", "phishing", "brute force", "denial of service", "dos", "ddos", "data interception", "sql injection", "cyber attack", "attack", "forms of attack"],
+      "books": {
+        "Robson & Heathcote": "pages 54–57",
+        "Rouse, Pearcey & Craddock": "pages 73–76"
+      }
+    },
+    {
+      "id": "prevention-methods",
+      "topic": "1.4 Network security",
+      "description": "Common prevention methods: penetration testing, anti-malware, firewalls, user access levels, passwords, physical security",
+      "keywords": ["penetration testing", "pen test", "anti-malware", "antivirus", "firewall", "firewalls", "user access levels", "access levels", "password", "passwords", "physical security", "prevention", "security measures"],
+      "books": {
+        "Robson & Heathcote": "pages 58–61",
+        "Rouse, Pearcey & Craddock": "pages 77–79"
+      }
+    },
+    {
+      "id": "operating-systems",
+      "topic": "1.5 Systems software",
+      "description": "Purpose and functionality of operating systems: user interface, memory management, multitasking, peripheral management, drivers, user management, file management",
+      "keywords": ["operating system", "os", "user interface", "memory management", "multitasking", "peripheral management", "drivers", "driver", "user management", "file management"],
+      "books": {
+        "Robson & Heathcote": "pages 61–64",
+        "Rouse, Pearcey & Craddock": "pages 83–85"
+      }
+    },
+    {
+      "id": "utility-software",
+      "topic": "1.5 Systems software",
+      "description": "Purpose and functionality of utility software: encryption, defragmentation, data compression",
+      "keywords": ["utility software", "utility", "defragmentation", "defrag", "data compression", "encryption software"],
+      "books": {
+        "Robson & Heathcote": "pages 64–65",
+        "Rouse, Pearcey & Craddock": "pages 86–87"
+      }
+    },
+    {
+      "id": "ethical-legal-cultural",
+      "topic": "1.6 Ethical, legal, cultural and environmental impacts",
+      "description": "Ethical, legal, cultural and environmental impacts of digital technology",
+      "keywords": ["ethical", "ethics", "legal", "cultural", "environmental", "impacts of digital technology", "digital technology impacts"],
+      "books": {
+        "Robson & Heathcote": "pages 72–78",
+        "Rouse, Pearcey & Craddock": "pages 91–96"
+      }
+    },
+    {
+      "id": "legislation",
+      "topic": "1.6 Ethical, legal, cultural and environmental impacts",
+      "description": "Legislation relevant to Computer Science: Data Protection Act 2018, Computer Misuse Act 1990, Copyright Designs and Patents Act 1988",
+      "keywords": ["legislation", "laws", "data protection act", "computer misuse act", "copyright designs and patents act", "copyright act", "gdpr"],
+      "books": {
+        "Robson & Heathcote": "pages 76–77",
+        "Rouse, Pearcey & Craddock": "pages 97–99"
+      }
+    },
+    {
+      "id": "software-licences",
+      "topic": "1.6 Ethical, legal, cultural and environmental impacts",
+      "description": "Software licences: open source and proprietary",
+      "keywords": ["licence", "license", "open source", "proprietary", "software licence", "software license"],
+      "books": {
+        "Robson & Heathcote": "page 77",
+        "Rouse, Pearcey & Craddock": "page 99"
+      }
+    },
+    {
+      "id": "computational-thinking",
+      "topic": "2.1 Algorithms",
+      "description": "Principles of computational thinking: abstraction, decomposition, algorithmic thinking",
+      "keywords": ["computational thinking", "abstraction", "decomposition", "algorithmic thinking", "algorithm"],
+      "books": {
+        "Robson & Heathcote": "pages 82–84",
+        "Rouse, Pearcey & Craddock": "page 106"
+      }
+    },
+    {
+      "id": "algorithms-design",
+      "topic": "2.1 Algorithms",
+      "description": "Designing algorithms using pseudocode, flowcharts and structure diagrams",
+      "keywords": ["pseudocode", "flowchart", "flowcharts", "structure diagram", "algorithm design", "inputs processes outputs"],
+      "books": {
+        "Robson & Heathcote": "pages 83, 92, 94",
+        "Rouse, Pearcey & Craddock": "pages 108–111"
+      }
+    },
+    {
+      "id": "searching-algorithms",
+      "topic": "2.1 Algorithms",
+      "description": "Standard searching algorithms: linear search and binary search",
+      "keywords": ["linear search", "binary search", "searching", "search algorithm"],
+      "books": {
+        "Robson & Heathcote": "pages 85–86",
+        "Rouse, Pearcey & Craddock": "page 116"
+      }
+    },
+    {
+      "id": "sorting-algorithms",
+      "topic": "2.1 Algorithms",
+      "description": "Standard sorting algorithms: bubble sort, merge sort and insertion sort",
+      "keywords": ["bubble sort", "merge sort", "insertion sort", "sorting", "sort algorithm"],
+      "books": {
+        "Robson & Heathcote": "pages 87–91",
+        "Rouse, Pearcey & Craddock": "pages 112–114"
+      }
+    },
+    {
+      "id": "trace-tables",
+      "topic": "2.1 Algorithms",
+      "description": "Trace tables and identifying errors in algorithms",
+      "keywords": ["trace table", "trace tables", "dry run", "identify errors"],
+      "books": {
+        "Robson & Heathcote": "pages 138, 143",
+        "Rouse, Pearcey & Craddock": "page 111"
+      }
+    },
+    {
+      "id": "programming-basics",
+      "topic": "2.2 Programming fundamentals",
+      "description": "Variables, constants, operators, inputs, outputs and assignments",
+      "keywords": ["variable", "variables", "constant", "constants", "operator", "input", "output", "assignment"],
+      "books": {
+        "Robson & Heathcote": "page 106",
+        "Rouse, Pearcey & Craddock": "page 125"
+      }
+    },
+    {
+      "id": "programming-constructs",
+      "topic": "2.2 Programming fundamentals",
+      "description": "The three basic programming constructs: sequence, selection and iteration",
+      "keywords": ["sequence", "selection", "iteration", "if", "elif", "else", "while", "for loop", "programming constructs", "constructs"],
+      "books": {
+        "Robson & Heathcote": "pages 94–96",
+        "Rouse, Pearcey & Craddock": "pages 127–129"
+      }
+    },
+    {
+      "id": "arithmetic-operators",
+      "topic": "2.2 Programming fundamentals",
+      "description": "Common arithmetic and Boolean operators",
+      "keywords": ["arithmetic operator", "arithmetic operators", "modulo", "div", "mod", "boolean operator", "and", "or", "not"],
+      "books": {
+        "Robson & Heathcote": "pages 108, 112",
+        "Rouse, Pearcey & Craddock": "pages 131–132"
+      }
+    },
+    {
+      "id": "data-types",
+      "topic": "2.2 Programming fundamentals",
+      "description": "Data types: integer, real, boolean, character, string; casting",
+      "keywords": ["data type", "data types", "integer", "real", "float", "boolean", "character", "string", "casting", "type casting", "convert data type"],
+      "books": {
+        "Robson & Heathcote": "pages 109, 113",
+        "Rouse, Pearcey & Craddock": "pages 134–135"
+      }
+    },
+    {
+      "id": "string-manipulation",
+      "topic": "2.2 Programming fundamentals",
+      "description": "String manipulation and slicing",
+      "keywords": ["string manipulation", "string", "slicing", "substring", "string methods", "length", "upper", "lower"],
+      "books": {
+        "Robson & Heathcote": "page 110",
+        "Rouse, Pearcey & Craddock": "pages 134–136"
+      }
+    },
+    {
+      "id": "file-handling",
+      "topic": "2.2 Programming fundamentals",
+      "description": "Basic file handling operations: open, read, write, close",
+      "keywords": ["file handling", "open file", "read file", "write file", "close file", "file operations"],
+      "books": {
+        "Robson & Heathcote": "pages 126–127",
+        "Rouse, Pearcey & Craddock": "page 138"
+      }
+    },
+    {
+      "id": "records-sql",
+      "topic": "2.2 Programming fundamentals",
+      "description": "Using records to store data and SQL to search for data",
+      "keywords": ["record", "records", "sql", "select", "from", "where", "database", "structured query language"],
+      "books": {
+        "Robson & Heathcote": "pages 124–125",
+        "Rouse, Pearcey & Craddock": "page 139"
+      }
+    },
+    {
+      "id": "arrays",
+      "topic": "2.2 Programming fundamentals",
+      "description": "Arrays: one-dimensional (1D) and two-dimensional (2D)",
+      "keywords": ["array", "arrays", "1d array", "2d array", "one dimensional", "two dimensional", "list"],
+      "books": {
+        "Robson & Heathcote": "pages 117–118",
+        "Rouse, Pearcey & Craddock": "pages 141–142"
+      }
+    },
+    {
+      "id": "subprograms",
+      "topic": "2.2 Programming fundamentals",
+      "description": "Sub-programs: functions and procedures for structured code",
+      "keywords": ["function", "functions", "procedure", "procedures", "subprogram", "sub-program", "subroutine", "parameter", "return value", "random number"],
+      "books": {
+        "Robson & Heathcote": "pages 120–122",
+        "Rouse, Pearcey & Craddock": "pages 142–145"
+      }
+    },
+    {
+      "id": "defensive-design",
+      "topic": "2.3 Producing robust programs",
+      "description": "Defensive design: anticipating misuse, authentication and input validation",
+      "keywords": ["defensive design", "anticipating misuse", "authentication", "input validation", "validate", "validation"],
+      "books": {
+        "Robson & Heathcote": "pages 135–136",
+        "Rouse, Pearcey & Craddock": "pages 152–154"
+      }
+    },
+    {
+      "id": "maintainability",
+      "topic": "2.3 Producing robust programs",
+      "description": "Code maintainability: sub-programs, naming conventions, indentation and commenting",
+      "keywords": ["maintainability", "maintainable", "naming convention", "indentation", "commenting", "comments", "code quality", "readable code"],
+      "books": {
+        "Robson & Heathcote": "pages 137–138",
+        "Rouse, Pearcey & Craddock": "pages 155–156"
+      }
+    },
+    {
+      "id": "testing",
+      "topic": "2.3 Producing robust programs",
+      "description": "Testing: purpose, iterative and final testing, syntax and logic errors, normal, boundary and erroneous test data",
+      "keywords": ["testing", "test", "iterative testing", "final testing", "terminal testing", "syntax error", "logic error", "test data", "normal data", "boundary data", "erroneous data", "invalid data"],
+      "books": {
+        "Robson & Heathcote": "pages 138–143",
+        "Rouse, Pearcey & Craddock": "pages 157–160"
+      }
+    },
+    {
+      "id": "boolean-logic",
+      "topic": "2.4 Boolean logic",
+      "description": "Boolean logic: AND, OR, NOT gates, logic diagrams and truth tables",
+      "keywords": ["boolean logic", "logic gate", "logic gates", "and gate", "or gate", "not gate", "truth table", "truth tables", "logic diagram"],
+      "books": {
+        "Robson & Heathcote": "pages 132–134",
+        "Rouse, Pearcey & Craddock": "pages 164–166"
+      }
+    },
+    {
+      "id": "programming-languages",
+      "topic": "2.5 Languages and IDEs",
+      "description": "High level and low level programming languages, and the purpose of translators",
+      "keywords": ["high level language", "low level language", "assembly language", "machine code", "translator", "translators", "assembler", "compiler", "interpreter"],
+      "books": {
+        "Robson & Heathcote": "pages 144–146",
+        "Rouse, Pearcey & Craddock": "pages 175–176"
+      }
+    },
+    {
+      "id": "ide",
+      "topic": "2.5 Languages and IDEs",
+      "description": "Common tools in an IDE: editor, error diagnostics, run-time environment, translator",
+      "keywords": ["ide", "integrated development environment", "editor", "error diagnostics", "run-time environment", "runtime environment", "debugger"],
+      "books": {
+        "Robson & Heathcote": "pages 146–148",
+        "Rouse, Pearcey & Craddock": "pages 177–179"
+      }
+    }
+  ]
+}
