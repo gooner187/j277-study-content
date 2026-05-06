@@ -1,0 +1,23 @@
+| Python Tool             | What It Does                                                              | Example                              |
+| ----------------------- | ------------------------------------------------------------------------- | ------------------------------------ |
+| **Variable**            | Stores information for later use                                          | `score = 10`                         |
+| **Constant**            | Stores fixed information that should not change *(declared in FULL CAPS)* | `MAX_SCORE = 100`                    |
+| **List**                | Keeps multiple pieces of data together in one place                       | `colours = ["red", "blue", "green"]` |
+| **Selection**           | Chooses different code paths based on conditions                          | `if score > 50:`                     |
+| **For Loop**            | Repeats code for each item or a set number of times                       | `for i in range(5):`                 |
+| **While Loop**          | Repeats code until a condition changes                                    | `while lives > 0:`                   |
+| **2D Array**            | Stores data in rows and columns like a table                              | `board = [[1,2],[3,4]]`              |
+| **Random**              | Generates unpredictable values or choices                                 | `random.randint(1,6)`                |
+| **Procedure**           | Groups instructions together to perform a task                            | `def greet():`                       |
+| **Function**            | Performs a task and returns a result                                      | `def add(a,b): return a+b`           |
+| **Data Types**          | Define what kind of data is being stored                                  | `name = "Alex"`                      |
+| **String Slicing**      | Extracts specific parts of text                                           | `word[0:3]`                          |
+| **Basic File Handling** | Reads from and writes data to files                                       | `file = open("scores.txt")`          |
+| **Casting**             | Converts data from one type to another                                    | `age = int("15")`                    |
+| **Concatenation**       | Joins pieces of data together                                             | `"Hello " + name`                    |
+| **Argument**            | Supplies data to a subprogram when it is called                           | `print_name("Sam")`                  |
+| **Parameter**           | A placeholder that receives data inside a subprogram                      | `def print_name(name):`              |
+| **Local Variable**      | Stores temporary data used only inside one subprogram                     | `total = 0` inside a function        |
+| **Global Variable**     | Stores data that can be used throughout the whole program                 | `score = 0` outside functions        |
+| **Passing**             | Sends data into a subprogram                                              | `calculate(total)`                   |
+| **Returning**           | Sends data back from a function to the main program                       | `return answer`                      |
