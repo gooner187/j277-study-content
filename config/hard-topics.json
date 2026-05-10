@@ -14,7 +14,7 @@
     { "label": "Multitasking",                  "message": "Can you help me understand: Multitasking in operating systems" },
     { "label": "Defragmentation",               "message": "Can you help me understand: Defragmentation" },
     { "label": "Abstraction",                   "message": "Can you help me understand: Abstraction" },
-    { "label": "Modulo / MOD",                  "message": "Can you help me understand: modulo operator MOD" }
+    { "label": "Modulo / MOD",                  "message": "Can you help me understand: modulo operator MOD" },
     { "label": "Quotient / DIV",                "message": "Can you help me understand: The quotient operator DIV" },
     { "label": "Exponentiation (^)",            "message": "Can you help me understand: Exponentiation using the ^ operator" },
     { "label": "SQL commands",                  "message": "Can you help me understand: SQL commands SELECT FROM and WHERE" },
