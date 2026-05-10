@@ -434,15 +434,17 @@
       "id": "arithmetic-operators",
       "topic": "2.2 Programming fundamentals",
       "description": "Common arithmetic and Boolean operators",
-      "keywords": [  "arithmetic operator", "arithmetic operators",
-      "modulo operator", "modulo", "mod operator",
-      "quotient operator", "quotient", "div operator",
-      "exponentiation operator", "exponentiation",
-      "div", "mod",
-      "boolean operator", "and", "or", "not"],
-          "books": {
-            "Robson & Heathcote": "pages 108, 112",
-            "Rouse, Pearcey & Craddock": "pages 131–132"
+      "keywords": [
+        "arithmetic operator", "arithmetic operators",
+        "modulo operator", "modulo", "mod operator",
+        "quotient operator", "quotient", "div operator",
+        "exponentiation operator", "exponentiation",
+        "div", "mod",
+        "boolean operator", "and", "or", "not"
+      ],
+      "books": {
+        "Robson & Heathcote": "pages 108, 112",
+        "Rouse, Pearcey & Craddock": "pages 131–132"
       }
     },
     {
@@ -485,10 +487,11 @@
         "structured query language",
         "database", "databases",
         "sql select", "sql from", "sql where",
-        "select from", "select where"],
-        "books": {
-          "Robson & Heathcote": "pages 124–125",
-          "Rouse, Pearcey & Craddock": "page 139"
+        "select from", "select where"
+      ],
+      "books": {
+        "Robson & Heathcote": "pages 124–125",
+        "Rouse, Pearcey & Craddock": "page 139"
       }
     },
     {
@@ -502,20 +505,21 @@
       }
     },
     {
-    "id": "subprograms",
-    "topic": "2.2 Programming fundamentals",
-    "description": "Sub-programs: functions and procedures for structured code",
-    "keywords": [
-      "function", "functions",
-      "procedure", "procedures",
-      "subprogram", "sub-program", "subprograms",
-      "subroutine", "subroutines",
-      "parameter", "parameters",
-      "argument", "arguments",
-      "parameters vs arguments",
-      "calling a subprogram", "calling a function", "calling a procedure",
-      "return value", "return values",
-      "random number"],
+      "id": "subprograms",
+      "topic": "2.2 Programming fundamentals",
+      "description": "Sub-programs: functions and procedures for structured code",
+      "keywords": [
+        "function", "functions",
+        "procedure", "procedures",
+        "subprogram", "sub-program", "subprograms",
+        "subroutine", "subroutines",
+        "parameter", "parameters",
+        "argument", "arguments",
+        "parameters vs arguments",
+        "calling a subprogram", "calling a function", "calling a procedure",
+        "return value", "return values",
+        "random number"
+      ],
       "books": {
         "Robson & Heathcote": "pages 120–122",
         "Rouse, Pearcey & Craddock": "pages 142–145"
