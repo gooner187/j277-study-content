@@ -1,0 +1,25 @@
+{
+  "topics": [
+    { "label": "Sound file size calculation",  "message": "Can you help me understand: Sound file size calculation" },
+    { "label": "Image file size calculation",   "message": "Can you help me understand: Image file size calculation" },
+    { "label": "Character set definition",      "message": "Can you help me understand: Character set definition" },
+    { "label": "DNS",                           "message": "Can you help me understand: DNS" },
+    { "label": "IPv4 and IPv6",                 "message": "Can you help me understand: IPv4 and IPv6" },
+    { "label": "Parameters vs arguments",       "message": "Can you help me understand: Parameters vs arguments" },
+    { "label": "Concatenation",                 "message": "Can you help me understand: Concatenation" },
+    { "label": "Calling a subprogram",          "message": "Can you help me understand: Calling a subprogram" },
+    { "label": "Procedure vs function",         "message": "Can you help me understand: The difference between a procedure and a function" },
+    { "label": "Binary shift",                  "message": "Can you help me understand: Binary shift" },
+    { "label": "Binary overflow",               "message": "Can you help me understand: Binary overflow" },
+    { "label": "Multitasking",                  "message": "Can you help me understand: Multitasking in operating systems" },
+    { "label": "Defragmentation",               "message": "Can you help me understand: Defragmentation" },
+    { "label": "Abstraction",                   "message": "Can you help me understand: Abstraction" },
+    { "label": "Modulo / MOD",                  "message": "Can you help me understand: The modulo operator MOD" },
+    { "label": "Quotient / DIV",                "message": "Can you help me understand: The quotient operator DIV" },
+    { "label": "Exponentiation (^)",            "message": "Can you help me understand: Exponentiation using the ^ operator" },
+    { "label": "SQL commands",                  "message": "Can you help me understand: SQL commands SELECT FROM and WHERE" },
+    { "label": "Local variables",               "message": "Can you help me understand: Local variables" },
+    { "label": "Global variables",              "message": "Can you help me understand: Global variables" },
+    { "label": "Maintainability",               "message": "Can you help me understand: Writing maintainable code" }
+  ]
+}
