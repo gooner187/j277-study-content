@@ -294,7 +294,7 @@
       "id": "forms-of-attack",
       "topic": "1.4 Network security",
       "description": "Forms of attack: malware, social engineering, phishing, brute force, DoS, data interception, SQL injection",
-      "keywords": ["malware", "virus", "worm", "ransomware", "spyware", "social engineering", "phishing", "brute force", "denial of service", "dos", "ddos", "data interception", "sql injection", "cyber attack", "attack", "forms of attack"],
+      "keywords": ["malware", "virus", "worm", "ransomware", "spyware", "social engineering", "phishing", "brute force", "denial of service", "dos", "ddos", "data interception", "sql injection", "cyber attack", "attack", "forms of attack", "shouldering"],
       "books": {
         "Robson & Heathcote": "pages 54–57",
         "Rouse, Pearcey & Craddock": "pages 73–76"
