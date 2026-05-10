@@ -434,7 +434,12 @@
       "id": "arithmetic-operators",
       "topic": "2.2 Programming fundamentals",
       "description": "Common arithmetic and Boolean operators",
-      "keywords": ["arithmetic operator", "arithmetic operators", "modulo", "div", "mod", "boolean operator", "and", "or", "not"],
+      "keywords": [  "arithmetic operator", "arithmetic operators",
+  "modulo operator", "modulo", "mod operator",
+  "quotient operator", "quotient", "div operator",
+  "exponentiation operator", "exponentiation",
+  "div", "mod",
+  "boolean operator", "and", "or", "not"],
       "books": {
         "Robson & Heathcote": "pages 108, 112",
         "Rouse, Pearcey & Craddock": "pages 131–132"
