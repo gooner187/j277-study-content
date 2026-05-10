@@ -376,7 +376,7 @@
       "description": "Designing algorithms using pseudocode, flowcharts and structure diagrams",
       "keywords": ["pseudocode", "flowchart", "flowcharts", "structure diagram", "algorithm design", "inputs processes outputs"],
       "books": {
-        "Robson & Heathcote": "pages 83, 92, 94",
+        "Robson & Heathcote": "pages 92, 94",
         "Rouse, Pearcey & Craddock": "pages 108–111"
       }
     },
