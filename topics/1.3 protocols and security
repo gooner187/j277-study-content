@@ -1,0 +1,738 @@
+## Computer Networks, Connections and Protocols — Part 2: Protocols, Security and Addressing
+
+### What You Need to Know
+
+1. What an IP address is and why every networked device needs one
+2. The format of an IPv4 address and how it is structured
+3. Why IPv4 addresses are running out and what IPv6 solves
+4. What a MAC address is, its format, and how it differs from an IP address
+5. What the Domain Name System (DNS) is and how it works step by step
+6. What a URL is and how it relates to a domain name
+7. What encryption is and why it is needed on networks
+8. What a standard is and why standards are needed
+9. What a protocol is and the four things a protocol specifies
+10. The difference between a standard and a protocol
+11. What TCP does and what IP does — and how they work together
+12. What HTTP and HTTPS are and the difference between them
+13. What FTP is and when it is used
+14. What POP, IMAP, and SMTP are — and the difference between POP and IMAP
+15. The TCP/IP four-layer model and the purpose of each layer
+
+---
+
+
+### What is an IP Address?
+
+Every networked computer or computing device in the world has a separate, unique **IP address**.
+
+- IP stands for **Internet Protocol**
+- The IP address identifies the device on a network
+- A mobile device's IP address changes as it moves location (dynamic addressing)
+
+---
+
+### IPv4
+
+The current addressing system is called **IPv4** (Internet Protocol version 4).
+
+- An IPv4 address is written in **dotted decimal** format
+- Formatted as **four 8-bit fields** separated by full stops
+- Each 8-bit field represents one **byte** of the address
+- Total length: 4 x 8 = **32 bits**
+- Example: **65.123.217.14**
+
+**Capacity of IPv4:**
+
+- Each 8-bit field can hold values from 0 to 255 (2^8 = 256 possible values)
+- Total possible IPv4 addresses: 2^32 = approximately **4.3 billion**
+- In 2020 there were over 30 billion connected devices — already far exceeding the available IPv4 addresses
+- This number is expected to double by 2025
+- **IPv4 addresses have run out** — a new system is replacing it
+
+---
+
+### IPv6
+
+**IPv6** (Internet Protocol version 6) is the replacement for IPv4.
+
+- An IPv6 address is **128 bits long** — four times as long as an IPv4 address
+- Arranged in **eight groups of 16 bits** each
+- Each group is written as **four hexadecimal digits**, separated by colons
+- Example: **BC43:71A6:0000:044C:3879:0000:55FD:286B**
+
+**Capacity of IPv6:**
+
+- Total possible IPv6 addresses: 2^128 — enough to address every atom on the planet
+- This effectively means IPv6 addresses will never run out
+
+**Shortening IPv6 addresses:**
+
+- Groups of four zeros (0000) may be shortened to a single zero (0)
+- Example: BC43:71A6:0000:044C:3879:0000:55FD:286B becomes BC43:71A6:0:044C:3879:0:55FD:286B
+
+**Compatibility:**
+
+- All modern computers and mobile phones support both IPv4 and IPv6
+- Devices typically have both types of address visible
+
+---
+
+### IPv4 vs IPv6 Comparison
+
+| Property | IPv4 | IPv6 |
+|---|---|---|
+| Bit length | 32 bits | 128 bits |
+| Structure | Four 8-bit fields | Eight 16-bit groups |
+| Format | Dotted decimal (0–255 per field) | Hexadecimal groups separated by colons |
+| Total addresses | ~4.3 billion (2^32) | 2^128 (effectively unlimited) |
+| Status | Running out | Replacing IPv4 |
+| Example | 65.123.217.14 | BC43:71A6:0000:044C:3879:0000:55FD:286B |
+
+---
+
+### Cross-Links
+
+- topic: Hexadecimal
+  trigger: When IPv6 address format or hexadecimal digits are mentioned
+  prompt: IPv6 addresses use hexadecimal notation. Would you like to review how hexadecimal works and how it relates to binary?
+  link_type: prerequisite_skill
+  specification_ref: J277 2.1 (Data Representation)
+
+- topic: Network Protocols
+  trigger: When IP is described as a protocol or how devices communicate on a network is discussed
+  prompt: IP is one of several protocols used on networks. Would you like to learn about the other key protocols such as TCP, HTTP, and DNS?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: DNS (Domain Name System)
+  trigger: When IP addresses are discussed in the context of how websites are accessed
+  prompt: IP addresses are translated from domain names by the DNS. Would you like to learn how DNS works?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+---
+
+### Misconceptions
+
+- misconception: IPv4 and IPv6 addresses look similar — they are just different lengths
+  reality: IPv4 and IPv6 use completely different formats. IPv4 uses four decimal numbers (0–255) separated by full stops. IPv6 uses eight groups of four hexadecimal digits separated by colons. The number systems, separator characters, and total lengths are all different.
+  trigger: When students describe IPv6 as just a longer version of IPv4 in the same format
+  correction_prompt: IPv4 and IPv6 do not just differ in length — they use different number systems and formats. IPv4 uses decimal numbers (e.g. 65.123.217.14), while IPv6 uses hexadecimal groups (e.g. BC43:71A6:0000:044C:...). They look and work quite differently, even though both uniquely identify a device on a network.
+
+- misconception: Every device only ever has one IP address
+  reality: A device can have both an IPv4 and an IPv6 address simultaneously. Mobile devices also have dynamic IP addresses that change as they move between networks.
+  trigger: When students state that a device has a single fixed IP address
+  correction_prompt: Devices do not always have just one fixed IP address. Modern devices typically have both an IPv4 and an IPv6 address. Mobile devices also use dynamic IP addressing — their address changes as they connect to different networks. The address is unique at any given moment, but it is not necessarily permanent.
+
+- misconception: IPv6 was created because IPv4 addresses were too short to be useful
+  reality: IPv4 addresses (32 bits) are perfectly functional — the problem is quantity, not usability. There are simply not enough unique 32-bit combinations to give a separate address to every device now connected to the Internet.
+  trigger: When students say IPv4 ran out because the addresses were too short
+  correction_prompt: IPv4 did not run out because the addresses were too short to work with — a 32-bit address is fine technically. The problem is that 2^32 (about 4.3 billion) unique addresses is not enough to cover the 30+ billion devices now connected to the Internet. IPv6 solves the quantity problem, not a usability one.
+
+---
+
+### AI-Instruction
+
+When explaining this topic:
+
+- Prioritise concise, exam-style definitions
+- Always state IPv4 as 32 bits and IPv6 as 128 bits — these specific values are directly testable
+- When IPv6 format comes up, remind students it uses hexadecimal (not decimal) — this links to the data representation unit
+- The reason IPv4 ran out is a capacity problem (2^32 insufficient for 30+ billion devices), not a technical failure — frame it clearly
+- When shortening IPv6 addresses, show the rule explicitly: 0000 becomes 0
+- Check for cross-links:
+  - If a trigger condition is met, offer the prompt to the user
+- Check for misconceptions:
+  - If the explanation could reasonably lead to a listed misconception, include the correction_prompt
+  - If the user shows confusion, prioritise addressing misconceptions before continuing
+
+
+---
+
+### Domain Names
+
+- Websites are stored on web servers connected to the Internet
+- Each website has an IP address — but humans do not type IP addresses to visit websites
+- Instead, users type a **domain name** or **URL (Uniform Resource Locator)** into a browser
+- Example domain name: www.rspb.org.uk
+- The domain name and the IP address both address the same location — a domain name is a human-readable label for an IP address
+
+---
+
+### The Domain Name System (DNS)
+
+The **Domain Name System (DNS)** is a worldwide system of servers that translates domain names into IP addresses.
+
+- Each DNS server has a database that maps domain names to their corresponding IP addresses
+- There are a large number of DNS servers distributed across the globe
+- These DNS servers communicate with each other to form the worldwide DNS system
+
+**How DNS works — step by step:**
+
+1. The user types a URL into the browser
+2. The URL is sent to a **local DNS server** where it is translated into an IP address
+3. If the IP address is found in that DNS server's database, it is passed back to the browser
+4. If the IP address is not found, the request is passed **up the chain** to the next DNS server
+5. If no DNS server can resolve the address, an error is returned — e.g. "www.abc.com's server IP address could not be found"
+
+---
+
+### Advantages of Using DNS
+
+- **Human-friendly** — humans do not have to remember or type numerical IP addresses
+- **Flexible** — if IP addresses change, DNS servers update their databases; users can continue using the same domain names without noticing any change
+- **Distributed access** — having many distributed DNS servers means everyone has access to all addresses from their local DNS server
+
+---
+
+### URLs (Uniform Resource Locators)
+
+A **URL** is the address of a particular page on a website.
+
+- The URL of the home page of a site is identical to its domain name
+- Example: rspb.org.uk is the domain name and also the URL of the RSPB home page
+- Clicking deeper into a site creates a longer URL
+- Example: https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/identify-a-bird/
+- The **domain name is the first part of the URL** — rspb.org.uk — and this is what gets converted to an IP address by DNS
+- The rest of the URL (the path) directs the browser to a specific page within the site
+
+---
+
+### Dynamic IP Addressing
+
+- The IP address is used to give the **location** of a device connected to the network or Internet
+- Each time a device connects to a network, it is allocated a unique IP address by the user's **ISP (Internet Service Provider)**
+- This means a mobile phone's IP address changes each time it crosses an invisible network boundary
+- This is why domain names remain stable even as the underlying IP addresses of servers can change
+
+---
+
+### Cross-Links
+
+- topic: IP Addressing (IPv4 and IPv6)
+  trigger: When IP addresses are mentioned as the numerical destination that DNS resolves to
+  prompt: DNS translates domain names into IP addresses. Would you like to review how IPv4 and IPv6 addresses are structured?
+  link_type: prerequisite_skill
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Network Protocols (HTTP, HTTPS, TCP/IP)
+  trigger: When URLs beginning with http:// or https:// are mentioned
+  prompt: The https:// at the start of a URL is a protocol. Would you like to learn about the key network protocols including HTTP, HTTPS, and TCP/IP?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Web Technologies and Browsers
+  trigger: When browsers, web pages, or accessing websites is discussed
+  prompt: Browsers use several technologies to retrieve and display web pages. Would you like to explore how web browsers work?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+---
+
+### Misconceptions
+
+- misconception: The domain name and the URL are the same thing
+  reality: The domain name is the base address of a website (e.g. rspb.org.uk). The URL is the full address of a specific page, which includes the domain name plus a path to the exact resource (e.g. https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/identify-a-bird/). The home page URL equals the domain name, but other pages have longer URLs.
+  trigger: When students use domain name and URL interchangeably
+  correction_prompt: Domain name and URL are related but not the same. The domain name is the base address of the site — like rspb.org.uk. The URL is the full address of a specific page, including the path after the domain name. The home page URL matches the domain name, but any other page has a longer URL with the page path appended.
+
+- misconception: DNS translates the full URL into an IP address
+  reality: DNS only translates the domain name part of the URL into an IP address. The path portion (the part after the domain name) is used by the web server to find the specific page once the connection is established.
+  trigger: When students say the whole URL is looked up in DNS
+  correction_prompt: DNS only looks up the domain name, not the full URL. For example, in https://www.rspb.org.uk/birds-and-wildlife/, DNS translates rspb.org.uk into an IP address. Once connected to that server, the path /birds-and-wildlife/ tells the server which specific page to return. DNS and the web server each handle a different part of the address.
+
+- misconception: A website's IP address never changes
+  reality: IP addresses can and do change — for example, when servers are moved or upgraded. This is one of the key reasons DNS exists: it decouples the human-readable domain name from the underlying IP address, so the domain name remains stable even if the IP address changes.
+  trigger: When students assume the IP address behind a domain name is fixed
+  correction_prompt: A website's IP address can change — servers get moved, upgraded, or load-balanced across multiple IP addresses. This is exactly why DNS is so valuable: you always type the same domain name, and the DNS database is updated in the background when the IP address changes. Users never need to know the new IP address.
+
+---
+
+### AI-Instruction
+
+When explaining this topic:
+
+- Prioritise concise, exam-style definitions
+- The DNS lookup process (URL typed → local DNS → up the chain → IP returned → browser connects) is the most likely process question — walk through it clearly and in order
+- Always distinguish domain name (base address) from URL (full page address including path)
+- The three advantages of DNS (human-friendly, flexible when IPs change, distributed access) are all independently testable
+- Dynamic IP allocation is a brief but important point — connect it to why mobile device IPs change and why DNS databases need updating
+- Check for cross-links:
+  - If a trigger condition is met, offer the prompt to the user
+- Check for misconceptions:
+  - If the explanation could reasonably lead to a listed misconception, include the correction_prompt
+  - If the user shows confusion, prioritise addressing misconceptions before continuing
+
+
+---
+
+### Network Interface Controller (NIC)
+
+- To connect to the Internet, a computer device must have a piece of hardware called a **Network Interface Controller/card (NIC)**
+- Every NIC has a **MAC address** assigned to it by its manufacturer
+- A device may have more than one NIC — and therefore more than one MAC address:
+  - One for wired **Ethernet**
+  - One for **wireless** (Wi-Fi)
+  - A mobile phone may also have a separate MAC address for **Bluetooth**
+
+---
+
+### What is a MAC Address?
+
+A **MAC address** (Media Access Control address) is a unique identifier assigned to a NIC by its manufacturer.
+
+- Every networked device in the world has a **unique, unchanging MAC address**
+- It is assigned at the point of manufacture and does not change
+- Used to identify a device at the hardware level on a local network
+
+**Use within a network:**
+
+- When data is sent across a local network, the switch uses the destination device's MAC address to send the data to the correct device
+- Each switch learns which MAC address is connected to each of its ports and uses this to direct data only to the intended device
+- MAC addresses are only used within the local network — once data leaves the local network, routers use IP addresses instead
+
+---
+
+### MAC Address Format
+
+- A MAC address is **48 bits** long
+- Written as **twelve hexadecimal digits** to make it easier for humans to work with
+- Example in hex: **00-1C-B3-F1-F7-85**
+- Example in binary: 0000 0000 0001 1100 1011 0011 1111 0001 1111 0111 1000 0101
+
+**Structure of a MAC address:**
+
+- **First six hex digits** (e.g. 00-1C-B3) — identify the **manufacturer** of the device
+  - Example: 00-1C-B3 identifies Apple Inc.
+- **Second six hex digits** (e.g. F1-F7-85) — give the **serial number** of the specific device
+
+So the example address 00-1C-B3-F1-F7-85 belongs to an Apple device with serial number F1-F7-85.
+
+---
+
+### MAC Address vs IP Address
+
+| Property | MAC Address | IP Address |
+|---|---|---|
+| Assigned by | Manufacturer (at production) | ISP or network (when connecting) |
+| Changes? | No — permanent and unique | Yes — can change (dynamic) |
+| Scope | Local network (hardware level) | Internet (network level) |
+| Format | 48-bit hex (e.g. 00-1C-B3-F1-F7-85) | 32-bit decimal (IPv4) or 128-bit hex (IPv6) |
+| Purpose | Identifies the physical device (NIC) | Identifies the device's location on a network |
+
+---
+
+### Cross-Links
+
+- topic: IP Addressing (IPv4 and IPv6)
+  trigger: When MAC addresses are compared to IP addresses or both are discussed together
+  prompt: MAC addresses and IP addresses both identify devices, but in different ways. Would you like to review how IP addresses work and how they differ from MAC addresses?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Hexadecimal
+  trigger: When the hex format of a MAC address is mentioned
+  prompt: MAC addresses are written in hexadecimal. Would you like to review how hexadecimal works and how to convert between hex and binary?
+  link_type: prerequisite_skill
+  specification_ref: J277 2.1 (Data Representation)
+
+- topic: Network Hardware (routers, switches)
+  trigger: When how devices are identified or data is directed on a local network is discussed
+  prompt: Network switches use MAC addresses to direct data to the correct device on a local network. Would you like to learn how network hardware uses MAC addressing?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+---
+
+### Misconceptions
+
+- misconception: MAC addresses and IP addresses are the same thing
+  reality: They are both identifiers for networked devices, but they work at different levels and serve different purposes. A MAC address is a permanent hardware identifier assigned by the manufacturer. An IP address is a logical address assigned by a network or ISP that can change.
+  trigger: When students use MAC address and IP address interchangeably
+  correction_prompt: MAC addresses and IP addresses are different. A MAC address is permanently assigned to the NIC by the manufacturer — it never changes and identifies the physical hardware. An IP address is assigned when a device connects to a network and can change each time. MAC addresses work at the local network level; IP addresses work across the Internet.
+
+- misconception: A device only has one MAC address
+  reality: A device can have multiple NICs — for example, separate hardware for Ethernet and Wi-Fi — and each NIC has its own unique MAC address. A mobile phone may have separate MAC addresses for Wi-Fi and Bluetooth.
+  trigger: When students say a device has a single MAC address
+  correction_prompt: A device can have more than one MAC address if it has more than one NIC. A laptop typically has separate NICs for wired Ethernet and Wi-Fi, each with its own MAC address. A mobile phone may also have a different MAC address for Bluetooth. Each NIC gets its own unique address from the manufacturer.
+
+- misconception: MAC addresses can be used to locate a device on the Internet
+  reality: MAC addresses operate at the local network level only. They are used to identify devices within a LAN. Routers use IP addresses to route traffic across the Internet — MAC addresses are not visible or used beyond the local network.
+  trigger: When students think MAC addresses work like IP addresses for Internet routing
+  correction_prompt: MAC addresses only work within a local network. When data leaves your local network and travels across the Internet, routers use IP addresses — not MAC addresses. The MAC address gets the data to the right device within the LAN, but the IP address is what gets data from one network to another across the Internet.
+
+---
+
+### AI-Instruction
+
+When explaining this topic:
+
+- Prioritise concise, exam-style definitions
+- The two key facts about MAC addresses are: (1) permanently assigned by the manufacturer, (2) unique to every device in the world — both are directly testable
+- Always explain the two-part structure: first 6 hex digits = manufacturer, last 6 hex digits = serial number
+- When comparing MAC to IP, use the comparison table — the permanent vs dynamic distinction is the most important differentiator
+- MAC addresses being 48-bit and written in hex is testable — connect it to the hexadecimal topic
+- Check for cross-links:
+  - If a trigger condition is met, offer the prompt to the user
+- Check for misconceptions:
+  - If the explanation could reasonably lead to a listed misconception, include the correction_prompt
+  - If the user shows confusion, prioritise addressing misconceptions before continuing
+
+
+---
+
+
+---
+
+### Encryption
+
+**Encryption** is the process of scrambling data so that it cannot be understood if intercepted during transmission across a network.
+
+- Data is converted from its original form (plaintext) into an unreadable form (ciphertext) using an encryption algorithm and a key
+- Only a device with the correct decryption key can convert the ciphertext back into readable data
+- Encryption protects data in transit — even if an attacker intercepts the transmission, they cannot read the content
+- It is a fundamental security principle for any network connection where sensitive data is transmitted
+
+Why encryption is needed on networks:
+
+- Data travelling across a network — particularly a wireless network or the Internet — passes through many intermediate devices
+- Without encryption, any device along that path could intercept and read the data
+- With encryption, intercepted data is meaningless without the decryption key
+
+Where encryption is used:
+
+- **HTTPS** — encrypts web page data between a browser and a web server; used by banks and any site handling sensitive information
+- **Wi-Fi** — wireless transmissions should be encrypted to prevent data interception in the wireless hot spot area
+- **VPNs** — encrypt all traffic between a device and a remote network
+
+---
+
+### AI-Instruction — Encryption
+
+When explaining this topic:
+
+- Always define encryption clearly: scrambling data so it cannot be read if intercepted; only the holder of the decryption key can reverse it
+- Emphasise that encryption protects data **in transit**, not just data at rest
+- Connect to HTTPS when web security comes up, and to Wi-Fi security when wireless risks are discussed
+- The spec requires students to understand the **principle** of encryption — not the specific algorithm — so focus on what it achieves, not how the maths works
+- Check for cross-links:
+  - If a trigger condition is met, offer the prompt to the user
+- Check for misconceptions:
+  - If the explanation could reasonably lead to a listed misconception, include the correction_prompt
+  - If the user shows confusion, prioritise addressing misconceptions before continuing
+
+---
+
+### Misconceptions — Encryption
+
+- misconception: Encryption stops hackers from accessing a network
+  reality: Encryption does not prevent a hacker from intercepting data — it prevents them from reading it. A hacker can still capture encrypted packets; they simply cannot decode them without the key.
+  trigger: When students say encryption prevents interception
+  correction_prompt: Encryption does not stop data from being intercepted — it stops intercepted data from being understood. A hacker can still capture the packets travelling across a network, but without the decryption key, the data is unreadable gibberish. Encryption protects the content, not the transmission itself.
+
+- misconception: HTTPS means a website is safe and trustworthy
+  reality: HTTPS means the connection between your browser and the server is encrypted. It says nothing about whether the website itself is legitimate or run by trustworthy people. A fraudulent website can use HTTPS just as easily as a legitimate one.
+  trigger: When students say HTTPS guarantees a website is safe
+  correction_prompt: HTTPS means the data between your browser and the server is encrypted — it does not mean the website is trustworthy. A phishing site or fraudulent shop can use HTTPS too. The padlock icon means your connection is encrypted; it does not verify the integrity of the site you are visiting.
+
+---
+
+### Standards
+
+**Standards** allow hardware and software from different manufacturers or producers to interact with each other.
+
+- Standards provide rules for different areas of computing
+- Without standards, devices from different manufacturers would be incompatible
+
+**Examples of areas covered by standards:**
+
+- Cabling
+- Ethernet
+- Connectivity
+
+**Network standards** specifically cover:
+
+- How computers access a network
+- The speeds used on different types of network
+- The types of physical cable or wireless technology used
+
+---
+
+### Protocols
+
+A **protocol** is a set of rules that defines how devices communicate.
+
+- When one computer transmits a stream of binary to another, the receiving end must know which protocol is being used in order to interpret the data correctly
+- Without an agreed protocol, a receiving device would not be able to make sense of incoming data
+
+**A protocol specifies:**
+
+- The **format of data packets** — how data is structured for transmission
+- The **addressing system** — how devices are identified (e.g. IP addresses, MAC addresses)
+- The **transmission speed** — the rate at which data is sent
+- The **error-checking procedures** — how errors in transmission are detected and handled
+
+---
+
+### Standards vs Protocols
+
+| Property | Standard | Protocol |
+|---|---|---|
+| Definition | A set of rules for hardware/software compatibility across manufacturers | A set of rules defining how devices communicate |
+| Scope | Applies to physical components and systems (cabling, connectivity, network access) | Applies to data transmission (format, addressing, speed, error checking) |
+| Example | Ethernet standard for cabling | TCP/IP protocol for data transmission |
+
+---
+
+### Cross-Links
+
+- topic: Ethernet and Transmission Media
+  trigger: When Ethernet or cabling standards are mentioned
+  prompt: Ethernet is one of the key networking standards. Would you like to review how Ethernet works and how it governs data transmission on a LAN?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Network Protocols (TCP/IP, HTTP, FTP, DNS)
+  trigger: When specific protocols are mentioned or how data is transmitted across a network is discussed
+  prompt: There are several key protocols used on networks. Would you like to learn about TCP/IP, HTTP, HTTPS, FTP, and DNS and what each one does?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: IP Addressing and MAC Addressing
+  trigger: When addressing systems are mentioned as something a protocol specifies
+  prompt: IP addresses and MAC addresses are both part of the addressing systems defined by protocols. Would you like to review how IP and MAC addressing work?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+---
+
+### Misconceptions
+
+- misconception: Standards and protocols are the same thing
+  reality: Standards and protocols are related but distinct. A standard defines rules for compatibility between hardware and software from different manufacturers — for example, what type of connector a cable uses. A protocol defines rules for how data is communicated between devices — for example, the format of packets and how errors are handled. Standards tend to cover physical and systemic compatibility; protocols govern data transmission behaviour.
+  trigger: When students use standard and protocol interchangeably
+  correction_prompt: Standards and protocols are not the same thing, even though both involve rules. A standard ensures that hardware and software from different manufacturers can work together — for example, the Ethernet standard means any Ethernet cable works with any compatible NIC. A protocol defines how devices actually communicate — for example, TCP/IP specifies how data packets are formatted and addressed. One is about compatibility; the other is about communication rules.
+
+- misconception: Protocols only apply to the Internet
+  reality: Protocols apply to any network communication, including local area networks. Ethernet itself defines a protocol for how devices on a LAN format and transmit data. Protocols govern all device-to-device communication, not just Internet traffic.
+  trigger: When students say protocols are only relevant for Internet connections
+  correction_prompt: Protocols apply to any network communication, not just the Internet. Ethernet, for example, defines a protocol for how data is formatted and transmitted on a local area network. Whenever two devices communicate over a network — whether it is a small office LAN or the global Internet — protocols are in use.
+
+---
+
+### AI-Instruction
+
+When explaining this topic:
+
+- Prioritise concise, exam-style definitions
+- Always define standard and protocol separately before comparing them — students who conflate them lose marks on definition questions
+- The four things a protocol specifies (packet format, addressing, transmission speed, error checking) are individually testable — students should be able to name all four
+- This topic is foundational for all the specific protocol topics that follow (TCP/IP, HTTP, FTP, DNS) — use the cross-link to connect naturally when students ask about specific protocols
+- Check for cross-links:
+  - If a trigger condition is met, offer the prompt to the user
+- Check for misconceptions:
+  - If the explanation could reasonably lead to a listed misconception, include the correction_prompt
+  - If the user shows confusion, prioritise addressing misconceptions before continuing
+
+
+---
+
+### TCP/IP (Transmission Control Protocol / Internet Protocol)
+
+**TCP/IP** consists of two separate protocols working together:
+
+**TCP (Transmission Control Protocol):**
+
+- Defines how messages are broken up into **packets**
+- Reassembles packets in the correct order at the destination
+- Detects errors and **resends lost packets**
+
+**IP (Internet Protocol):**
+
+- Identifies the **location of a device** on the Internet
+- Routes individual packets from source to destination **via routers**
+
+---
+
+### HTTP and HTTPS
+
+**HTTP (HyperText Transfer Protocol):**
+
+- Used for **accessing and receiving web pages** on the Internet
+- Web pages are delivered as HTML (HyperText Markup Language) files
+- The protocol requests the web server to transmit the requested web page to the user's browser
+
+**HTTPS (HyperText Transfer Protocol Secure):**
+
+- Encrypts the information so it **cannot be understood if intercepted**
+- Used whenever security is required — banks always use HTTPS
+- The secure version of HTTP
+
+---
+
+### FTP (File Transfer Protocol)
+
+**FTP** is a standard network protocol used for **transferring computer files between a client and a server** on a computer network.
+
+- Based on a **client-server model**
+- Uses **separate control and data connections** between the client and server
+- Commonly used to upload website files to a web host
+
+---
+
+### Email Protocols
+
+Mail servers pass on or store emails until they are collected. A user must log on to a mail server to collect mail. Three protocols handle email:
+
+---
+
+### POP (Post Office Protocol)
+
+**POP** is a widespread method of **receiving email**.
+
+- Like a physical post office — holds email until the user picks it up
+- **Downloads emails to the local device** and deletes them from the server
+- Emails are tied to that specific device and can be viewed offline
+- Works best when accessing email from only one device
+
+---
+
+### IMAP (Internet Message Access Protocol)
+
+**IMAP** stores email messages **on the server** but allows users to view and manage them as though stored locally.
+
+- Users can organise messages into folders, flag messages, and save drafts on the server
+- Devices **synchronise with the server** — changes made on one device are reflected on all others
+- Allows **simultaneous access by multiple clients** (multiple devices or users)
+- More suitable than POP when accessing email from multiple devices
+
+**POP vs IMAP comparison:**
+
+| Property | POP | IMAP |
+|---|---|---|
+| Email storage | Downloaded to and stored on the local device | Stored on the server; devices synchronise |
+| Multiple devices | Works best with one device | Can use multiple computers and devices |
+| Offline access | Yes — emails stored locally | Requires connection to access server |
+| Sent email | Stored locally on the device | Stored on the server — accessible from any device |
+
+---
+
+### SMTP (Simple Mail Transfer Protocol)
+
+**SMTP** is a protocol for **sending email messages between servers**.
+
+- Used to send messages from one mail server to another
+- Essential when sender and recipient have different email service providers
+- Once messages arrive at the recipient's server, they are retrieved using **POP or IMAP**
+
+**Email flow using all three protocols:**
+
+- Sender's device → SMTP → sender's mail server
+- Sender's mail server → SMTP → recipient's mail server
+- Recipient's mail server → POP or IMAP → recipient's device
+
+---
+
+### The TCP/IP Layer Model
+
+The **TCP/IP model** consists of **four layers**, creating a modular design where each layer is responsible for a specific part of the communication process.
+
+**Advantages of the layered model:**
+
+- Allows suppliers to adapt protocol software to specific hardware and operating systems by changing only the relevant layer — other layers are unaffected
+- Products from different vendors can work together
+- Developers can work on one layer without needing to know how other layers work
+
+**Note: the four layers do not need to be memorised for the exam — but understanding what they do is useful context.**
+
+**The four layers (top to bottom when sending data):**
+
+1. **Application layer** — encodes data so it will be understood by the recipient; formats data and adds a header according to the protocol in use (e.g. HTTP, FTP)
+
+2. **Transport layer** — splits data into packets and adds packet information (packet number, total number of packets) so packets can be reassembled in the correct order
+
+3. **Internet layer** — attaches the IP address of the sender and the destination IP address so routers can direct the packets
+
+4. **Link layer** — attaches the MAC addresses of the sender and recipient, allowing the packet to be directed to a specific device on a local area network
+
+At the receiving end, data packets are passed **back up the protocol stack**, with each layer reversing the process performed on the way down.
+
+---
+
+### Protocol Summary Table
+
+| Protocol | Full Name | Purpose |
+|---|---|---|
+| TCP | Transmission Control Protocol | Breaks data into packets; reassembles; detects errors; resends lost packets |
+| IP | Internet Protocol | Identifies device location; routes packets between networks via routers |
+| HTTP | HyperText Transfer Protocol | Accessing and receiving web pages |
+| HTTPS | HyperText Transfer Protocol Secure | Encrypted web page transfer |
+| FTP | File Transfer Protocol | Transferring files between client and server |
+| POP | Post Office Protocol | Receiving email — downloads to local device |
+| IMAP | Internet Message Access Protocol | Receiving email — stored on server, synced to devices |
+| SMTP | Simple Mail Transfer Protocol | Sending email between servers |
+
+---
+
+### Cross-Links
+
+- topic: Standards and Protocols
+  trigger: When the general definition of a protocol is needed before discussing specific ones
+  prompt: These are all examples of specific protocols. Would you like to review what a protocol is and what it specifies?
+  link_type: prerequisite_skill
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Domain Names and DNS
+  trigger: When HTTP/HTTPS requests or accessing websites is discussed
+  prompt: When a browser sends an HTTP request, it first needs the IP address from DNS. Would you like to review how DNS translates domain names into IP addresses?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: MAC Addressing and IP Addressing
+  trigger: When the Internet layer or Link layer attach IP or MAC addresses to packets
+  prompt: The TCP/IP layers use both IP and MAC addresses. Would you like to review how IP and MAC addresses work and what each identifies?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Hosting and FTP
+  trigger: When FTP is discussed in the context of uploading files to a web server
+  prompt: FTP is used to upload website files to a web host. Would you like to review how Internet hosting works?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+---
+
+### Misconceptions
+
+- misconception: HTTP and HTTPS are different protocols with completely different purposes
+  reality: HTTPS is simply the secure, encrypted version of HTTP. Both are used for accessing web pages; HTTPS adds a layer of encryption so intercepted data cannot be read. The purpose is the same — the security level is different.
+  trigger: When students describe HTTP and HTTPS as serving completely different functions
+  correction_prompt: HTTP and HTTPS serve the same basic purpose — accessing web pages. The difference is that HTTPS encrypts the data so that if it is intercepted by a hacker, it cannot be understood. Think of HTTPS as HTTP with a lock on it. Banks and any site handling sensitive data use HTTPS instead of HTTP.
+
+- misconception: SMTP is used to receive email
+  reality: SMTP is used only to send email between servers. Receiving email is handled by POP or IMAP. Most email systems use SMTP for sending and either POP or IMAP for receiving — they are distinct and complementary protocols.
+  trigger: When students say SMTP handles both sending and receiving email
+  correction_prompt: SMTP only handles sending — it transfers email messages between servers. Once the email arrives at the recipient's mail server, a separate protocol takes over: POP downloads it to the device, or IMAP keeps it on the server and syncs it. You need all three protocols for a complete email system: SMTP to send, and POP or IMAP to receive.
+
+- misconception: POP and IMAP are interchangeable — they both just download email
+  reality: POP downloads emails to the local device and deletes them from the server — they can then be viewed offline but are tied to that device. IMAP keeps emails on the server and synchronises across multiple devices. If you access email on a phone and a laptop, IMAP keeps both in sync; POP does not.
+  trigger: When students treat POP and IMAP as the same protocol
+  correction_prompt: POP and IMAP work very differently. POP downloads emails to your device and removes them from the server — so they only exist on that one device. IMAP keeps emails on the server and syncs to all your devices. If you read an email on your phone with IMAP, it shows as read on your laptop too. With POP, the two devices would be out of sync because the email was downloaded and removed.
+
+---
+
+### AI-Instruction
+
+When explaining this topic:
+
+- Prioritise concise, exam-style definitions
+- Use the protocol summary table as a quick reference — students need to match protocol names to purposes
+- For TCP/IP, always explain both TCP and IP separately — they do different jobs
+- For email: explain the three-protocol system (SMTP sends, POP/IMAP receive) using the email flow diagram
+- The TCP/IP layers are flagged as not needing to be memorised — provide context and understanding but do not pressure students to memorise all four layer names
+- The POP vs IMAP comparison table is the most useful resource for that comparison — use it
+- Check for cross-links:
+  - If a trigger condition is met, offer the prompt to the user
+- Check for misconceptions:
+  - If the explanation could reasonably lead to a listed misconception, include the correction_prompt
+  - If the user shows confusion, prioritise addressing misconceptions before continuing
