@@ -1,0 +1,1301 @@
+## Computer Networks, Connections and Protocols — Part 1: Networks and Topologies
+
+### What You Need to Know
+
+1. What a LAN is, its geographical scope, and who owns it
+2. What a WAN is, its geographical scope, and how it is connected
+3. The difference between a LAN and a WAN
+4. The benefits and disadvantages of networking computers
+5. What a network topology is
+6. The structure and advantages/disadvantages of a star topology
+7. The structure and advantages/disadvantages of a mesh topology
+8. What a router is and what it does
+9. What a switch is and how it differs from a router and a hub
+10. What a NIC is and which devices have one
+11. What Ethernet is and how it handles collisions and frames
+12. The three cable types: twisted-pair copper, copper coaxial, and fibre optic — advantages and disadvantages of each
+13. What Wi-Fi is and how a Wireless Access Point (WAP) works
+14. The three security risks of wireless networking
+15. What Bluetooth is, its range, and its common applications
+16. What a client-server network is and the roles of server and client
+17. What a peer-to-peer network is and when it is used
+18. What cloud storage is — advantages and disadvantages
+19. The five factors affecting network performance: bandwidth, number of devices, latency, transmission errors, interference
+
+---
+
+### Local Area Network (LAN)
+
+A **Local Area Network (LAN)** is a network that covers a relatively small geographical area.
+
+- Consists of computers and peripheral devices (such as printers) connected together
+- Usually located on a single site (e.g. a school campus, an office building, a home)
+- A school LAN may connect computers across multiple buildings within the same campus
+- A LAN is typically **owned and managed by a single person or organisation**
+- The organisation controls the hardware, cabling, and configuration of the network
+
+---
+
+### Wide Area Network (WAN)
+
+A **Wide Area Network (WAN)** is a collection of computers and networks connected together across a wide geographical area.
+
+- Components are usually spread across different cities, countries, or continents
+- Uses resources supplied by a **third-party carrier** (such as British Telecom)
+- Connection infrastructure includes:
+  - Cables
+  - Telephone lines
+  - Satellites
+  - Radio waves
+- The organisation does not own the connecting infrastructure — it **leases connections** from a network service provider
+
+**The Internet** is the largest and most well-known WAN in the world.
+
+**Private WANs** also exist — large and medium-sized organisations may have their own private WANs. For example, a business with offices in London, Leeds, Bristol, and York might lease connections to link the four office LANs together into a single WAN.
+
+---
+
+### LAN vs WAN Comparison
+
+| Property | LAN | WAN |
+|---|---|---|
+| Geographical area | Small (single site or campus) | Large (cities, countries, worldwide) |
+| Ownership | Single person or organisation | Infrastructure owned by third-party carriers |
+| Infrastructure | Organisation owns cables and hardware | Organisation leases connections |
+| Speed | Generally faster | Generally slower (depends on leased connection) |
+| Examples | School network, home network, office network | The Internet, a multinational company's private network |
+
+---
+
+### Cross-Links
+
+- topic: Network Hardware (routers, switches, WAPs)
+  trigger: When connecting devices within a LAN or between LANs is discussed
+  prompt: LANs and WANs use different hardware to connect devices. Would you like to learn about the hardware used in networks including routers, switches, and wireless access points?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Network Topologies
+  trigger: When the physical layout or arrangement of devices in a LAN is discussed
+  prompt: The way devices are arranged and connected within a LAN is called the network topology. Would you like to learn about different topologies such as star and mesh?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: IP Addressing (IPv4 and IPv6)
+  trigger: When how devices on a LAN or WAN are identified is discussed
+  prompt: Devices on a network are identified using IP addresses. Would you like to review how IPv4 and IPv6 addressing works?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+---
+
+### Misconceptions
+
+- misconception: The Internet and a WAN are the same thing
+  reality: The Internet is a WAN — the largest one in the world — but not all WANs are the Internet. A large company can have its own private WAN connecting its offices without that network being part of the public Internet.
+  trigger: When students use Internet and WAN interchangeably
+  correction_prompt: The Internet is an example of a WAN, but WANs are not always the Internet. A large organisation such as a bank or government department might have its own private WAN connecting offices in different cities. That network is a WAN, but it is separate from the public Internet.
+
+- misconception: A LAN must be in one single building
+  reality: A LAN covers a relatively small geographical area, but this can include multiple buildings on the same site. A school LAN, for example, typically connects computers across several buildings on a single campus.
+  trigger: When students say a LAN is limited to one building
+  correction_prompt: A LAN is not limited to a single building — it covers a small geographical area, which can include several buildings on one site. A school campus is a good example: the LAN connects computers across all the school buildings, but it is still classed as a LAN because it covers a single site under one organisation's control.
+
+- misconception: An organisation owns all the infrastructure of its WAN
+  reality: An organisation using a WAN typically leases the connecting infrastructure (cables, telephone lines, satellites) from a third-party carrier such as a telecoms company. The organisation owns its own devices and local equipment, but not the long-distance connections.
+  trigger: When students say a company owns its WAN infrastructure
+  correction_prompt: An organisation does not usually own its WAN infrastructure. The long-distance connections — cables, telephone lines, satellites — are owned by third-party carriers like BT. The organisation leases these connections to link its offices together. It owns its own devices and local network hardware, but not the infrastructure between sites.
+
+---
+
+### AI-Instruction
+
+When explaining this topic:
+
+- Prioritise concise, exam-style definitions
+- The key distinguishing features are: geographical scale, ownership, and infrastructure — always cover all three when defining each type
+- The most common exam question is "state two differences between a LAN and a WAN" — the comparison table provides ready-made answers
+- Always clarify that the Internet is an example of a WAN, not a synonym for it
+- Real-world examples anchor these concepts well: school/home/office for LAN; Internet or multinational business network for WAN
+- Check for cross-links:
+  - If a trigger condition is met, offer the prompt to the user
+- Check for misconceptions:
+  - If the explanation could reasonably lead to a listed misconception, include the correction_prompt
+  - If the user shows confusion, prioritise addressing misconceptions before continuing
+
+
+---
+
+### Benefits of Networking Computers
+
+#### Sharing Resources
+
+- **File storage** — folders and files can be stored on a file server and accessed by authorised users from any computer on the network
+- **Peripheral devices** — hardware such as printers and scanners can be shared across the network rather than needing one per computer
+- **Internet connection** — a single internet connection can be shared across the network; any authorised user can use email
+
+#### Centralised Management
+
+- **User profiles and security** — user accounts and access permissions can be managed centrally rather than on each individual machine
+- **Software distribution** — software can be installed and updated across the network from a central point rather than on each individual computer
+- **Centralised backup** — all files can be backed up from one central location, ensuring nothing is missed
+
+---
+
+### Disadvantages of Networking Computers
+
+- **Complex management** — managing a large network is complicated and requires a dedicated network administrator
+- **Security risk** — viruses and malware may be able to infiltrate the network and spread to infect every connected computer
+
+---
+
+### Benefits vs Disadvantages Summary
+
+| Category | Benefit / Disadvantage |
+|---|---|
+| File access | Files on a server can be accessed from any machine on the network |
+| Hardware sharing | Peripherals (printers, scanners) can be shared |
+| Internet sharing | One connection shared across all users |
+| User management | Profiles and security managed centrally |
+| Software deployment | Software distributed network-wide from one point |
+| Backup | All files backed up centrally |
+| Management complexity | Large networks are complicated to administer |
+| Security | Viruses can spread across all connected machines |
+
+---
+
+### Cross-Links
+
+- topic: LAN and WAN
+  trigger: When the network being discussed is described as belonging to a school, office, or single organisation
+  prompt: These benefits apply to networks of all sizes. Would you like to review the difference between LANs and WANs and when each is used?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Network Security (threats and protection)
+  trigger: When viruses, malware, or security risks on a network are mentioned
+  prompt: Virus spread is one of the key security risks of networking. Would you like to learn about other network security threats and how to protect against them?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Network Hardware (servers, routers, switches)
+  trigger: When file servers or centralised storage is mentioned
+  prompt: File servers are a key piece of network hardware. Would you like to learn about the hardware components used in a network?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+---
+
+### Misconceptions
+
+- misconception: Networking computers always improves security
+  reality: Networking can actually increase security risk. If one computer on a network is infected by a virus or malware, it can spread to every other connected device. Networking requires active security management to stay safe.
+  trigger: When students list networking as universally beneficial for security
+  correction_prompt: Networking does not automatically improve security — it can make things worse if not managed properly. A virus that infects one machine can spread across the entire network. Security is listed as one of the key disadvantages of networking, not a benefit.
+
+- misconception: Centralised management means individual computers have no local control
+  reality: Centralised management means that user profiles, software, security, and backups can be administered from a central point. Individual computers still function locally — it is the administration that is centralised, not the physical control of every machine.
+  trigger: When students think centralised management means computers cannot be used independently
+  correction_prompt: Centralised management does not mean users lose all local control. It means the network administrator can manage user accounts, install software, and run backups from one central location — which saves time and ensures consistency. Users still interact with their own machine as normal.
+
+- misconception: Every computer on a network needs its own printer
+  reality: One of the key benefits of networking is that peripheral devices like printers and scanners can be shared. A single printer connected to the network can be used by all authorised users, which reduces cost and hardware requirements.
+  trigger: When students list the cost of printers for every machine as a downside of computing
+  correction_prompt: In a networked environment, one printer can be shared across many computers. This is one of the main benefits of networking — peripheral devices do not need to be duplicated for each user. Any authorised user on the network can send a print job to the shared printer.
+
+---
+
+### AI-Instruction
+
+When explaining this topic:
+
+- Prioritise concise, exam-style definitions
+- Group benefits clearly under the two textbook categories: sharing resources and centralised management — OCR questions may specifically ask for examples from each category
+- There are exactly two disadvantages listed in the specification: management complexity and virus spread — students should know both
+- When exam questions ask for "one benefit" or "one disadvantage", prompt students to name the category and then give a specific example (e.g. not just "sharing" but "peripheral devices such as printers can be shared")
+- Check for cross-links:
+  - If a trigger condition is met, offer the prompt to the user
+- Check for misconceptions:
+  - If the explanation could reasonably lead to a listed misconception, include the correction_prompt
+  - If the user shows confusion, prioritise addressing misconceptions before continuing
+
+
+
+---
+
+### Cross-Links
+
+- topic: Hexadecimal
+  trigger: When IPv6 or MAC address hex format is mentioned
+  prompt: IPv6 and MAC addresses use hexadecimal notation. Would you like to review how hexadecimal works and how it relates to binary?
+  link_type: prerequisite_skill
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Network Protocols (HTTP, HTTPS, TCP/IP)
+  trigger: When URLs beginning with http:// or https:// are mentioned, or how devices communicate is discussed
+  prompt: The https:// at the start of a URL is a protocol. Would you like to learn about the key network protocols including HTTP, HTTPS, and TCP/IP?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Network Hardware (routers, switches, WAPs)
+  trigger: When connecting devices within a LAN or how data is directed on a local network is discussed
+  prompt: LANs and WANs use different hardware to connect devices. Would you like to learn about routers, switches, and wireless access points?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Network Security (threats and protection)
+  trigger: When viruses, malware, or security risks on a network are mentioned
+  prompt: Virus spread is one of the key security risks of networking. Would you like to learn about other network security threats and how to protect against them?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Network Topologies
+  trigger: When the physical layout or arrangement of devices in a LAN is discussed
+  prompt: The way devices are arranged and connected within a LAN is called the network topology. Would you like to learn about star and mesh topologies?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+---
+
+### Misconceptions
+
+- misconception: IPv4 and IPv6 addresses look similar — they are just different lengths
+  reality: IPv4 uses four decimal numbers (0–255) separated by full stops. IPv6 uses eight groups of four hexadecimal digits separated by colons. The number systems, separators, and lengths are all different.
+  trigger: When students describe IPv6 as just a longer version of IPv4 in the same format
+  correction_prompt: IPv4 and IPv6 do not just differ in length — they use different number systems and formats. IPv4 uses decimal (e.g. 65.123.217.14); IPv6 uses hexadecimal groups (e.g. BC43:71A6:0000:...). They look and work quite differently.
+
+- misconception: IPv6 was created because IPv4 addresses were too short to be useful
+  reality: IPv4 addresses are perfectly functional — the problem is quantity. There are not enough 32-bit combinations to give a unique address to every device now connected to the Internet.
+  trigger: When students say IPv4 ran out because the addresses were too short
+  correction_prompt: IPv4 ran out because 2^32 (about 4.3 billion) unique addresses is not enough for 30+ billion connected devices. IPv6 solves a quantity problem, not a usability one.
+
+- misconception: Every device only ever has one IP address
+  reality: A device can have both an IPv4 and an IPv6 address simultaneously. Mobile devices also have dynamic IP addresses that change as they move between networks.
+  trigger: When students state a device has a single fixed IP address
+  correction_prompt: Modern devices typically have both an IPv4 and an IPv6 address. Mobile devices use dynamic IP addressing — their address changes as they connect to different networks.
+
+- misconception: The domain name and the URL are the same thing
+  reality: The domain name is the base address (e.g. rspb.org.uk). The URL is the full address of a specific page, including the domain name plus a path. The home page URL equals the domain name, but other pages have longer URLs.
+  trigger: When students use domain name and URL interchangeably
+  correction_prompt: Domain name is the base address of the site. URL is the full address of a specific page — it includes the domain name plus the path to the exact resource.
+
+- misconception: DNS translates the full URL into an IP address
+  reality: DNS only translates the domain name part. The path portion is used by the web server to find the specific page once the connection is established.
+  trigger: When students say the whole URL is looked up in DNS
+  correction_prompt: DNS only resolves the domain name (e.g. rspb.org.uk). The path after the domain (/birds-and-wildlife/) is handled by the web server once connected — DNS never sees it.
+
+- misconception: MAC addresses and IP addresses are the same thing
+  reality: A MAC address is a permanent hardware identifier assigned by the manufacturer. An IP address is a logical address assigned by a network or ISP that can change.
+  trigger: When students use MAC address and IP address interchangeably
+  correction_prompt: MAC addresses are permanently burned into the NIC at manufacture and identify the physical hardware. IP addresses are assigned when connecting to a network and can change. MAC addresses work at the local network level; IP addresses work across the Internet.
+
+- misconception: A device only has one MAC address
+  reality: A device can have multiple NICs — one for Ethernet, one for Wi-Fi, one for Bluetooth — each with its own unique MAC address.
+  trigger: When students say a device has a single MAC address
+  correction_prompt: Each NIC has its own MAC address. A laptop typically has separate NICs for wired and wireless — so two MAC addresses. A phone may also have a separate one for Bluetooth.
+
+- misconception: The Internet and a WAN are the same thing
+  reality: The Internet is a WAN — the largest one — but not all WANs are the Internet. A large organisation can have its own private WAN connecting offices without it being part of the public Internet.
+  trigger: When students use Internet and WAN interchangeably
+  correction_prompt: The Internet is an example of a WAN, but WANs are not always the Internet. A bank or government department might have its own private WAN connecting offices in different cities — separate from the public Internet.
+
+- misconception: A LAN must be in one single building
+  reality: A LAN covers a relatively small geographical area, which can include multiple buildings on the same site — such as a school campus.
+  trigger: When students say a LAN is limited to one building
+  correction_prompt: A LAN covers a small area under one organisation's control — this can span several buildings on a single site. A school campus is a classic example.
+
+- misconception: Networking computers always improves security
+  reality: Networking can increase security risk. If one computer is infected by a virus or malware, it can spread to every connected device. Security is listed as a key disadvantage of networking.
+  trigger: When students list networking as universally beneficial for security
+  correction_prompt: Networking does not automatically improve security — a virus on one machine can spread across the whole network. Security is one of the two main disadvantages of networking and requires active management.
+
+---
+
+### AI-Instruction
+
+When explaining this topic:
+
+- Prioritise concise, exam-style definitions throughout
+- For IP addressing: always state IPv4 = 32 bits, IPv6 = 128 bits — these specific values are directly testable; the reason IPv4 ran out is a capacity problem (2^32 insufficient for 30+ billion devices)
+- For DNS: the lookup process (URL typed → local DNS → up the chain → IP returned → browser connects) is the most likely process question — walk through it in order; always distinguish domain name (base) from URL (full page address including path)
+- For MAC addresses: the two key facts are permanently assigned by manufacturer and unique to every device; always explain the two-part structure (first 6 hex = manufacturer, last 6 hex = serial number)
+- For LAN/WAN: the key distinguishing features are geographical scale, ownership, and infrastructure — cover all three; always clarify that the Internet is an example of a WAN, not a synonym for it
+- For networking benefits: group clearly under sharing resources and centralised management; there are exactly two disadvantages — management complexity and virus spread — students must know both
+- Check for cross-links: if a trigger condition is met, offer the prompt to the user
+- Check for misconceptions: if the explanation could lead to a listed misconception, include the correction_prompt; if the user shows confusion, prioritise addressing misconceptions before continuing
+---
+
+### What is a Network Topology?
+
+A **topology** is the layout or arrangement in which computers are connected together in a network.
+
+The two topologies required for J277 are:
+
+- **Star topology**
+- **Mesh topology**
+
+---
+
+### Star Topology
+
+In a star network, all devices have their own dedicated cable connecting them to a **central device** — either a hub, switch, or computer acting as a server.
+
+- Every device connects directly to the central switch/hub
+- No device connects directly to another device — all traffic passes through the centre
+- The central device manages communication between all connected devices
+
+**Star topology — advantages and disadvantages:**
+
+| Advantages | Disadvantages |
+|---|---|
+| If one cable fails, the other workstations are not affected | Can be costly to install — requires a lot of cabling and extra hardware (e.g. a switch) |
+| Consistent performance even when the network is heavily used | If the server or central switch fails, the whole network goes down |
+
+---
+
+### Mesh Topology
+
+A **mesh network** has no central connection point. Instead, each device on the network acts as a **node**, and data travels by hopping from node to node to reach its destination.
+
+- Each node is equipped with a small radio transmitter (in wireless mesh networks)
+- Information travels from node A to node B by choosing the quickest available route through the mesh
+- Mesh networks can be a LAN, a wireless LAN (WLAN), or a virtual LAN
+- Wireless mesh networks are an emerging technology capable of connecting small offices or entire cities
+
+**Connecting to the Internet in a mesh network:**
+
+- Only **one node** needs to be physically connected to the Internet via a modem
+- That node shares its connection with the nodes closest to it
+- Those nodes then share with their nearest neighbours, and so on
+- The more nodes, the further the connection spreads
+
+**Full mesh network:**
+
+- In a **full mesh network**, every node is directly connected to every other node
+- This provides the highest level of redundancy — there are always multiple paths for data to travel
+
+**Mesh topology — advantages and disadvantages:**
+
+| Advantages | Disadvantages |
+|---|---|
+| If one node or connection fails, data can be rerouted via another path | Can be complex and expensive to set up — many connections required |
+| Highly resilient — no single point of failure in a full mesh | Maintenance is more complicated with many interconnections |
+| Only one Internet connection needed for the whole mesh | Wireless mesh can be affected by interference or range limitations |
+
+---
+
+### Star vs Mesh Comparison
+
+| Property | Star | Mesh |
+|---|---|---|
+| Central device | Yes — hub or switch required | No central device |
+| Fault tolerance | Single cable failure isolated; central switch failure brings down whole network | Single node/link failure does not affect rest of network |
+| Cost | High — cabling to every device plus switch hardware | High — many connections; complex setup |
+| Performance | Consistent; not degraded by heavy use | Flexible routing; can self-optimise |
+| Typical use | School and office LANs | City-wide wireless networks, resilient enterprise networks |
+
+---
+
+### Cross-Links
+
+- topic: LAN and WAN
+  trigger: When the topology being discussed is described as part of a school, office, or local network
+  prompt: Network topologies describe how devices are arranged within a network. Would you like to review what a LAN is and how it differs from a WAN?
+  link_type: prerequisite_skill
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Network Hardware (switches, hubs, routers)
+  trigger: When a hub, switch, or central device is mentioned in the context of a star network
+  prompt: The central device in a star network is usually a switch or hub. Would you like to learn more about what switches and hubs do and how they differ?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Benefits and Disadvantages of Networking
+  trigger: When fault tolerance, reliability, or cost of a topology is discussed
+  prompt: Topology choices affect the reliability and cost of a network. Would you like to review the broader benefits and disadvantages of networking?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+---
+
+### Misconceptions
+
+- misconception: In a star network, if the switch fails only one device is affected
+  reality: The switch is the central point of the star. If the switch fails, all devices lose connectivity — the entire network goes down. This is one of the key disadvantages of the star topology.
+  trigger: When students say a switch failure only affects part of the star network
+  correction_prompt: In a star network, all devices connect through the central switch. If the switch fails, every device on the network loses its connection — not just one. This is listed as a key disadvantage of the star topology. Individual cable failures are isolated, but central switch failure brings down the whole network.
+
+- misconception: A mesh network requires every node to be connected to the Internet
+  reality: In a mesh network, only one node needs a physical Internet connection via a modem. That node shares the connection with its neighbours, who share it further, until the whole mesh has access.
+  trigger: When students say every mesh node needs its own modem or Internet connection
+  correction_prompt: In a mesh network, only one node needs to be physically connected to the Internet. It shares that connection with the nearest nodes, which share it with their neighbours, and so on. This is one of the practical advantages of mesh — a single Internet connection can serve the whole network.
+
+- misconception: A star and a mesh topology are equally resilient to failure
+  reality: They handle failure very differently. In a star, a single cable failure is isolated but a central switch failure brings down everything. In a full mesh, there is no single point of failure — data can always be rerouted through another path.
+  trigger: When students treat fault tolerance as equal between star and mesh
+  correction_prompt: Star and mesh topologies handle failure differently. In a star, individual cable failures are isolated but if the central switch fails, the whole network goes down. In a full mesh, there is no single point of failure — if one node or connection fails, data is rerouted through another path. Mesh is significantly more resilient.
+
+---
+
+### AI-Instruction
+
+When explaining this topic:
+
+- Prioritise concise, exam-style definitions
+- For star topology: always include the role of the central device (hub/switch), and both advantages and disadvantages from the textbook table
+- For mesh topology: distinguish clearly between wireless mesh (nodes with radio transmitters, data hops to quickest route) and full mesh (every node connected to every other node)
+- The Internet connectivity mechanism for mesh (one modem, connection shared outward) is a commonly tested application detail
+- When comparing topologies, the fault tolerance difference is the most important exam point: star has a central point of failure; full mesh does not
+- Check for cross-links:
+  - If a trigger condition is met, offer the prompt to the user
+- Check for misconceptions:
+  - If the explanation could reasonably lead to a listed misconception, include the correction_prompt
+  - If the user shows confusion, prioritise addressing misconceptions before continuing
+
+
+---
+
+### Overview of Network Hardware
+
+The hardware required to create a network includes:
+
+- **Routers** — connect networks together across a WAN
+- **Switches** — direct data to devices within a LAN
+- **Network Interface Cards (NICs)** — allow any device to connect to a network
+- Cabling and wireless access points (covered in a separate topic)
+
+---
+
+### Router
+
+A **router** is designed to route data packets across a wide area network such as the Internet.
+
+- Used for **connecting networks together** (e.g. connecting a home LAN to the Internet)
+- Each router in a network acts as a node
+- Packets are passed from router to router until they reach their destination on the Internet
+- If a packet is destined for a computer in a LAN, the router will typically pass it to a **switch** for final delivery
+
+---
+
+### Switch
+
+A **switch** is a component of a LAN that manages the delivery of data within that local network.
+
+- Learns the **MAC addresses** of each device connected to it locally
+- Forwards inbound packets **only to the intended recipient** — using the recipient's MAC address and the port it is connected to
+- More efficient than a hub — a hub broadcasts data to all connected devices; a switch delivers only to the correct device
+
+---
+
+### Router vs Switch
+
+| Property | Router | Switch |
+|---|---|---|
+| Scope | Connects networks (WAN/Internet level) | Operates within a LAN |
+| Addressing used | IP addresses | MAC addresses |
+| Function | Routes packets between networks | Forwards packets to the correct device within a LAN |
+| Typical location | Between LAN and Internet | Within the LAN |
+
+---
+
+### Network Interface Card (NIC)
+
+A **Network Interface Card (NIC)** is required to connect any network-enabled device to a network.
+
+- A physical hardware component installed in or built into the device
+- Can operate **wirelessly** (Wi-Fi) or via a **wired connection** (standard Ethernet cable)
+- Every device that can connect to a network has a NIC
+- Examples of devices with NICs:
+  - Desktop and laptop computers
+  - Smartphones
+  - Internet-enabled smart devices (e.g. a smart light bulb)
+  - Network printers
+
+---
+
+### Cross-Links
+
+- topic: MAC Addressing
+  trigger: When a switch uses MAC addresses to forward data to the correct device
+  prompt: Switches use MAC addresses to direct data within a LAN. Would you like to review what a MAC address is and how it is structured?
+  link_type: prerequisite_skill
+  specification_ref: J277 1.3 (Networks)
+
+- topic: IP Addressing (IPv4 and IPv6)
+  trigger: When routers use IP addresses to route packets between networks
+  prompt: Routers use IP addresses to route data across networks. Would you like to review how IP addressing works?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Network Topologies (Star and Mesh)
+  trigger: When the central device in a star network is discussed
+  prompt: In a star topology, the switch is the central device. Would you like to review how star and mesh topologies are structured?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: LAN and WAN
+  trigger: When the difference between routing across the Internet and switching within a LAN is discussed
+  prompt: Routers connect LANs to WANs; switches operate within LANs. Would you like to review what LANs and WANs are?
+  link_type: prerequisite_skill
+  specification_ref: J277 1.3 (Networks)
+
+---
+
+### Misconceptions
+
+- misconception: A router and a switch do the same job
+  reality: A router connects different networks together and routes data between them using IP addresses. A switch operates within a single LAN and forwards data to individual devices using MAC addresses. They work at different scales and use different addressing.
+  trigger: When students use router and switch interchangeably
+  correction_prompt: Routers and switches do different jobs. A router connects networks together — for example, your home LAN to the Internet — and uses IP addresses to direct traffic. A switch works inside a LAN and uses MAC addresses to deliver data to the correct device. They work at different levels and are often both needed in a network.
+
+- misconception: A switch sends data to every device on the network
+  reality: That is what a hub does, not a switch. A switch learns the MAC address of each connected device and sends incoming data only to the specific device it is addressed to. This makes switches more efficient and secure than hubs.
+  trigger: When students describe a switch as broadcasting data to all connected devices
+  correction_prompt: Sending data to every device is what a hub does. A switch is more intelligent — it learns the MAC address of each device connected to each of its ports and forwards data only to the device it is addressed to. This means less unnecessary network traffic and better security.
+
+- misconception: Only computers have a NIC
+  reality: Any device that can connect to a network has a NIC. This includes smartphones, smart TVs, smart light bulbs, network printers, and many other Internet-connected devices. The NIC may be wired, wireless, or both.
+  trigger: When students say only computers or laptops have network interface cards
+  correction_prompt: Any device that connects to a network needs a NIC — not just computers. Smartphones, smart home devices, network printers, and even some light bulbs have NICs built in. The NIC may be wired (Ethernet) or wireless (Wi-Fi), and many devices have both.
+
+---
+
+### AI-Instruction
+
+When explaining this topic:
+
+- Prioritise concise, exam-style definitions
+- The router vs switch distinction is the most commonly tested comparison — always anchor it on scope (WAN vs LAN) and addressing (IP vs MAC)
+- When explaining switches, contrast with hubs explicitly — the efficiency gain of unicast delivery vs hub broadcast is a mark-earning detail
+- NIC questions often appear in the context of "what hardware does a device need to connect to a network?" — the answer is always a NIC, regardless of device type
+- Check for cross-links:
+  - If a trigger condition is met, offer the prompt to the user
+- Check for misconceptions:
+  - If the explanation could reasonably lead to a listed misconception, include the correction_prompt
+  - If the user shows confusion, prioritise addressing misconceptions before continuing
+
+
+---
+
+### Ethernet
+
+**Ethernet** refers to a family of networking rules (protocols) widely used in Local Area Networks.
+
+- Describes how devices should **format data ready for transmission** between computers on the same network
+- Similar to polite human conversation: nodes will **wait until the connection is quiet** before attempting to transmit
+- If two nodes attempt to transmit simultaneously, both **stop and each waits a random period** before reattempting — this avoids repeated collisions
+
+**Ethernet frames:**
+
+- Ethernet systems divide data into **frames** (similar to Internet packets)
+- Each frame contains:
+  - Source MAC address
+  - Destination MAC address
+  - Error checking data
+- Faulty frames containing transmission errors are **dropped or resent**
+
+---
+
+### Transmission Media
+
+The standard network cable is commonly referred to as an **Ethernet cable**. It uses either:
+
+- **Twisted-pair copper cabling**
+- **Fibre optic cabling**
+
+---
+
+### Twisted-Pair Copper Cable
+
+**Twisted-pair copper cable** is the most commonly used cable in Local Area Networks.
+
+- Lightweight, inexpensive, and easily installed
+- Most PCs come with built-in copper NICs — optical NICs cost around £100 each, making copper significantly cheaper to deploy
+- Standard choice for connecting devices within a LAN
+
+---
+
+### Copper Coaxial Cable
+
+**Copper coaxial cable** is used for cable TV and broadband in some locations where fibre optic has not yet replaced it.
+
+- High bandwidth and can transmit data quickly over large distances
+- Less distortion or interference than twisted-pair due to better shielding
+- Being replaced by fibre optic in many areas
+
+---
+
+### Fibre Optic Cable
+
+**Fibre optic cable** transmits data as pulses of light rather than electrical signals.
+
+- **Much greater bandwidth** than copper cable
+- **Faster transmission** than copper
+- Cables do **not break as easily** as copper cables
+- **Not affected by electromagnetic interference** — copper cables can suffer interference from other wires, causing lost or distorted transmissions
+- **Much less signal loss over distance** — fibre optic loses only 3% of signal strength over 100 metres; copper loses 94% over the same distance and requires repeaters or boosters beyond that range
+- In many situations, fibre optic is the cable of choice for its performance advantages
+
+---
+
+### Cable Type Comparison
+
+| Property | Twisted-Pair Copper | Copper Coaxial | Fibre Optic |
+|---|---|---|---|
+| Cost | Low — built-in NICs on most PCs | Medium | Higher — optical NICs ~£100 each |
+| Bandwidth | Lower | High | Much greater |
+| Speed | Slower | Fast over long distances | Fastest |
+| Signal loss over 100m | 94% — needs repeaters | Lower than twisted-pair | 3% — minimal loss |
+| Electromagnetic interference | Susceptible | Better shielded than twisted-pair | Not affected |
+| Durability | More fragile | Robust | Does not break as easily |
+| Typical use | LANs, home networks | Cable TV, broadband | Long-distance, high-performance links |
+
+---
+
+### Cross-Links
+
+- topic: Network Hardware (routers, switches, NICs)
+  trigger: When NICs are mentioned in the context of cable compatibility or cost
+  prompt: NICs determine which cable type a device can use. Would you like to review what a NIC is and how it connects a device to a network?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: MAC Addressing
+  trigger: When Ethernet frames containing source and destination MAC addresses are discussed
+  prompt: Ethernet frames use MAC addresses to identify source and destination devices. Would you like to review how MAC addresses work?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Network Protocols (TCP/IP)
+  trigger: When Ethernet is described as a protocol or how data is formatted for transmission is discussed
+  prompt: Ethernet is one of several protocols used in networks. Would you like to learn about the other key protocols such as TCP/IP and how they work together?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+---
+
+### Misconceptions
+
+- misconception: Fibre optic is always better than copper cable in every situation
+  reality: Fibre optic has superior performance in bandwidth, speed, signal loss, and interference resistance, but it costs more — both the cable itself and the optical NICs required (around £100 each vs built-in copper NICs). For a small local network on a tight budget, copper remains a practical choice.
+  trigger: When students state fibre optic is always the best choice without qualification
+  correction_prompt: Fibre optic has clear performance advantages, but cost matters too. Most PCs come with copper NICs built in; optical NICs cost around £100 each. For a home or small office LAN where distances are short and budget is limited, copper is often the practical choice. Fibre optic is preferred where high bandwidth, long distances, or freedom from interference are priorities.
+
+- misconception: Ethernet is a type of cable
+  reality: Ethernet is a set of networking protocols (rules) that governs how data is formatted and transmitted on a LAN. The cable used with Ethernet networks may be copper or fibre optic — the cable is the transmission medium, not Ethernet itself.
+  trigger: When students say "Ethernet cable" and mean only the physical cable, conflating the protocol with the medium
+  correction_prompt: Ethernet is a family of networking protocols — a set of rules about how data should be formatted and transmitted on a LAN. The physical cable it runs over can be twisted-pair copper or fibre optic. When people say "Ethernet cable" in everyday speech they usually mean twisted-pair copper, but Ethernet the protocol can run over fibre optic too.
+
+- misconception: Copper cable is unaffected by interference because it is shielded
+  reality: Twisted-pair copper cable can suffer electromagnetic interference from nearby wires. Coaxial copper has better shielding than twisted-pair, but copper cables in general are more susceptible to interference than fibre optic, which is completely unaffected because it transmits light rather than electrical signals.
+  trigger: When students say all copper cable is immune to interference due to shielding
+  correction_prompt: Copper cables can suffer from electromagnetic interference, which can cause lost or distorted data. Coaxial cable has better shielding than twisted-pair, but it is still susceptible compared to fibre optic. Fibre optic is completely unaffected by electromagnetic interference because it uses light pulses, not electrical signals — there is nothing for electromagnetic fields to interfere with.
+
+---
+
+### AI-Instruction
+
+When explaining this topic:
+
+- Prioritise concise, exam-style definitions
+- Always distinguish Ethernet (a protocol) from the physical cable (transmission medium) — these are different things
+- The signal loss statistic (3% vs 94% over 100m) is directly testable and very memorable — use it when distance or signal degradation is discussed
+- The cost argument for copper (built-in NICs vs £100 optical NICs) is the key reason copper remains common — always include it when comparing the two cable types
+- Ethernet frame contents (source MAC, destination MAC, error checking) are testable — students should know all three components
+- Check for cross-links:
+  - If a trigger condition is met, offer the prompt to the user
+- Check for misconceptions:
+  - If the explanation could reasonably lead to a listed misconception, include the correction_prompt
+  - If the user shows confusion, prioritise addressing misconceptions before continuing
+
+
+---
+
+### Wi-Fi
+
+**Wi-Fi** is a family of protocols (rules) that makes wireless networking run smoothly.
+
+- Like Ethernet, Wi-Fi governs how devices communicate — but without physical cables
+- Many networks use Wi-Fi connections instead of, or alongside, wired connections
+
+---
+
+### Wireless Access Points (WAPs)
+
+A **Wireless Access Point (WAP)** is a wireless transmitter that connects wireless devices to a network.
+
+**How a WAP works:**
+
+1. The WAP receives data from the network via its physical connection
+2. It converts this data into **radio waves**
+3. The radio waves are transmitted wirelessly
+4. Any device with a **Wi-Fi adaptor** within range receives the radio signal
+5. The adaptor converts the signal back into data the device can use
+6. This process also works in reverse — a device can send data back to the network via the WAP
+
+---
+
+### Risks of Wireless Networking
+
+A typical network has **hot spots** around a WAP where any device can potentially gain illicit Wi-Fi access. Key risks include:
+
+- **Criminal activity** — wireless networks are often connected to private internal networks. An intruder bypassing the hardware firewall between the private network and the broadband connection could:
+  - Plant viruses
+  - Launch Denial of Service (DoS) attacks
+  - Cause serious damage to the network
+
+- **Bandwidth stealing** — outside intruders can use the Internet connection to download music, games, and other software, slowing the network and reducing employee productivity
+
+- **Confidentiality breach** — if network data is not encrypted before transmission, an intruder can intercept and access confidential information
+
+---
+
+### Bluetooth
+
+**Bluetooth** is a radio-wave technology designed for communication over **short distances**.
+
+- Typical range: up to **100 metres**, but usually no more than about **10 metres**
+- Range is intentionally limited to minimise power drain on devices
+
+**Common Bluetooth applications:**
+
+- Connecting a mouse wirelessly to a laptop or PC
+- Downloading photos, video, and contacts from a phone or digital camera between devices
+- Linking a hands-free headset to a smartphone to talk and drive at the same time
+- Connecting wirelessly to speakers and headphones without cables
+
+**How Bluetooth works:**
+
+- Bluetooth devices have built-in **radio antennas** (transmitters and receivers)
+- These send and receive signals from other Bluetooth devices
+- Devices without built-in antennas can use a **plug-in Bluetooth adapter**
+
+---
+
+### Wired vs Wireless Connection — Comparison
+
+| Property | Wired (Ethernet/copper/fibre) | Wireless (Wi-Fi) |
+|---|---|---|
+| Speed | Faster — no signal degradation from interference | Slower — affected by interference and distance |
+| Reliability | More reliable — physical connection is stable | Less reliable — signal can drop, be blocked by thick walls, or suffer interference |
+| Security | More secure — data travels along a physical cable that must be physically accessed to intercept | Less secure — data transmitted as radio waves; can be intercepted if unencrypted |
+| Interference | Copper susceptible to electromagnetic interference; fibre optic unaffected | Susceptible to interference from cordless phones, microwaves, baby monitors, and thick walls |
+| Mobility | No mobility — device must be physically connected via cable | High mobility — devices can move freely within range of a WAP |
+| Cost of setup | Higher initial cost — cabling infrastructure required throughout building | Lower infrastructure cost — only WAPs needed, no cabling to every device |
+| Flexibility | Less flexible — adding new devices requires running new cables | More flexible — new devices connect without cabling |
+| Typical use | Desktop computers, servers, fixed workstations | Laptops, smartphones, tablets, any device needing mobility |
+
+---
+
+### AI-Instruction — Wired vs Wireless
+
+When a student asks which connection type to recommend for a scenario:
+
+- Always justify the recommendation against the specific requirements of the scenario
+- Key factors to consider: whether devices need to move (mobility), whether security is critical, whether the environment has interference sources, and budget
+- Example scenarios:
+  - A hospital ward where nurses move between beds with tablets → wireless (mobility essential)
+  - A bank's back-office servers handling financial transactions → wired (security and reliability critical)
+  - A school classroom with desktop computers → wired (fixed devices, reliability, speed)
+  - A café offering customer internet access → wireless (customers need mobility, no fixed points)
+- Students can also recommend a combination — wired for fixed, performance-critical devices; wireless for mobile users
+
+---
+
+### Wi-Fi vs Bluetooth Comparison
+
+| Property | Wi-Fi | Bluetooth |
+|---|---|---|
+| Purpose | Connect devices to a network/Internet | Connect devices directly to each other |
+| Range | Longer (tens to hundreds of metres) | Short (typically up to 10 metres) |
+| Power consumption | Higher | Lower (limited range reduces drain) |
+| Typical use | Internet access, LAN connectivity | Peripherals, file transfer, audio devices |
+
+---
+
+### Cross-Links
+
+- topic: Network Hardware (routers, switches, NICs)
+  trigger: When WAPs are discussed as hardware components of a network
+  prompt: WAPs are one type of network hardware. Would you like to review the other key hardware components including routers, switches, and NICs?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Network Security (threats and protection)
+  trigger: When the risks of wireless networking are discussed, including DoS attacks and unencrypted data
+  prompt: Wireless networks face specific security threats. Would you like to learn about network security threats and the protections used against them?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Ethernet and Transmission Media
+  trigger: When wireless is compared to wired networking or protocols are mentioned
+  prompt: Wi-Fi and Ethernet are both protocol families — one wireless, one wired. Would you like to review how Ethernet works and compare it to Wi-Fi?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+---
+
+### Misconceptions
+
+- misconception: Wi-Fi and Bluetooth are the same technology
+  reality: Both use radio waves, but they serve different purposes and have different ranges. Wi-Fi connects devices to a network (e.g. the Internet) over longer distances. Bluetooth connects devices directly to each other over short distances, typically for peripherals and file transfer, with intentionally low power consumption.
+  trigger: When students treat Wi-Fi and Bluetooth as interchangeable or identical
+  correction_prompt: Wi-Fi and Bluetooth both use radio waves, but they are different technologies designed for different purposes. Wi-Fi connects your device to a network or the Internet and works over longer distances. Bluetooth connects two devices directly to each other over short distances — typically up to 10 metres — and uses very little power. You would use Wi-Fi to browse the internet and Bluetooth to connect wireless headphones.
+
+- misconception: Wireless networks are inherently less secure than wired ones, so they should not be used
+  reality: Wireless networks do have additional security risks (hot spots, bandwidth theft, unencrypted data interception), but these risks can be mitigated through encryption, strong passwords, and firewalls. Wireless networking is essential for modern devices, and the risks are manageable with proper security measures.
+  trigger: When students say wireless networking should be avoided due to security risks
+  correction_prompt: Wireless networks do carry extra security risks compared to wired ones, but that does not mean they should be avoided. The risks — bandwidth theft, data interception, unauthorised access — can all be reduced using encryption, strong passwords, and firewalls. Modern wireless security is robust when properly configured.
+
+- misconception: A WAP is the same as a router
+  reality: A WAP converts network data into radio waves for wireless transmission — it extends a network wirelessly. A router routes data between networks (e.g. between a LAN and the Internet). Home broadband hubs often combine both functions in one device, which causes this confusion, but they are distinct pieces of hardware with different roles.
+  trigger: When students use WAP and router interchangeably
+  correction_prompt: A WAP and a router do different things. A WAP converts data into radio waves so wireless devices can connect. A router connects networks together — for example, your home LAN to the Internet. Many home broadband hubs combine both functions in one box, which makes them look the same, but they are separate functions. A WAP alone would not route your traffic to the Internet without a router also being present.
+
+---
+
+### AI-Instruction
+
+When explaining this topic:
+
+- Prioritise concise, exam-style definitions
+- When explaining WAPs, walk through the conversion process: data → radio waves → Wi-Fi adaptor receives → data (and in reverse)
+- The three wireless security risks (criminal activity/DoS, bandwidth stealing, confidentiality) are each independently testable — students should know all three
+- Bluetooth range (typically 10m, up to 100m) is directly testable — always give both figures
+- When comparing Wi-Fi and Bluetooth, anchor on purpose and range as the key differentiators
+- Check for cross-links:
+  - If a trigger condition is met, offer the prompt to the user
+- Check for misconceptions:
+  - If the explanation could reasonably lead to a listed misconception, include the correction_prompt
+  - If the user shows confusion, prioritise addressing misconceptions before continuing
+
+
+---
+
+### Client-Server Networks
+
+In a **client-server network**, shared files and resources are stored on centralised servers. Client computers request services or resources from the server.
+
+**Server:**
+
+- A powerful, specialised computer with a different role from a normal PC
+- Provides services or resources required by any of the clients on the network
+
+**Client:**
+
+- A computer that requests services or resources provided by the server
+- The everyday computers that users work on (e.g. computers in classrooms around a school)
+
+**Types of server in a client-server network:**
+
+- **File server** — stores files and folders that can be accessed by authorised users from any computer on the network
+- **Web server** — hosts a website (e.g. the school's external website)
+- **Email server** — receives all emails, distributes them to network users, and may detect and block spam
+
+---
+
+### Peer-to-Peer Networks
+
+In a **peer-to-peer (P2P) network**, all computers have equal status and the same role — there is no dedicated server.
+
+- Computers are simply cabled or wirelessly connected together
+- Each computer is configured to share specified files and folders with other peer computers on the LAN
+- PCs on the LAN can only access files on another computer if **access rights have been granted**
+- Suitable for smaller offices with a handful of computers where a dedicated server is not practical or cost-effective
+
+---
+
+### Client-Server vs Peer-to-Peer Comparison
+
+| Property | Client-Server | Peer-to-Peer |
+|---|---|---|
+| Storage | Central backing store available to all computers | Storage distributed across all computers |
+| Security | Controlled centrally by the server | Not centrally controlled |
+| Backup | Done centrally on the server | Must be done separately on each computer |
+| Dependency | All users reliant on the central server | No central server — no single point of failure |
+| Scalability | Can support hundreds or thousands of users and grow with an organisation | Easy to set up; best suited to homes and small businesses |
+
+---
+
+### Cross-Links
+
+- topic: Benefits and Disadvantages of Networking
+  trigger: When centralised management, shared storage, or backup is discussed
+  prompt: Client-server networks make use of centralised management — one of the key benefits of networking. Would you like to review the full list of networking benefits and disadvantages?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Network Hardware (servers, routers, switches)
+  trigger: When file servers, web servers, or email servers are mentioned as hardware components
+  prompt: Servers are a key type of network hardware. Would you like to review the other hardware components used in networks?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Network Security
+  trigger: When centralised vs decentralised security control is discussed
+  prompt: Security control is one of the key differences between client-server and peer-to-peer networks. Would you like to explore network security threats and protections in more detail?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+---
+
+### Misconceptions
+
+- misconception: Peer-to-peer means anyone can access any file on the network
+  reality: In a peer-to-peer network, each computer owner controls which files and folders are shared. Other computers on the LAN can only access files if access rights have been specifically granted. P2P does not mean open access.
+  trigger: When students say all files are visible to everyone in a P2P network
+  correction_prompt: In a peer-to-peer network, sharing is not automatic or open. Each computer is configured to share only specific files and folders, and access rights must be granted before another computer can read those files. It is less centralised than client-server, but it is not unsecured or open by default.
+
+- misconception: Peer-to-peer is always less secure than client-server
+  reality: Client-server networks have centralised security control, which is easier to manage consistently. Peer-to-peer networks lack centralised control, making security harder to enforce. However, P2P is not inherently insecure — it just requires security to be managed on each individual machine rather than centrally.
+  trigger: When students say peer-to-peer is always insecure
+  correction_prompt: Peer-to-peer is not inherently insecure — but security is harder to manage because there is no central point of control. In a client-server network, one administrator controls all security policies. In P2P, each computer owner is responsible for their own security settings, which can lead to inconsistency. It is a management challenge, not an inherent flaw.
+
+- misconception: Client-server networks always have exactly one server
+  reality: Large client-server networks commonly have multiple specialised servers — a file server, a web server, an email server, and others. Each server handles a specific type of service. Having multiple servers also reduces the risk of a single point of failure.
+  trigger: When students describe a client-server network as having one server
+  correction_prompt: A client-server network can have multiple servers, each with a specialised role. A school network, for example, might have a separate file server for storing student work, a web server for the school website, and an email server for staff communications. Having dedicated servers for each service improves performance and manageability.
+
+---
+
+### AI-Instruction
+
+When explaining this topic:
+
+- Prioritise concise, exam-style definitions
+- The comparison table is the core of this topic — OCR questions frequently ask students to "state one difference between client-server and peer-to-peer" — have all five rows available
+- Always define both server and client clearly before comparing the two network types
+- The three server types (file, web, email) are individually testable — students should know what each one does
+- When use-case questions come up: client-server for large organisations needing centralised management; P2P for homes and small businesses needing simplicity
+- Check for cross-links:
+  - If a trigger condition is met, offer the prompt to the user
+- Check for misconceptions:
+  - If the explanation could reasonably lead to a listed misconception, include the correction_prompt
+  - If the user shows confusion, prioritise addressing misconceptions before continuing
+
+
+---
+
+### What is an Internet Host?
+
+An **Internet host** is a company (often an ISP) that stores files and makes them available to users or others from other Internet-connected computers.
+
+**Types of content that can be hosted:**
+
+- Website pages, images, and related files
+- Online file hosting services (e.g. OneDrive, Dropbox)
+- Video hosting services (e.g. YouTube)
+
+---
+
+### Web Hosting
+
+When a company or individual wants their own website, they need a **web hosting service** to make the website accessible on the World Wide Web.
+
+Web hosting often includes **domain name registration**:
+
+- Ensures the chosen domain name has not already been taken
+- If acceptable, the domain name is registered and made available on a Domain Name Server
+
+**Uploading files to a web host:**
+
+- Files making up the web pages are uploaded to the host's server using **File Transfer Protocol (FTP)**
+- Many ISPs (e.g. BT, Virgin Media, Sky) offer hosting services free to subscribers
+
+**Large companies:**
+
+- May have their own **dedicated web server** rather than using a third-party hosting service
+- This gives greater control over the server configuration, performance, and security
+
+---
+
+### Cross-Links
+
+- topic: Domain Names and DNS
+  trigger: When domain name registration or Domain Name Servers are mentioned
+  prompt: Domain name registration makes the website's name available on a DNS server. Would you like to review how domain names and the DNS system work?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Client-Server Networks
+  trigger: When web servers or dedicated servers for hosting are mentioned
+  prompt: A dedicated web server is a type of server in a client-server setup. Would you like to review how client-server networks work and the different types of server?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Network Protocols (FTP, HTTP, HTTPS)
+  trigger: When FTP is mentioned as the method of uploading files to a web host
+  prompt: FTP is one of several network protocols. Would you like to learn about the other key protocols used on the Internet including HTTP and HTTPS?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+---
+
+### Misconceptions
+
+- misconception: Hosting and the World Wide Web are the same thing
+  reality: The World Wide Web is a collection of web pages and resources accessible via the Internet. Hosting is the service that stores those web pages on servers and makes them accessible. A website must be hosted on a server to appear on the Web, but hosting and the Web itself are separate concepts.
+  trigger: When students conflate web hosting with the Internet or the World Wide Web
+  correction_prompt: Hosting and the World Wide Web are not the same thing. The Web is the collection of websites and pages you access through a browser. Hosting is the service that stores your website files on a server so they are accessible on the Web. Without hosting, a website would have no server to run from and would not be accessible.
+
+- misconception: FTP is used to view web pages in a browser
+  reality: FTP (File Transfer Protocol) is used to transfer files between a local computer and a remote server — specifically for uploading the files that make up a website to the host's server. Viewing web pages in a browser uses HTTP or HTTPS, not FTP.
+  trigger: When students confuse FTP with HTTP/HTTPS or describe FTP as how websites are accessed
+  correction_prompt: FTP and HTTP/HTTPS are different protocols for different purposes. FTP is used to upload files to a web server — for example, when a web developer uploads the HTML, CSS, and image files that make up a website. HTTP/HTTPS is what your browser uses to download and display those pages when you visit the site. One is for publishing content, the other is for accessing it.
+
+- misconception: Every website uses a third-party hosting service
+  reality: Large companies and organisations often run their own dedicated web servers rather than paying a third-party host. This gives them more control over performance, security, and configuration, though it requires more technical expertise and investment to manage.
+  trigger: When students say all websites are hosted by ISPs or third-party companies
+  correction_prompt: Not all websites use third-party hosting. Large companies often run their own dedicated web servers, which gives them full control over performance, security, and configuration. Third-party hosting (from ISPs or companies like AWS, GoDaddy) is practical and cost-effective for smaller websites, but large organisations with the resources to manage their own infrastructure often prefer to do so.
+
+---
+
+### AI-Instruction
+
+When explaining this topic:
+
+- Prioritise concise, exam-style definitions
+- The definition of an Internet host (a company, often an ISP, that stores and makes files available) is directly testable
+- FTP as the upload mechanism is a specific and testable detail — always distinguish it from HTTP/HTTPS which is used to access pages
+- Domain name registration as part of web hosting connects back to the DNS topic — use the cross-link if that topic comes up
+- When large companies are mentioned, note the dedicated server alternative and why it is used (control, performance, security)
+- Check for cross-links:
+  - If a trigger condition is met, offer the prompt to the user
+- Check for misconceptions:
+  - If the explanation could reasonably lead to a listed misconception, include the correction_prompt
+  - If the user shows confusion, prioritise addressing misconceptions before continuing
+
+
+---
+
+### What is Cloud Storage?
+
+**Cloud storage** refers to saving data in an off-site storage system maintained by a third party, accessed via the Internet.
+
+- Instead of saving data on a local hard drive or storage device, data is saved to a **remote storage facility**
+- The data is accessed via the Internet from any Internet-connected device
+- Examples of cloud storage providers: **Dropbox, Google, Microsoft**
+
+---
+
+### Advantages of Cloud Storage
+
+- **Access from anywhere** — data can be accessed from anywhere in the world where there is an Internet connection
+- **Easy sharing** — data can be shared with other people in different locations
+- **Backup responsibility transferred** — backup is no longer the user's concern; the provider is responsible for keeping the data safe
+- **Software on demand** — cloud-based servers enable access to software on a subscription basis; instead of installing software locally, it can be accessed from any Internet-connected computer (including via mobile phone applications)
+
+---
+
+### Disadvantages of Cloud Storage
+
+- **Internet dependency** — you must have an Internet connection to access your data; without connectivity, the data is inaccessible
+- **Security concerns** — some users are concerned about security in the cloud and whether their data could be accessed by a hacker
+
+---
+
+### Physical Storage
+
+Cloud data is stored on servers in remote locations, often in different countries:
+
+- Usually stored on **hard disk drives (HDDs)**
+- Increasingly also stored on **solid state drives (SSDs)**
+
+---
+
+### Cloud vs Local Storage Comparison
+
+| Property | Cloud Storage | Local Storage |
+|---|---|---|
+| Location | Remote servers maintained by a third party | On the user's own device or local network |
+| Access | From any Internet-connected device | From the specific device or local network only |
+| Backup responsibility | Provider's responsibility | User's responsibility |
+| Internet required | Yes — no connection means no access | No — works offline |
+| Security risk | Data held remotely — third-party risk | Data under user's direct control |
+| Software access | Software available on demand/subscription | Software must be installed locally |
+
+---
+
+### Cross-Links
+
+- topic: Secondary Storage (HDD and SSD)
+  trigger: When HDDs or SSDs are mentioned as the physical storage medium for cloud data
+  prompt: Cloud data is stored on HDDs and SSDs in remote data centres. Would you like to review how HDDs and SSDs work and compare their characteristics?
+  link_type: related_topic
+  specification_ref: J277 1.2 (Memory and Storage)
+
+- topic: Network Security
+  trigger: When security concerns about cloud storage or hackers accessing cloud data are mentioned
+  prompt: Cloud security is one concern with remote storage. Would you like to learn about network security threats and the protections used against them?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Hosting
+  trigger: When cloud servers or remote storage maintained by a third party are discussed
+  prompt: Cloud storage uses remote servers maintained by third parties — similar to web hosting. Would you like to review how Internet hosting works?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+---
+
+### Misconceptions
+
+- misconception: Cloud storage means the data is stored somewhere in the air or wirelessly
+  reality: Cloud data is stored on physical servers — hard disks or solid state drives — in data centres located in specific buildings in various countries. "The cloud" is a metaphor for remote, Internet-accessible storage. The data is always on physical hardware somewhere.
+  trigger: When students describe the cloud as wireless or non-physical storage
+  correction_prompt: Despite the name, "the cloud" is not wireless or abstract — it is just physical storage (HDDs and SSDs) in data centres in various countries, accessed via the Internet. The term "cloud" is a metaphor for the fact that users do not need to know or care which specific server their data is on. The hardware is very real.
+
+- misconception: Cloud storage automatically makes your data more secure
+  reality: Cloud storage transfers backup responsibility to the provider, which is an advantage. However, it also introduces security risks — the data is held on third-party servers and could potentially be accessed by hackers or the provider itself. Security in the cloud depends entirely on the provider's security measures.
+  trigger: When students list cloud storage as inherently more secure than local storage
+  correction_prompt: Cloud storage does not automatically make your data more secure. The provider takes responsibility for backup, which removes one burden. But your data is also now on a third-party server accessible via the Internet — which introduces hacking risks and questions about who else might access it. The textbook lists security concerns as one of the disadvantages of cloud storage.
+
+- misconception: You can always access cloud data as long as you have the right password
+  reality: Cloud data requires both a valid login AND an active Internet connection. If you have no Internet access — for example, on a plane or in an area with no signal — your cloud data is inaccessible regardless of your credentials. This Internet dependency is a key disadvantage.
+  trigger: When students say the only requirement to access cloud data is a password
+  correction_prompt: A password alone is not enough to access cloud storage — you also need an active Internet connection. This is one of the listed disadvantages: without Internet access, your data is completely inaccessible. Local storage, by contrast, works offline at any time.
+
+---
+
+### AI-Instruction
+
+When explaining this topic:
+
+- Prioritise concise, exam-style definitions
+- The four advantages and two disadvantages are all independently testable — have all six available
+- When exam questions ask for advantages, students should go beyond "you can access it anywhere" to include sharing, backup responsibility, and software on demand
+- The Internet dependency disadvantage is the most commonly missed in exam answers — always include it
+- The physical storage detail (HDDs and SSDs in remote data centres) is a useful grounding point when students ask where cloud data actually lives
+- Check for cross-links:
+  - If a trigger condition is met, offer the prompt to the user
+- Check for misconceptions:
+  - If the explanation could reasonably lead to a listed misconception, include the correction_prompt
+  - If the user shows confusion, prioritise addressing misconceptions before continuing
+
+
+---
+
+### Bandwidth
+
+**Bandwidth** is the main factor affecting network performance.
+
+- Measured in **megabits per second (Mbps)**
+- The higher the bandwidth, the faster data is transferred
+- Bandwidth represents the maximum rate at which data can be transmitted across a network connection
+
+---
+
+### Number of Devices Connected
+
+The number of devices connected to a network directly affects available bandwidth and performance.
+
+- As more devices connect, **available bandwidth is shared** between them
+- Network load increases as more users actively transmit data
+- **Bandwidth-intensive applications** (such as video streaming) consume large amounts of bandwidth
+- If many users run bandwidth-intensive applications simultaneously, the network can slow significantly
+- Example: a classful of students all engaged in online learning simultaneously can cause the network to almost grind to a halt if bandwidth is insufficient
+
+---
+
+### Latency
+
+**Latency** is the time delay between the moment that transmission of the first byte or packet of a communication starts, and when it is received at its destination.
+
+- On a fibre optic network, latency is determined by the time it takes light to travel from source to destination
+- Satellite links introduce significant latency because signals must travel distances of over **100,000 km**
+- Satellite latency is visible in everyday life — e.g. the delay when a studio presenter speaks to a reporter at a distant location on live TV
+
+---
+
+### Errors in Transmission
+
+- Errors caused by **noise or distortion** in the transmission medium mean that data must be **retransmitted**
+- Retransmission adds delay and effectively reduces the usable bandwidth available for new data
+- More errors → more retransmissions → slower effective network performance
+
+---
+
+### Interference (Wireless Networks)
+
+Interference is a specific issue for **Wi-Fi transmissions**.
+
+- Sources of electromagnetic interference that can cause **dropped connections**:
+  - Cordless phones
+  - Microwave ovens
+  - Baby monitors
+  - Any device that emits an electromagnetic signal
+- Physical barriers can also reduce Wi-Fi signal strength:
+  - **Thick walls** between the router and the Wi-Fi device result in a weak connection
+
+---
+
+### Summary of Factors
+
+| Factor | Effect on Performance |
+|---|---|
+| Bandwidth | Higher bandwidth = faster data transfer |
+| Number of connected devices | More devices = shared bandwidth = slower per device |
+| Latency | Higher latency = greater delay before data arrives |
+| Transmission errors | More errors = more retransmissions = slower effective speed |
+| Interference | Causes dropped connections and weak signals on wireless networks |
+
+---
+
+### Cross-Links
+
+- topic: Wireless Networking (Wi-Fi)
+  trigger: When interference from cordless phones, microwaves, or thick walls is discussed
+  prompt: Interference is one of the risks of wireless networking. Would you like to review how Wi-Fi works and the other security and performance risks of wireless networks?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Ethernet and Transmission Media (Fibre Optic vs Copper)
+  trigger: When latency on optical fibre networks or signal loss due to noise is discussed
+  prompt: The type of cable used affects latency and signal quality. Would you like to review how fibre optic and copper cables compare in terms of speed and signal loss?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+- topic: Network Protocols (TCP/IP)
+  trigger: When error checking, retransmission, or data packets are mentioned
+  prompt: Retransmission of corrupted data is handled by network protocols. Would you like to learn how TCP/IP manages data transmission and error correction?
+  link_type: related_topic
+  specification_ref: J277 1.3 (Networks)
+
+---
+
+### Misconceptions
+
+- misconception: Bandwidth and speed are the same thing
+  reality: Bandwidth is the maximum rate at which data can be transmitted (measured in Mbps). Speed describes how fast data actually transfers in practice. Available bandwidth is shared between users; the actual speed experienced by a single user depends on how many devices are connected and what they are doing.
+  trigger: When students use bandwidth and speed interchangeably
+  correction_prompt: Bandwidth and speed are related but not the same. Bandwidth is the maximum data transfer rate of the connection. The speed any individual user experiences depends on how that bandwidth is shared — if many devices are connected and all transferring data, each user gets a fraction of the total bandwidth, so their effective speed is much lower than the headline bandwidth figure.
+
+- misconception: Only wireless networks suffer from interference
+  reality: The textbook specifically covers electromagnetic interference in the context of Wi-Fi, but wired copper cables can also suffer from electromagnetic interference (as covered in the Ethernet and Transmission Media topic). Fibre optic is unaffected by electromagnetic interference because it uses light. Interference is most visible and disruptive in wireless networks.
+  trigger: When students say wired networks are completely immune to interference
+  correction_prompt: Electromagnetic interference affects wireless networks most noticeably — it can cause dropped Wi-Fi connections. Wired copper cables can also suffer from interference, which is why fibre optic (immune to electromagnetic interference) is preferred for high-performance links. It is fair to say interference is primarily a wireless concern, but wired copper is not entirely immune.
+
+- misconception: High bandwidth means low latency
+  reality: Bandwidth and latency are independent properties. A satellite connection may have very high bandwidth (capable of transferring large amounts of data) but also very high latency (long delay before data starts arriving) due to the 100,000+ km signal distance. A low-bandwidth but short-distance connection can have very low latency.
+  trigger: When students assume that faster bandwidth automatically means less delay
+  correction_prompt: Bandwidth and latency are different things and do not automatically correlate. Bandwidth is about how much data can be transferred at once. Latency is about how long it takes for the first bit of data to arrive. A satellite link can have high bandwidth but very high latency because signals must travel over 100,000 km. A slow broadband connection in a nearby building may have low latency even with limited bandwidth.
+
+---
+
+### AI-Instruction
+
+When explaining this topic:
+
+- Prioritise concise, exam-style definitions
+- There are five distinct factors — students should know all five and be able to describe each
+- Bandwidth is named the main factor in the textbook — make this explicit when students ask which factor matters most
+- The satellite latency example (100,000 km, visible on live TV) is a highly memorable anchor — use it when explaining latency
+- The interference examples (cordless phones, microwaves, baby monitors, thick walls) are all testable — students asked for examples of what causes Wi-Fi interference need specific answers
+- Check for cross-links:
+  - If a trigger condition is met, offer the prompt to the user
+- Check for misconceptions:
+  - If the explanation could reasonably lead to a listed misconception, include the correction_prompt
+  - If the user shows confusion, prioritise addressing misconceptions before continuing
+
+
+---
