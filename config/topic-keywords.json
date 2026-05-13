@@ -8,7 +8,7 @@
     "fetch-decode-execute", "ghz", "hertz", "mar", "mdr", "memory address register",
     "memory data register", "mhz", "multi-core", "multicore", "parallel processing",
     "pc", "processor", "program counter", "purpose of the cpu", "register",
-    "stored program", "system architecture", "von neumann"
+    "stored program", "system architecture", "von neumann", "Von Neumann architecture"
   ],
   "memory-storage": [
     "add binary", "adding binary", "ascii", "audio", "audio file", "base 16",
