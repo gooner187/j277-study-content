@@ -9,7 +9,7 @@
 ```
 Roses are red,
 Violets are blue,
-Python is awesome,
+Computers are great,
 And so are you!
 ```
 
@@ -28,8 +28,8 @@ holder.close()
 ```
 Roses are red,
 Violets are blue,
-Python is awesome,
-And so are you!
+I love to code,
+How about you?
 ```
 
 ```python
@@ -47,8 +47,8 @@ holder.cllose()
 ```
 Roses are red,
 Violets are blue,
-Python is awesome,
-And so are you!
+The internet is vast,
+And full of data too!
 ```
 
 ```python
@@ -79,8 +79,8 @@ notepad.close)
 ```
 Roses are red,
 Violets are blue,
-Python is awesome,
-And so are you!
+Data is stored,
+In ones and zeros too!
 ```
 
 ```python
@@ -100,8 +100,8 @@ holder.close()
 ```
 Roses are red,
 Violets are blue,
-Python is awesome,
-And so are you!
+Algorithms solve problems,
+Step by step and true!
 ```
 
 ```python
