@@ -3,8 +3,8 @@
 ## Challenge 1
 **Type:** write
 **Difficulty:** easy
-**Task:** In Python, constants are written in UPPER_CASE to show they should not change. Create a constant called PI = 3.14159 and a variable radius = 5. Calculate the area of a circle (PI * radius * radius) and print the result rounded to 2 decimal places. Expected output: 78.54.
-**Hint:** Use UPPER_CASE for the constant name. round(area, 2) rounds to 2 decimal places — round(value, decimal_places).
+**Task:** In Python, constants are written in UPPER_CASE to show they should not change. Create a constant called PI = 3.14159 and a variable radius = 5. Calculate the area of a circle (PI * radius * radius) and print the result. Expected output: 78.53975.
+**Hint:** Use UPPER_CASE for the constant name. area = PI * radius * radius calculates the area. Then print it.
 
 ## Challenge 2
 **Type:** debug
