@@ -80,7 +80,7 @@ print(name
 **Type:** write
 **Difficulty:** medium
 **Task:** Create an array with 5 different animals. Loop through the array to display each one like this: "Number 1 animal is a cat", "Number 2 animal is a dog" and so on.
-**Hint:** You need a counter that increases with each loop. Try using enumerate() or a separate counter variable starting at 1.
+**Hint:** You need a counter that increases with each loop.
 
 ## Challenge 9
 **Type:** write
