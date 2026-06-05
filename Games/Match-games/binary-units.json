@@ -1,0 +1,14 @@
+{
+  "title": "Binary Units",
+  "instruction": "Match each term to its correct value",
+  "pairs": [
+    { "term": "Bit",       "match": "A single 0 or 1" },
+    { "term": "Nibble",    "match": "4 bits" },
+    { "term": "Byte",      "match": "8 bits" },
+    { "term": "Kilobyte",  "match": "1,000 bytes" },
+    { "term": "Megabyte",  "match": "1,000 KB" },
+    { "term": "Gigabyte",  "match": "1,000 MB" },
+    { "term": "Terabyte",  "match": "1,000 GB" },
+    { "term": "Petabyte",  "match": "1,000 TB" }
+  ]
+}
