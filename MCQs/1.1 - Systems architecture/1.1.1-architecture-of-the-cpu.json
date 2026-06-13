@@ -1,1 +1,150 @@
-
+{
+  "topic_code": "1.1",
+  "topic_name": "Systems Architecture",
+  "subtopic": "Fetch-Decode-Execute Cycle - Introduction",
+  "questions": [
+    {
+      "id": "fde_001",
+      "question": "What is Von Neumann architecture?",
+      "options": [
+        "Where data, instructions and programs are all stored in the same main memory and processed by the CPU",
+        "Where data, instructions and programs are all stored in separate memory and processed by the CPU",
+        "A type of secondary storage",
+        "All of these are correct"
+      ],
+      "correct_index": 0,
+      "explanation": "Von Neumann architecture stores both data and instructions in the same main memory, where they are fetched, decoded and executed by the CPU.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_002",
+      "question": "What does a CPU do?",
+      "options": [
+        "Processes data and instructions",
+        "Processes arithmetic only",
+        "Processes logic only",
+        "All of these are correct"
+      ],
+      "correct_index": 0,
+      "explanation": "The CPU processes both data and instructions — this includes arithmetic, logic, and control operations.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_003",
+      "question": "What is clock speed?",
+      "options": [
+        "How fast the transistors in a CPU are switched on and off by the system clock",
+        "Where data and instructions are stored in the same main memory",
+        "A type of super-fast memory",
+        "All of these are correct"
+      ],
+      "correct_index": 0,
+      "explanation": "Clock speed measures how many times per second the system clock switches transistors on and off, driving the CPU's operations.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_004",
+      "question": "How is clock speed measured?",
+      "options": [
+        "Hertz",
+        "Km/second",
+        "Miles per hour",
+        "Bits per second"
+      ],
+      "correct_index": 0,
+      "explanation": "Clock speed is measured in Hertz (Hz), typically GHz for modern CPUs — representing the number of cycles per second.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_005",
+      "question": "What does Hertz mean?",
+      "options": [
+        "Cycles per second",
+        "Bytes per second",
+        "Distance per second",
+        "Metres per second"
+      ],
+      "correct_index": 0,
+      "explanation": "Hertz (Hz) means cycles per second. A CPU running at 3 GHz completes 3 billion cycles every second.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_006",
+      "question": "How many cycles per second is 100 Hertz?",
+      "options": [
+        "100 cycles per second",
+        "10 cycles per second",
+        "1 cycle per second",
+        "1000 cycles per second"
+      ],
+      "correct_index": 0,
+      "explanation": "100 Hz means exactly 100 cycles per second — Hertz is simply another way of saying cycles per second.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_007",
+      "question": "Which of the following statements about clock speed is correct?",
+      "options": [
+        "All of these are correct",
+        "1.4 GHz means 1.4 billion cycles per second",
+        "2.4 MHz means 2.4 million cycles per second",
+        "4.4 GHz means 4.4 billion cycles per second"
+      ],
+      "correct_index": 0,
+      "explanation": "GHz = billion cycles per second; MHz = million cycles per second. All three statements correctly apply these units.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_008",
+      "question": "In the fetch-decode-execute cycle, what exactly is being fetched?",
+      "options": [
+        "An instruction",
+        "A RAM chip",
+        "A CPU register",
+        "All of these are fetched"
+      ],
+      "correct_index": 0,
+      "explanation": "In the fetch stage, the CPU fetches the next instruction from main memory using the address held in the Program Counter.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_009",
+      "question": "In the fetch-decode-execute cycle, where are instructions fetched from?",
+      "options": [
+        "Main memory",
+        "The CPU",
+        "Secondary storage",
+        "The ALU"
+      ],
+      "correct_index": 0,
+      "explanation": "Instructions are fetched from main memory (RAM). The Program Counter holds the address of the next instruction to fetch.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_010",
+      "question": "In the fetch-decode-execute cycle, where are instructions decoded?",
+      "options": [
+        "The CPU",
+        "Main memory",
+        "Secondary storage",
+        "The hard drive"
+      ],
+      "correct_index": 0,
+      "explanation": "Instructions are decoded inside the CPU by the Control Unit, which interprets what the instruction means and signals the appropriate components.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_011",
+      "question": "In the fetch-decode-execute cycle, where are instructions executed?",
+      "options": [
+        "The CPU",
+        "Main memory",
+        "Secondary storage",
+        "The system bus"
+      ],
+      "correct_index": 0,
+      "explanation": "Instructions are executed inside the CPU. Depending on the instruction, the ALU or other components carry out the required operation.",
+      "difficulty": "foundation"
+    }
+  ]
+}
