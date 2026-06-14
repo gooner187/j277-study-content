@@ -275,6 +275,136 @@
       "correct_index": 0,
       "explanation": "The correct order is always Fetch (get the instruction from memory), Decode (work out what it means), Execute (carry it out).",
       "difficulty": "foundation"
+    },
+    {
+      "id": "fde_022",
+      "question": "What does MAR stand for?",
+      "options": [
+        "Memory address register",
+        "Memory access register",
+        "Memory accumulator register",
+        "Memory AND register"
+      ],
+      "correct_index": 0,
+      "explanation": "MAR stands for Memory Address Register \u2014 it holds the address in main memory that the CPU wants to read from or write to.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_023",
+      "question": "What does ACC stand for?",
+      "options": [
+        "Accumulator",
+        "Address circuit counter",
+        "Accumulator circuit counter",
+        "Arithmetic and logic unit"
+      ],
+      "correct_index": 0,
+      "explanation": "ACC stands for Accumulator \u2014 the register that stores the results of arithmetic and logic operations performed by the ALU.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_024",
+      "question": "What does ALU stand for?",
+      "options": [
+        "Arithmetic and logic unit",
+        "Accumulator and logic unit",
+        "Address and logic unit",
+        "Arithmetic and cache unit"
+      ],
+      "correct_index": 0,
+      "explanation": "ALU stands for Arithmetic and Logic Unit \u2014 the part of the CPU that performs all arithmetic calculations and logical comparisons.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_025",
+      "question": "What does PC stand for?",
+      "options": [
+        "Program counter",
+        "Program circuit",
+        "Program accumulator",
+        "Program unit"
+      ],
+      "correct_index": 0,
+      "explanation": "PC stands for Program Counter \u2014 the register that holds the memory address of the next instruction to be fetched.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_026",
+      "question": "What does MDR stand for?",
+      "options": [
+        "Memory data register",
+        "Memory data region",
+        "Memory dump register",
+        "Memory drum region"
+      ],
+      "correct_index": 0,
+      "explanation": "MDR stands for Memory Data Register \u2014 it temporarily holds data that has just been read from or is about to be written to main memory.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_027",
+      "question": "What does the 'A' in MAR stand for?",
+      "options": [
+        "Address",
+        "Another",
+        "Accumulator",
+        "Acute"
+      ],
+      "correct_index": 0,
+      "explanation": "The 'A' in MAR stands for Address \u2014 MAR = Memory Address Register, which stores the address of a memory location.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_028",
+      "question": "What does CU stand for?",
+      "options": [
+        "Control unit",
+        "Circuit unit",
+        "Control URL",
+        "Current unit"
+      ],
+      "correct_index": 0,
+      "explanation": "CU stands for Control Unit \u2014 the component that directs the operation of the CPU, controlling the fetch-decode-execute cycle.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_029",
+      "question": "What does the 'D' in MDR stand for?",
+      "options": [
+        "Data",
+        "Done",
+        "Decode",
+        "Denote"
+      ],
+      "correct_index": 0,
+      "explanation": "The 'D' in MDR stands for Data \u2014 MDR = Memory Data Register, which holds the data being transferred to or from main memory.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_030",
+      "question": "What does the 'L' in ALU stand for?",
+      "options": [
+        "Logic",
+        "Left",
+        "Listen",
+        "Label"
+      ],
+      "correct_index": 0,
+      "explanation": "The 'L' in ALU stands for Logic \u2014 ALU = Arithmetic and Logic Unit, which handles both arithmetic operations and logical comparisons.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_031",
+      "question": "Which register increments every cycle?",
+      "options": [
+        "PC",
+        "ACC",
+        "MAR",
+        "MDR"
+      ],
+      "correct_index": 0,
+      "explanation": "The Program Counter (PC) increments after each fetch so it points to the next instruction in sequence, ensuring instructions are executed in order.",
+      "difficulty": "foundation"
     }
   ]
 }
