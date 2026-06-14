@@ -1,7 +1,7 @@
 {
   "topic_code": "1.1",
   "topic_name": "Systems Architecture",
-  "subtopic": "Fetch-Decode-Execute Cycle - Introduction",
+  "subtopic": "Fetch-Decode-Execute Cycle",
   "questions": [
     {
       "id": "fde_001",
@@ -26,7 +26,7 @@
         "All of these are correct"
       ],
       "correct_index": 0,
-      "explanation": "The CPU processes both data and instructions — this includes arithmetic, logic, and control operations.",
+      "explanation": "The CPU processes both data and instructions \u2014 this includes arithmetic, logic, and control operations.",
       "difficulty": "foundation"
     },
     {
@@ -52,7 +52,7 @@
         "Bits per second"
       ],
       "correct_index": 0,
-      "explanation": "Clock speed is measured in Hertz (Hz), typically GHz for modern CPUs — representing the number of cycles per second.",
+      "explanation": "Clock speed is measured in Hertz (Hz), typically GHz for modern CPUs \u2014 representing the number of cycles per second.",
       "difficulty": "foundation"
     },
     {
@@ -78,7 +78,7 @@
         "1000 cycles per second"
       ],
       "correct_index": 0,
-      "explanation": "100 Hz means exactly 100 cycles per second — Hertz is simply another way of saying cycles per second.",
+      "explanation": "100 Hz means exactly 100 cycles per second \u2014 Hertz is simply another way of saying cycles per second.",
       "difficulty": "foundation"
     },
     {
@@ -144,6 +144,136 @@
       ],
       "correct_index": 0,
       "explanation": "Instructions are executed inside the CPU. Depending on the instruction, the ALU or other components carry out the required operation.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_012",
+      "question": "Where are registers found?",
+      "options": [
+        "In the CPU",
+        "In main memory",
+        "In secondary storage",
+        "All of these are correct"
+      ],
+      "correct_index": 0,
+      "explanation": "Registers are small, fast storage locations found inside the CPU itself, used to hold data and instructions currently being processed.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_013",
+      "question": "Which of the following is NOT a register?",
+      "options": [
+        "Control unit",
+        "Accumulator",
+        "Memory address register",
+        "Program counter"
+      ],
+      "correct_index": 0,
+      "explanation": "The Control Unit is a component of the CPU, not a register. It controls the fetch-decode-execute cycle. The others (ACC, MAR, PC) are all registers.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_014",
+      "question": "What does the Memory Address Register (MAR) store?",
+      "options": [
+        "An address",
+        "Data",
+        "An instruction",
+        "Results from a calculation"
+      ],
+      "correct_index": 0,
+      "explanation": "The MAR holds the memory address of the data or instruction that the CPU needs to read from or write to in main memory.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_015",
+      "question": "What does the Memory Data Register (MDR) store?",
+      "options": [
+        "Data",
+        "An instruction",
+        "An address",
+        "Results from a calculation"
+      ],
+      "correct_index": 0,
+      "explanation": "The MDR (also called MBR \u2014 Memory Buffer Register) holds the data that has just been read from or is about to be written to main memory.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_016",
+      "question": "Which of the following is NOT a register?",
+      "options": [
+        "Arithmetic and logic unit",
+        "Accumulator",
+        "Program counter",
+        "Memory address register"
+      ],
+      "correct_index": 0,
+      "explanation": "The ALU (Arithmetic and Logic Unit) is a component of the CPU that performs calculations \u2014 it is not a register. The others are all registers.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_017",
+      "question": "What does the Accumulator (ACC) store?",
+      "options": [
+        "Results from a calculation",
+        "An instruction",
+        "A memory address",
+        "Data from main memory"
+      ],
+      "correct_index": 0,
+      "explanation": "The Accumulator holds the results of arithmetic and logic operations performed by the ALU.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_018",
+      "question": "What does the Control Unit do?",
+      "options": [
+        "All of these are correct",
+        "Controls the execution of instructions in the correct sequence",
+        "Decodes instructions",
+        "Sends and receives control signals to and from other devices in a computer"
+      ],
+      "correct_index": 0,
+      "explanation": "The Control Unit manages all CPU operations \u2014 it sequences instructions, decodes them, and sends/receives control signals to coordinate the rest of the computer.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_019",
+      "question": "What does ALU stand for?",
+      "options": [
+        "Arithmetic and Logic Unit",
+        "Accumulator and Logic Unit",
+        "Accounting and Law Unit",
+        "Arithmetic and Law Unit"
+      ],
+      "correct_index": 0,
+      "explanation": "ALU stands for Arithmetic and Logic Unit \u2014 it carries out all arithmetic operations (e.g. addition) and logical operations (e.g. comparisons).",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_020",
+      "question": "Which register holds the address of the next instruction to be executed?",
+      "options": [
+        "Program counter",
+        "Memory address register",
+        "Current instruction register",
+        "Accumulator"
+      ],
+      "correct_index": 0,
+      "explanation": "The Program Counter (PC) is an incrementing counter that holds the memory address of the next instruction to be fetched and executed.",
+      "difficulty": "foundation"
+    },
+    {
+      "id": "fde_021",
+      "question": "What is the correct order of the fetch-decode-execute cycle?",
+      "options": [
+        "Fetch, decode, execute",
+        "Decode, fetch, execute",
+        "Execute, decode, fetch",
+        "Decode, execute, fetch"
+      ],
+      "correct_index": 0,
+      "explanation": "The correct order is always Fetch (get the instruction from memory), Decode (work out what it means), Execute (carry it out).",
       "difficulty": "foundation"
     }
   ]
