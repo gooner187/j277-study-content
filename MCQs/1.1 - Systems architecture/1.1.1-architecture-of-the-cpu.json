@@ -274,7 +274,7 @@
       "question": "Which register holds the address of the next instruction to be executed?",
       "options": [
         "Program counter",
-        "Memory address register",
+        "Memory data register",
         "Current instruction register",
         "Accumulator"
       ],
