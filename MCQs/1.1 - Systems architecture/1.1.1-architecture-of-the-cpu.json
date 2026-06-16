@@ -486,6 +486,22 @@
       "correct_index": 0,
       "explanation": "The CPU is mounted directly on the motherboard \u2014 the main circuit board that connects all components of the computer.",
       "difficulty": "foundation"
+    },
+    {
+      "id": "fde_036",
+      "type": "image_mcq",
+      "question": "What is the structure labelled 4?",
+      "image": "https://raw.githubusercontent.com/gooner187/j277-study-content/main/MCQs/1.1%20-%20Systems%20architecture/1.1.1-Images/FDE1.png",
+      "image_alt": "Diagram of a CPU architecture with four labelled structures",
+      "options": [
+        "CPU",
+        "RAM",
+        "Control unit",
+        "Arithmetic Logic Unit"
+      ],
+      "correct_index": 0,
+      "explanation": "Structure 4 is the CPU \u2014 the central processing unit that fetches, decodes and executes instructions.",
+      "difficulty": "foundation"
     }
   ]
 }
