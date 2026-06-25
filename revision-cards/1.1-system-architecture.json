@@ -1,137 +1,799 @@
 {
   "topic": "1.1",
-  "topic_title": "System Architecture",
   "spec_ref": "J277 1.1",
-  "cards": [
-    {
-      "card_id": "1.1-01",
-      "front": "What is the Von Neumann architecture?",
-      "back": "A computer design where both programs and data are stored together in memory. The CPU sits at the centre, connected to Input devices, Output devices, Cache, and Main Memory. Its key feature is the 'stored program concept'.",
-      "objective_ref": 1,
-      "active_type": "card",
-      "video_url": null
-    },
-    {
-      "card_id": "1.1-02",
-      "front": "What does the Control Unit do? (state its 4 functions)",
-      "back": "1) Controls the execution of instructions in the correct sequence\n2) Decodes instructions\n3) Regulates processor timing using the system clock\n4) Sends and receives control signals to/from other devices",
-      "objective_ref": 2,
-      "active_type": "card",
-      "video_url": null
-    },
-    {
-      "card_id": "1.1-03",
-      "front": "What does the ALU do? (state its 3 types of operation)",
-      "back": "1) Logical operations: AND, OR, NOT\n2) Shift operations: shifting bits left or right\n3) Arithmetic operations: addition, subtraction, multiplication, division",
-      "objective_ref": 3,
-      "active_type": "card",
-      "video_url": null
-    },
-    {
-      "card_id": "1.1-03b",
-      "front": "What are the three stages of the Fetch-Decode-Execute cycle, and what happens at each stage?",
-      "back": "1) Fetch \u2014 The Program Counter (PC) holds the address of the next instruction. This address is loaded into the Memory Address Register (MAR). The Control Unit fetches the instruction from that address in main memory and stores it in the Memory Data Register (MDR). The PC then increments to point to the next instruction.\n2) Decode \u2014 the Control Unit (CU) decodes the instruction so it understands what to do\n3) Execute \u2014 the processor carries out the instruction. Any arithmetic, logic or shift operations are carried out in the Arithmetic Logic Unit (ALU), with results stored in the Accumulator (ACC)",
-      "objective_ref": 1,
-      "active_type": "card",
-      "video_url": null
-    },
-    {
-      "card_id": "1.1-04a",
-      "front": "What does the MAR (Memory Address Register) store?",
-      "back": "The ADDRESS (location in memory) of the instruction or piece of data to be fetched or stored.",
-      "objective_ref": 4,
-      "cross_links": [
-        "Fetch-Decode-Execute Cycle"
-      ],
-      "active_type": "card",
-      "video_url": null
-    },
-    {
-      "card_id": "1.1-04b",
-      "front": "What does the MDR (Memory Data Register) store?",
-      "back": "The actual DATA or instruction, held temporarily when it is fetched from memory or about to be sent to memory.",
-      "objective_ref": 4,
-      "cross_links": [
-        "Fetch-Decode-Execute Cycle"
-      ],
-      "active_type": "card",
-      "video_url": null
-    },
-    {
-      "card_id": "1.1-04c",
-      "front": "What does the PC (Program Counter) store?",
-      "back": "The memory address of the NEXT instruction to be processed.",
-      "objective_ref": 4,
-      "cross_links": [
-        "Fetch-Decode-Execute Cycle"
-      ],
-      "active_type": "card",
-      "video_url": null
-    },
-    {
-      "card_id": "1.1-04d",
-      "front": "What does the ACC (Accumulator) store?",
-      "back": "The results of operations carried out in the ALU, stored temporarily.",
-      "objective_ref": 4,
-      "cross_links": [
-        "Fetch-Decode-Execute Cycle"
-      ],
-      "active_type": "card",
-      "video_url": null
-    },
-    {
-      "card_id": "1.1-06",
-      "front": "What are the three main factors affecting CPU performance?",
-      "back": "1) Clock speed\n2) Cache size\n3) Number of cores",
-      "objective_ref": 6,
-      "active_type": "card",
-      "video_url": null
-    },
-    {
-      "card_id": "1.1-07",
-      "front": "What is clock speed, how is it measured, and why does a faster clock speed improve performance?",
-      "back": "Clock speed is the speed at which a processor operates, measured in Hertz (Hz) \u2014 cycles per second. Typical PCs run at 2-4 GHz. The greater the clock speed, the faster instructions are executed \u2014 though other components can bottleneck overall performance.",
-      "objective_ref": 7,
-      "active_type": "card",
-      "video_url": null
-    },
-    {
-      "card_id": "1.1-08",
-      "front": "What is cache memory and why does it improve CPU performance?",
-      "back": "Cache is a small amount of very fast memory that stores frequently used instructions/data, acting as an intermediary between RAM and the CPU. Because accessing cache is much faster than accessing RAM, the CPU needs main memory less often, which increases performance.",
-      "objective_ref": 8,
-      "cross_links": [
-        "RAM and ROM"
-      ],
-      "active_type": "card",
-      "video_url": null
-    },
-    {
-      "card_id": "1.1-09",
-      "front": "What is a multi-core processor and how does it enable parallel processing?",
-      "back": "A processor with more than one core (e.g. dual-core = 2, quad-core = 4). Each core can execute instructions independently, allowing multiple instructions to be processed simultaneously \u2014 though this only speeds up tasks that are designed to use multiple cores.",
-      "objective_ref": 9,
-      "active_type": "card",
-      "video_url": null
-    },
-    {
-      "card_id": "1.1-10",
-      "front": "What is an embedded system? Give 5 examples.",
-      "back": "A small computer built into a piece of equipment, designed to perform a specific function. Examples: vehicles, cameras, medical equipment, vending machines, ovens, fridges, mobile phones, satellite navigation devices, televisions, digital clocks.",
-      "objective_ref": 10,
-      "active_type": "card",
-      "video_url": null
-    },
-    {
-      "card_id": "1.1-11",
-      "front": "What are the four main characteristics of an embedded system?",
-      "back": "1) Reliable and uses minimal resources\n2) Control program held in ROM, written in a machine-efficient language\n3) Very limited operating system, can only run a single application\n4) Very simple user interface (or none at all)",
-      "objective_ref": 11,
-      "cross_links": [
-        "RAM and ROM"
-      ],
-      "active_type": "card",
-      "video_url": null
-    }
-  ]
+  "mcqs": {
+    "1.1-01": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What is the key feature of the Von Neumann architecture?",
+        "options": [
+          "Both programs and data are held in the same memory",
+          "Programs are set using switches",
+          "Data and programs are stored in separate memories",
+          "There is no memory at all"
+        ],
+        "correct": 0
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "What is the key feature of the Von Neumann architecture called? (type in 3 words)",
+        "acceptable_answers": [
+          "stored program concept"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "Which architecture introduced the idea of holding both programs and data together in memory?",
+        "options": [
+          "Harvard architecture",
+          "Von Neumann architecture",
+          "RISC architecture",
+          "Client-server architecture"
+        ],
+        "correct": 1
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "Which architecture introduced the stored program concept? (type in 2 words)",
+        "acceptable_answers": [
+          "von neumann"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "In the Von Neumann model, which component sits directly between Cache and Main Memory in terms of connection?",
+        "options": [
+          "Input devices",
+          "Output devices",
+          "The Processor connects to both directly; Cache sits between CPU and Main Memory",
+          "Storage"
+        ],
+        "correct": 2
+      }
+    ],
+    "1.1-02": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "Which of these is NOT one of the Control Unit's four functions?",
+        "options": [
+          "Decoding instructions",
+          "Regulating processor timing",
+          "Performing arithmetic calculations",
+          "Sending/receiving control signals"
+        ],
+        "correct": 2
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "What does the Control Unit use to regulate processor timing? (type in one word)",
+        "acceptable_answers": [
+          "clock"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "Which CPU component decodes instructions and regulates processor timing using the system clock?",
+        "options": [
+          "Arithmetic Logic Unit",
+          "Control Unit",
+          "Memory Address Register",
+          "Accumulator"
+        ],
+        "correct": 1
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "Which CPU component decodes instructions? (type in 2 words)",
+        "acceptable_answers": [
+          "control unit"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What does the Control Unit use to regulate processor timing?",
+        "options": [
+          "The accumulator",
+          "Regular pulses from the system clock",
+          "The memory address register",
+          "Cache memory"
+        ],
+        "correct": 1
+      }
+    ],
+    "1.1-03": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "Which of these is one of the ALU's three types of operation?",
+        "options": [
+          "Decoding",
+          "Fetching",
+          "Shift operations",
+          "Storing addresses"
+        ],
+        "correct": 2
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "AND, OR and NOT are examples of which type of ALU operation? (type in one word)",
+        "acceptable_answers": [
+          "logical",
+          "logic"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "Which CPU component carries out arithmetic, logical and shift operations?",
+        "options": [
+          "Control Unit",
+          "Arithmetic Logic Unit",
+          "Memory Data Register",
+          "Program Counter"
+        ],
+        "correct": 1
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "Which CPU component carries out arithmetic, logical and shift operations? (type in 3 words)",
+        "acceptable_answers": [
+          "arithmetic logic unit"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "AND, OR and NOT are examples of which type of ALU operation?",
+        "options": [
+          "Arithmetic operations",
+          "Shift operations",
+          "Logical operations",
+          "Decode operations"
+        ],
+        "correct": 2
+      }
+    ],
+    "1.1-03b": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What is the correct order of the three stages of the FDE cycle?",
+        "options": [
+          "Decode, Fetch, Execute",
+          "Fetch, Decode, Execute",
+          "Execute, Fetch, Decode",
+          "Fetch, Execute, Decode"
+        ],
+        "correct": 1
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "Which CPU component carries out the Decode stage? (type in 2 words)",
+        "acceptable_answers": [
+          "control unit"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "The address of the next instruction is loaded into the Memory Address Register \u2014 from which register does this value come?",
+        "options": [
+          "Accumulator",
+          "Memory Data Register",
+          "Program Counter",
+          "None, the MAR is set directly"
+        ],
+        "correct": 2
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "Where are ALU results stored during the Execute stage? (type in one word)",
+        "acceptable_answers": [
+          "accumulator"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What happens to the Program Counter during the Fetch stage?",
+        "options": [
+          "It is deleted",
+          "It increments to point to the next instruction",
+          "It moves into the ALU",
+          "It stores the fetched data"
+        ],
+        "correct": 1
+      }
+    ],
+    "1.1-04a": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What does the MAR store?",
+        "options": [
+          "An address",
+          "An instruction",
+          "A CPU",
+          "A clock signal"
+        ],
+        "correct": 0
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "What does the MAR store? (type in one word)",
+        "acceptable_answers": [
+          "address"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "Which register stores the address of the instruction or data to be fetched?",
+        "options": [
+          "Memory Data Register",
+          "Memory Address Register",
+          "Program Counter",
+          "Accumulator"
+        ],
+        "correct": 1
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "Which register stores an address? (type in 3 words) (not abbreviated answers)",
+        "acceptable_answers": [
+          "memory address register"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "MAR stands for which of these?",
+        "options": [
+          "Memory Address Register",
+          "Main Address Register",
+          "Memory Allocation Register",
+          "Multiple Address Register"
+        ],
+        "correct": 0
+      }
+    ],
+    "1.1-04b": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What does the MDR store?",
+        "options": [
+          "The data or instruction itself",
+          "An address",
+          "A clock signal",
+          "A core count"
+        ],
+        "correct": 0
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "What does the MDR store? (type in one word)",
+        "acceptable_answers": [
+          "data"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "Which register temporarily holds data or an instruction once it has been fetched from memory?",
+        "options": [
+          "Memory Address Register",
+          "Memory Data Register",
+          "Program Counter",
+          "Accumulator"
+        ],
+        "correct": 1
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "Which register stores fetched data? (type in 3 words) (not abbreviated answers)",
+        "acceptable_answers": [
+          "memory data register"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "MDR stands for which of these?",
+        "options": [
+          "Memory Direct Register",
+          "Main Data Register",
+          "Memory Data Register",
+          "Memory Decode Register"
+        ],
+        "correct": 2
+      }
+    ],
+    "1.1-04c": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What does the PC (Program Counter) store?",
+        "options": [
+          "The address of the next instruction to be processed",
+          "The current instruction itself",
+          "The result of the last calculation",
+          "The clock speed"
+        ],
+        "correct": 0
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "What TYPE of value does the Program Counter initially store? (type in one word)",
+        "acceptable_answers": [
+          "address"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "Which register initially holds the memory address of the next instruction to be processed?",
+        "options": [
+          "Accumulator",
+          "Memory Data Register",
+          "Program Counter",
+          "Memory Address Register"
+        ],
+        "correct": 2
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "Which register initially stores the address of the next instruction? (type in 2 words)",
+        "acceptable_answers": [
+          "program counter"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "Why is PC a potentially confusing abbreviation to use in an exam answer?",
+        "options": [
+          "It also commonly means 'personal computer'",
+          "It is too long to abbreviate",
+          "It is not a real register",
+          "It only applies to embedded systems"
+        ],
+        "correct": 0
+      }
+    ],
+    "1.1-04d": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What does the ACC (Accumulator) store?",
+        "options": [
+          "The results of ALU operations",
+          "The address of the next instruction",
+          "The instruction currently being decoded",
+          "The clock signal"
+        ],
+        "correct": 0
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "What does the Accumulator temporarily store? (type in one word)",
+        "acceptable_answers": [
+          "results",
+          "calculations"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "Which register temporarily stores the results of operations carried out by the ALU?",
+        "options": [
+          "Memory Data Register",
+          "Program Counter",
+          "Accumulator",
+          "Memory Address Register"
+        ],
+        "correct": 2
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "Which register stores ALU results? (type in one word)",
+        "acceptable_answers": [
+          "accumulator"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "Which register is most directly linked to the ALU's output?",
+        "options": [
+          "Program Counter",
+          "Memory Address Register",
+          "Accumulator",
+          "Memory Data Register"
+        ],
+        "correct": 2
+      }
+    ],
+    "1.1-06": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "Which three factors directly affect CPU performance, according to the spec?",
+        "options": [
+          "Clock speed, cache size, number of cores",
+          "Clock speed, RAM size, screen resolution",
+          "Cache size, hard disk size, number of cores",
+          "Number of cores, RAM size, battery life"
+        ],
+        "correct": 0
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "Besides cache size and number of cores, what is the third CPU performance factor? (type in 2 words)",
+        "acceptable_answers": [
+          "clock speed"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "Which of these is NOT one of the three main CPU performance factors?",
+        "options": [
+          "Number of cores",
+          "Cache size",
+          "Clock speed",
+          "Amount of secondary storage"
+        ],
+        "correct": 3
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "Besides clock speed and cache size, what is the third CPU performance factor? (type in 3 words)",
+        "acceptable_answers": [
+          "number of cores"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "Is secondary storage capacity one of the three main CPU performance factors?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1
+      }
+    ],
+    "1.1-07": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What unit is clock speed measured in?",
+        "options": [
+          "Bytes",
+          "Hertz",
+          "Bits per second",
+          "Watts"
+        ],
+        "correct": 1
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "What unit is clock speed measured in? (type in one word)",
+        "acceptable_answers": [
+          "hertz"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "Which performance factor is measured in GHz and represents cycles per second?",
+        "options": [
+          "Cache size",
+          "Number of cores",
+          "Clock speed",
+          "Bus width"
+        ],
+        "correct": 2
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "Which performance factor is measured in GHz? (type in 2 words)",
+        "acceptable_answers": [
+          "clock speed"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "Why might a 4 GHz processor NOT run exactly twice as fast as a 2 GHz one in practice?",
+        "options": [
+          "Clock speed has no effect on speed",
+          "Other components can create bottlenecks",
+          "4 GHz processors are always faulty",
+          "GHz only matters for embedded systems"
+        ],
+        "correct": 1
+      }
+    ],
+    "1.1-08": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What is cache memory used for?",
+        "options": [
+          "Storing frequently used instructions/data close to the CPU",
+          "Permanently storing the operating system",
+          "Replacing RAM entirely",
+          "Cooling down the processor"
+        ],
+        "correct": 0
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "What does the CPU need to access less often when cache is larger? (type in 2 words)",
+        "acceptable_answers": [
+          "main memory"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "Which type of memory sits between RAM and the CPU, holding frequently used data?",
+        "options": [
+          "ROM",
+          "Cache",
+          "Secondary storage",
+          "Virtual memory"
+        ],
+        "correct": 1
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "Which type of memory sits between RAM and the CPU? (type in one word)",
+        "acceptable_answers": [
+          "cache"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "Roughly how does the size of cache compare to the size of RAM in a typical computer?",
+        "options": [
+          "Cache is much larger than RAM",
+          "Cache is roughly the same size as RAM",
+          "Cache is much smaller than RAM",
+          "There is no size difference"
+        ],
+        "correct": 2
+      }
+    ],
+    "1.1-09": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What does a quad-core processor have?",
+        "options": [
+          "4 processing units",
+          "4 GB of RAM",
+          "4 cache levels",
+          "4 clock speeds"
+        ],
+        "correct": 0
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "A program that must run in strict step-by-step order is described as what? (type in one word)",
+        "acceptable_answers": [
+          "sequential"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "What allows multiple instructions to be executed simultaneously?",
+        "options": [
+          "A larger cache",
+          "Multiple cores",
+          "A faster clock speed",
+          "More RAM"
+        ],
+        "correct": 1
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "What CPU feature allows simultaneous execution of instructions? (type in 2 words)",
+        "acceptable_answers": [
+          "multiple cores"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "When is a multi-core processor most beneficial?",
+        "options": [
+          "When running a single sequential program",
+          "When running multiple programs simultaneously",
+          "When the cache is very small",
+          "Never, multi-core has no benefit"
+        ],
+        "correct": 1
+      }
+    ],
+    "1.1-10": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What is an embedded system?",
+        "options": [
+          "A small computer built into a device to perform a specific function",
+          "A desktop PC used for embedded software development",
+          "A type of cache memory",
+          "A network of multiple computers"
+        ],
+        "correct": 0
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "Which best describes an embedded system?",
+        "options": [
+          "A small computer built into a device for a specific function",
+          "Any computer with a screen",
+          "A type of cache",
+          "A general-purpose laptop"
+        ],
+        "correct": 0
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "Which of these is an example of an embedded system?",
+        "options": [
+          "A general-purpose laptop",
+          "A washing machine's control system",
+          "A web server",
+          "A gaming desktop PC"
+        ],
+        "correct": 1
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "Give one example of a device that contains an embedded system (type in one word)",
+        "acceptable_answers": [
+          "oven",
+          "fridge",
+          "television",
+          "car",
+          "vehicle"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "Which of these is generally NOT considered an embedded system?",
+        "options": [
+          "A microwave's control panel",
+          "A desktop PC used for general purpose computing",
+          "A car's engine management system",
+          "A digital alarm clock"
+        ],
+        "correct": 1
+      }
+    ],
+    "1.1-11": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "Where is the control program of an embedded system typically held?",
+        "options": [
+          "RAM",
+          "ROM",
+          "Cache",
+          "Secondary storage"
+        ],
+        "correct": 1
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "Where is the control program of an embedded system typically held? (type in 3 words) (not abbreviated answers)",
+        "acceptable_answers": [
+          "read only memory"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "Which characteristic describes an embedded system's operating system?",
+        "options": [
+          "Full multi-tasking desktop OS",
+          "Very limited, runs only a single application",
+          "No operating system concept applies",
+          "Identical to a smartphone OS"
+        ],
+        "correct": 1
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "How many applications can an embedded system's operating system typically run? (type in one word)",
+        "acceptable_answers": [
+          "one",
+          "1",
+          "single"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "Why is an embedded system's control program written in a machine-efficient language?",
+        "options": [
+          "To minimise memory use and maximise speed",
+          "To make it easier to read",
+          "Because ROM cannot store assembly language",
+          "To allow internet connectivity"
+        ],
+        "correct": 0
+      }
+    ]
+  }
 }
