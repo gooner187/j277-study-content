@@ -383,16 +383,13 @@
         "spelling_strict": false
       },
       {
-        "format": "mcq",
+        "format": "free_text",
         "direction": "component_to_property",
-        "question": "Why is PC a potentially confusing abbreviation to use in an exam answer?",
-        "options": [
-          "It also commonly means 'personal computer'",
-          "It is too long to abbreviate",
-          "It is not a real register",
-          "It only applies to embedded systems"
+        "question": "In the CPU, what does \"PC\" stand for? (type in 2 words)",
+        "acceptable_answers": [
+          "program counter"
         ],
-        "correct": 0
+        "spelling_strict": false
       }
     ],
     "1.1-04d": [
@@ -411,10 +408,9 @@
       {
         "format": "free_text",
         "direction": "component_to_property",
-        "question": "What does the Accumulator temporarily store? (type in one word)",
+        "question": "What is the missing word - The Accumulator temporarily stores the .... of calculations. (type in 1 word)",
         "acceptable_answers": [
-          "results",
-          "calculations"
+          "results"
         ],
         "spelling_strict": false
       },
@@ -456,7 +452,7 @@
       {
         "format": "mcq",
         "direction": "component_to_property",
-        "question": "Which three factors directly affect CPU performance, according to the spec?",
+        "question": "Which three factors directly affect CPU performance?",
         "options": [
           "Clock speed, cache size, number of cores",
           "Clock speed, RAM size, screen resolution",
@@ -489,9 +485,9 @@
       {
         "format": "free_text",
         "direction": "property_to_component",
-        "question": "Besides clock speed and cache size, what is the third CPU performance factor? (type in 3 words)",
+        "question": "Besides clock speed and cache size, the third CPU performance factor is the number of .... (type in 1 word)",
         "acceptable_answers": [
-          "number of cores"
+          "cores"
         ],
         "spelling_strict": false
       },
@@ -560,6 +556,42 @@
           "GHz only matters for embedded systems"
         ],
         "correct": 1
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What does \"hertz\" actually mean?",
+        "options": [
+          "Cycles per second",
+          "Bikes per hour",
+          "Miles an hour",
+          "Metres per second"
+        ],
+        "correct": 0
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What is a kilohertz (kHz)?",
+        "options": [
+          "1 Cycle per second",
+          "10 Cycles per second",
+          "100 Cycles per second",
+          "1000 Cycles per second"
+        ],
+        "correct": 3
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "If my computer has an Intel Core i7 CPU with a clock speed of 4.9 GHz, what does this actually mean?",
+        "options": [
+          "49 clock cycles per second",
+          "4,900 clock cycles per second",
+          "4,900,000 clock cycles per second",
+          "4,900,000,000 clock cycles per second"
+        ],
+        "correct": 3
       }
     ],
     "1.1-08": [
@@ -578,9 +610,9 @@
       {
         "format": "free_text",
         "direction": "component_to_property",
-        "question": "What does the CPU need to access less often when cache is larger? (type in 2 words)",
+        "question": "The CPU will need to access .... memory less often when the cache is larger. (type in 1 word)",
         "acceptable_answers": [
-          "main memory"
+          "main"
         ],
         "spelling_strict": false
       },
@@ -599,7 +631,7 @@
       {
         "format": "free_text",
         "direction": "property_to_component",
-        "question": "Which type of memory sits between RAM and the CPU? (type in one word)",
+        "question": "Which type of memory sits between RAM and the CPU and is super-fast memory? (type in one word)",
         "acceptable_answers": [
           "cache"
         ],
@@ -616,6 +648,30 @@
           "There is no size difference"
         ],
         "correct": 2
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "Where is Cache located?",
+        "options": [
+          "In the CPU",
+          "In the RAM",
+          "In the Optical disc drive",
+          "In the ROM"
+        ],
+        "correct": 0
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What is Cache?",
+        "options": [
+          "Super-fast memory",
+          "Secondary storage",
+          "Main memory",
+          "An input device"
+        ],
+        "correct": 0
       }
     ],
     "1.1-09": [
@@ -632,15 +688,6 @@
         "correct": 0
       },
       {
-        "format": "free_text",
-        "direction": "component_to_property",
-        "question": "A program that must run in strict step-by-step order is described as what? (type in one word)",
-        "acceptable_answers": [
-          "sequential"
-        ],
-        "spelling_strict": false
-      },
-      {
         "format": "mcq",
         "direction": "property_to_component",
         "question": "What allows multiple instructions to be executed simultaneously?",
@@ -655,9 +702,9 @@
       {
         "format": "free_text",
         "direction": "property_to_component",
-        "question": "What CPU feature allows simultaneous execution of instructions? (type in 2 words)",
+        "question": "A CPU that is able to simultaneously execute two or more instructions at the same time will have multiple .... (type in 1 word)",
         "acceptable_answers": [
-          "multiple cores"
+          "cores"
         ],
         "spelling_strict": false
       },
@@ -672,125 +719,14 @@
           "Never, multi-core has no benefit"
         ],
         "correct": 1
-      }
-    ],
-    "1.1-10": [
+      },
       {
-        "format": "mcq",
+        "format": "true_false",
         "direction": "component_to_property",
-        "question": "What is an embedded system?",
+        "question": "True or False: a CPU with multiple cores will always work faster than a CPU with one core.",
         "options": [
-          "A small computer built into a device to perform a specific function",
-          "A desktop PC used for embedded software development",
-          "A type of cache memory",
-          "A network of multiple computers"
-        ],
-        "correct": 0
-      },
-      {
-        "format": "mcq",
-        "direction": "component_to_property",
-        "question": "Which best describes an embedded system?",
-        "options": [
-          "A small computer built into a device for a specific function",
-          "Any computer with a screen",
-          "A type of cache",
-          "A general-purpose laptop"
-        ],
-        "correct": 0
-      },
-      {
-        "format": "mcq",
-        "direction": "property_to_component",
-        "question": "Which of these is an example of an embedded system?",
-        "options": [
-          "A general-purpose laptop",
-          "A washing machine's control system",
-          "A web server",
-          "A gaming desktop PC"
-        ],
-        "correct": 1
-      },
-      {
-        "format": "free_text",
-        "direction": "property_to_component",
-        "question": "Give one example of a device that contains an embedded system (type in one word)",
-        "acceptable_answers": [
-          "oven",
-          "fridge",
-          "television",
-          "car",
-          "vehicle"
-        ],
-        "spelling_strict": false
-      },
-      {
-        "format": "mcq",
-        "direction": "component_to_property",
-        "question": "Which of these is generally NOT considered an embedded system?",
-        "options": [
-          "A microwave's control panel",
-          "A desktop PC used for general purpose computing",
-          "A car's engine management system",
-          "A digital alarm clock"
-        ],
-        "correct": 1
-      }
-    ],
-    "1.1-11": [
-      {
-        "format": "mcq",
-        "direction": "component_to_property",
-        "question": "Where is the control program of an embedded system typically held?",
-        "options": [
-          "RAM",
-          "ROM",
-          "Cache",
-          "Secondary storage"
-        ],
-        "correct": 1
-      },
-      {
-        "format": "free_text",
-        "direction": "component_to_property",
-        "question": "Where is the control program of an embedded system typically held? (type in 3 words) (not abbreviated answers)",
-        "acceptable_answers": [
-          "read only memory"
-        ],
-        "spelling_strict": false
-      },
-      {
-        "format": "mcq",
-        "direction": "property_to_component",
-        "question": "Which characteristic describes an embedded system's operating system?",
-        "options": [
-          "Full multi-tasking desktop OS",
-          "Very limited, runs only a single application",
-          "No operating system concept applies",
-          "Identical to a smartphone OS"
-        ],
-        "correct": 1
-      },
-      {
-        "format": "free_text",
-        "direction": "property_to_component",
-        "question": "How many applications can an embedded system's operating system typically run? (type in one word)",
-        "acceptable_answers": [
-          "one",
-          "1",
-          "single"
-        ],
-        "spelling_strict": false
-      },
-      {
-        "format": "mcq",
-        "direction": "component_to_property",
-        "question": "Why is an embedded system's control program written in a machine-efficient language?",
-        "options": [
-          "To minimise memory use and maximise speed",
-          "To make it easier to read",
-          "Because ROM cannot store assembly language",
-          "To allow internet connectivity"
+          "False",
+          "True"
         ],
         "correct": 0
       }
