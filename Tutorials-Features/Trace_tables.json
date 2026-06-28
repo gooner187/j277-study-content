@@ -43,9 +43,7 @@
       {
         "line": 2,
         "vars": {},
-        "cond": {
-          "count < 3": "True"
-        },
+        "cond": {},
         "out": {
           "OUTPUT": 0
         },
@@ -58,9 +56,7 @@
         "vars": {
           "count": 1
         },
-        "cond": {
-          "count < 3": "True"
-        },
+        "cond": {},
         "out": {},
         "changed": [
           "count"
@@ -82,9 +78,7 @@
       {
         "line": 2,
         "vars": {},
-        "cond": {
-          "count < 3": "True"
-        },
+        "cond": {},
         "out": {
           "OUTPUT": 1
         },
@@ -97,9 +91,7 @@
         "vars": {
           "count": 2
         },
-        "cond": {
-          "count < 3": "True"
-        },
+        "cond": {},
         "out": {},
         "changed": [
           "count"
@@ -121,9 +113,7 @@
       {
         "line": 2,
         "vars": {},
-        "cond": {
-          "count < 3": "True"
-        },
+        "cond": {},
         "out": {
           "OUTPUT": 2
         },
@@ -136,9 +126,7 @@
         "vars": {
           "count": 3
         },
-        "cond": {
-          "count < 3": "True"
-        },
+        "cond": {},
         "out": {},
         "changed": [
           "count"
@@ -160,9 +148,7 @@
       {
         "line": 4,
         "vars": {},
-        "cond": {
-          "count < 3": "False"
-        },
+        "cond": {},
         "out": {
           "OUTPUT": "Done"
         },
@@ -462,9 +448,7 @@
         "vars": {
           "result": 1
         },
-        "cond": {
-          "i <= n": "True"
-        },
+        "cond": {},
         "out": {},
         "changed": [
           "result"
@@ -477,9 +461,7 @@
         "vars": {
           "i": 2
         },
-        "cond": {
-          "i <= n": "True"
-        },
+        "cond": {},
         "out": {},
         "changed": [
           "i"
@@ -503,9 +485,7 @@
         "vars": {
           "result": 2
         },
-        "cond": {
-          "i <= n": "True"
-        },
+        "cond": {},
         "out": {},
         "changed": [
           "result"
@@ -518,9 +498,7 @@
         "vars": {
           "i": 3
         },
-        "cond": {
-          "i <= n": "True"
-        },
+        "cond": {},
         "out": {},
         "changed": [
           "i"
@@ -544,9 +522,7 @@
         "vars": {
           "result": 6
         },
-        "cond": {
-          "i <= n": "True"
-        },
+        "cond": {},
         "out": {},
         "changed": [
           "result"
@@ -559,9 +535,7 @@
         "vars": {
           "i": 4
         },
-        "cond": {
-          "i <= n": "True"
-        },
+        "cond": {},
         "out": {},
         "changed": [
           "i"
@@ -585,9 +559,7 @@
         "vars": {
           "result": 24
         },
-        "cond": {
-          "i <= n": "True"
-        },
+        "cond": {},
         "out": {},
         "changed": [
           "result"
@@ -600,9 +572,7 @@
         "vars": {
           "i": 5
         },
-        "cond": {
-          "i <= n": "True"
-        },
+        "cond": {},
         "out": {},
         "changed": [
           "i"
@@ -624,9 +594,7 @@
       {
         "line": 6,
         "vars": {},
-        "cond": {
-          "i <= n": "False"
-        },
+        "cond": {},
         "out": {
           "OUTPUT": 24
         },
@@ -698,9 +666,7 @@
         "vars": {
           "maxVal": 7
         },
-        "cond": {
-          "numbers[i] > maxVal": "True"
-        },
+        "cond": {},
         "out": {},
         "changed": [
           "maxVal"
@@ -761,9 +727,7 @@
         "vars": {
           "maxVal": 9
         },
-        "cond": {
-          "numbers[i] > maxVal": "True"
-        },
+        "cond": {},
         "out": {},
         "changed": [
           "maxVal"
@@ -930,9 +894,7 @@
       {
         "line": 5,
         "vars": {},
-        "cond": {
-          "numbers[i] == target": "True"
-        },
+        "cond": {},
         "out": {
           "OUTPUT": "Found at index 2"
         },
@@ -1822,9 +1784,7 @@
         "vars": {
           "count": 1
         },
-        "cond": {
-          "word[i] in \"aeiou\"": "True"
-        },
+        "cond": {},
         "out": {},
         "changed": [
           "count"
@@ -1885,9 +1845,7 @@
         "vars": {
           "count": 2
         },
-        "cond": {
-          "word[i] in \"aeiou\"": "True"
-        },
+        "cond": {},
         "out": {},
         "changed": [
           "count"
