@@ -779,16 +779,18 @@
       "numbers = [5, 3, 8, 1, 9]",
       "target = 8",
       "idx = 0",
-      "while idx < 5:",
+      "found = False",
+      "while idx < 5 AND found == False:",
       "    if numbers[idx] == target:",
       "        print(\"Found at index\", idx)",
-      "        break",
+      "        found = True",
       "    idx = idx + 1"
     ],
     "cols": [
       "line",
       "idx",
       "numbers[idx] == target",
+      "found",
       "OUTPUT"
     ],
     "steps": [
@@ -807,15 +809,28 @@
       },
       {
         "line": 3,
-        "vars": {},
+        "vars": {
+          "found": "False"
+        },
         "cond": {},
         "out": {},
-        "changed": [],
-        "msg": "idx < 5 is True, loop continues",
+        "changed": [
+          "found"
+        ],
+        "msg": "found starts as False",
         "done": false
       },
       {
         "line": 4,
+        "vars": {},
+        "cond": {},
+        "out": {},
+        "changed": [],
+        "msg": "0 < 5 and not found \u2014 loop continues",
+        "done": false
+      },
+      {
+        "line": 5,
         "vars": {},
         "cond": {
           "numbers[idx] == target": "False"
@@ -826,7 +841,7 @@
         "done": false
       },
       {
-        "line": 7,
+        "line": 8,
         "vars": {
           "idx": 1
         },
@@ -839,16 +854,16 @@
         "done": false
       },
       {
-        "line": 3,
+        "line": 4,
         "vars": {},
         "cond": {},
         "out": {},
         "changed": [],
-        "msg": "idx < 5 is True, loop continues",
+        "msg": "1 < 5 and not found \u2014 loop continues",
         "done": false
       },
       {
-        "line": 4,
+        "line": 5,
         "vars": {},
         "cond": {
           "numbers[idx] == target": "False"
@@ -859,7 +874,7 @@
         "done": false
       },
       {
-        "line": 7,
+        "line": 8,
         "vars": {
           "idx": 2
         },
@@ -872,16 +887,16 @@
         "done": false
       },
       {
-        "line": 3,
+        "line": 4,
         "vars": {},
         "cond": {},
         "out": {},
         "changed": [],
-        "msg": "idx < 5 is True, loop continues",
+        "msg": "2 < 5 and not found \u2014 loop continues",
         "done": false
       },
       {
-        "line": 4,
+        "line": 5,
         "vars": {},
         "cond": {
           "numbers[idx] == target": "True"
@@ -892,7 +907,7 @@
         "done": false
       },
       {
-        "line": 5,
+        "line": 6,
         "vars": {},
         "cond": {},
         "out": {
@@ -903,12 +918,25 @@
         "done": false
       },
       {
-        "line": 6,
+        "line": 7,
+        "vars": {
+          "found": "True"
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "found"
+        ],
+        "msg": "found is set to True",
+        "done": false
+      },
+      {
+        "line": 4,
         "vars": {},
         "cond": {},
         "out": {},
         "changed": [],
-        "msg": "break \u2014 exit the loop immediately",
+        "msg": "found is now True \u2014 loop ends",
         "done": true
       }
     ]
@@ -921,11 +949,12 @@
       "target = 7",
       "low = 0",
       "high = 5",
-      "while low <= high:",
+      "found = False",
+      "while low <= high AND found == False:",
       "    mid = (low + high) // 2",
       "    if numbers[mid] == target:",
       "        print(\"Found at index\", mid)",
-      "        break",
+      "        found = True",
       "    elif numbers[mid] < target:",
       "        low = mid + 1",
       "    else:",
@@ -937,6 +966,7 @@
       "high",
       "mid",
       "numbers[mid]",
+      "found",
       "OUTPUT"
     ],
     "steps": [
@@ -968,17 +998,30 @@
       },
       {
         "line": 4,
+        "vars": {
+          "found": "False"
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "found"
+        ],
+        "msg": "found starts as False",
+        "done": false
+      },
+      {
+        "line": 5,
         "vars": {},
         "cond": {
           "low <= high": "True"
         },
         "out": {},
         "changed": [],
-        "msg": "0 <= 5 is True, loop continues",
+        "msg": "0 <= 5 and not found \u2014 loop continues",
         "done": false
       },
       {
-        "line": 5,
+        "line": 6,
         "vars": {
           "mid": 2
         },
@@ -991,7 +1034,7 @@
         "done": false
       },
       {
-        "line": 6,
+        "line": 7,
         "vars": {},
         "cond": {
           "numbers[mid] == target": "False"
@@ -1002,7 +1045,7 @@
         "done": false
       },
       {
-        "line": 9,
+        "line": 10,
         "vars": {},
         "cond": {
           "numbers[mid] < target": "True"
@@ -1013,7 +1056,7 @@
         "done": false
       },
       {
-        "line": 10,
+        "line": 11,
         "vars": {
           "low": 3
         },
@@ -1026,18 +1069,18 @@
         "done": false
       },
       {
-        "line": 4,
+        "line": 5,
         "vars": {},
         "cond": {
           "low <= high": "True"
         },
         "out": {},
         "changed": [],
-        "msg": "3 <= 5 is True, loop continues",
+        "msg": "3 <= 5 and not found \u2014 loop continues",
         "done": false
       },
       {
-        "line": 5,
+        "line": 6,
         "vars": {
           "mid": 4
         },
@@ -1050,7 +1093,7 @@
         "done": false
       },
       {
-        "line": 6,
+        "line": 7,
         "vars": {},
         "cond": {
           "numbers[mid] == target": "False"
@@ -1061,7 +1104,7 @@
         "done": false
       },
       {
-        "line": 9,
+        "line": 10,
         "vars": {},
         "cond": {
           "numbers[mid] < target": "False"
@@ -1072,7 +1115,7 @@
         "done": false
       },
       {
-        "line": 12,
+        "line": 13,
         "vars": {
           "high": 3
         },
@@ -1085,18 +1128,18 @@
         "done": false
       },
       {
-        "line": 4,
+        "line": 5,
         "vars": {},
         "cond": {
           "low <= high": "True"
         },
         "out": {},
         "changed": [],
-        "msg": "3 <= 3 is True, loop continues",
+        "msg": "3 <= 3 and not found \u2014 loop continues",
         "done": false
       },
       {
-        "line": 5,
+        "line": 6,
         "vars": {
           "mid": 3
         },
@@ -1109,7 +1152,7 @@
         "done": false
       },
       {
-        "line": 6,
+        "line": 7,
         "vars": {},
         "cond": {
           "numbers[mid] == target": "True"
@@ -1120,7 +1163,7 @@
         "done": false
       },
       {
-        "line": 7,
+        "line": 8,
         "vars": {},
         "cond": {},
         "out": {
@@ -1131,12 +1174,25 @@
         "done": false
       },
       {
-        "line": 8,
+        "line": 9,
+        "vars": {
+          "found": "True"
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "found"
+        ],
+        "msg": "found is set to True",
+        "done": false
+      },
+      {
+        "line": 5,
         "vars": {},
         "cond": {},
         "out": {},
         "changed": [],
-        "msg": "break \u2014 exit the loop",
+        "msg": "found is now True \u2014 loop ends",
         "done": true
       }
     ]
