@@ -2331,5 +2331,140 @@
         "done": true
       }
     ]
+  },
+  "Merge sort": {
+    "title": "Merge Sort",
+    "badge": "J277 2.1 Algorithms",
+    "code": [
+      "nums = [3, 1, 2, 4]",
+      "// --- Divide phase ---",
+      "split [3, 1, 2, 4] into left=[3, 1] and right=[2, 4]",
+      "split left into [3] and [1]",
+      "split right into [2] and [4]",
+      "// --- Merge phase ---",
+      "merge [3] and [1] \u2192 compare each item in order",
+      "merge [2] and [4] \u2192 compare each item in order",
+      "merge [1, 3] and [2, 4] \u2192 compare each item in order",
+      "print(nums)"
+    ],
+    "cols": [
+      "line",
+      "left",
+      "right",
+      "merged",
+      "OUTPUT"
+    ],
+    "steps": [
+      {
+        "line": 0,
+        "vars": {},
+        "cond": {},
+        "out": {},
+        "changed": [],
+        "msg": "Start: nums = [3, 1, 2, 4]",
+        "done": false
+      },
+      {
+        "line": 2,
+        "vars": {
+          "left": "[3, 1]",
+          "right": "[2, 4]"
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "left",
+          "right"
+        ],
+        "msg": "Split [3,1,2,4] into left=[3,1] and right=[2,4]",
+        "done": false
+      },
+      {
+        "line": 3,
+        "vars": {
+          "left": "[3]",
+          "right": "[1]"
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "left",
+          "right"
+        ],
+        "msg": "Split left=[3,1] into [3] and [1] \u2014 single items cannot be split further",
+        "done": false
+      },
+      {
+        "line": 4,
+        "vars": {
+          "left": "[2]",
+          "right": "[4]"
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "left",
+          "right"
+        ],
+        "msg": "Split right=[2,4] into [2] and [4] \u2014 single items cannot be split further",
+        "done": false
+      },
+      {
+        "line": 6,
+        "vars": {
+          "left": "[3]",
+          "right": "[1]",
+          "merged": "[1, 3]"
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "merged"
+        ],
+        "msg": "Merge [3] and [1]: 1 < 3, so result is [1, 3]",
+        "done": false
+      },
+      {
+        "line": 7,
+        "vars": {
+          "left": "[2]",
+          "right": "[4]",
+          "merged": "[2, 4]"
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "merged"
+        ],
+        "msg": "Merge [2] and [4]: 2 < 4, so result is [2, 4]",
+        "done": false
+      },
+      {
+        "line": 8,
+        "vars": {
+          "left": "[1, 3]",
+          "right": "[2, 4]",
+          "merged": "[1, 2, 3, 4]"
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "merged"
+        ],
+        "msg": "Merge [1,3] and [2,4]: compare in order \u2192 1,2,3,4",
+        "done": false
+      },
+      {
+        "line": 9,
+        "vars": {},
+        "cond": {},
+        "out": {
+          "OUTPUT": "[1, 2, 3, 4]"
+        },
+        "changed": [],
+        "msg": "nums is now fully sorted",
+        "done": true
+      }
+    ]
   }
 }
