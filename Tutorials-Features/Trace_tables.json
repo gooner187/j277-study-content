@@ -615,7 +615,8 @@
       {
         "line": 2,
         "vars": {
-          "i": 1
+          "i": 1,
+          "numbers[i]": 7
         },
         "cond": {},
         "out": {},
@@ -652,7 +653,8 @@
       {
         "line": 2,
         "vars": {
-          "i": 2
+          "i": 2,
+          "numbers[i]": 2
         },
         "cond": {},
         "out": {},
@@ -676,7 +678,8 @@
       {
         "line": 2,
         "vars": {
-          "i": 3
+          "i": 3,
+          "numbers[i]": 9
         },
         "cond": {},
         "out": {},
@@ -713,7 +716,8 @@
       {
         "line": 2,
         "vars": {
-          "i": 4
+          "i": 4,
+          "numbers[i]": 4
         },
         "cond": {},
         "out": {},
@@ -941,7 +945,9 @@
       "low",
       "high",
       "mid",
-      "numbers[mid]",
+      "low <= high",
+      "numbers[mid] == target",
+      "numbers[mid] < target",
       "found",
       "OUTPUT"
     ],
@@ -1335,6 +1341,7 @@
       "passCount",
       "key",
       "j",
+      "j>=0 and numbers[j]>key",
       "numbers",
       "OUTPUT"
     ],
@@ -1625,7 +1632,8 @@
       {
         "line": 2,
         "vars": {
-          "i": 0
+          "i": 0,
+          "word[i]": "c"
         },
         "cond": {},
         "out": {},
@@ -1649,7 +1657,8 @@
       {
         "line": 2,
         "vars": {
-          "i": 1
+          "i": 1,
+          "word[i]": "o"
         },
         "cond": {},
         "out": {},
@@ -1686,7 +1695,8 @@
       {
         "line": 2,
         "vars": {
-          "i": 2
+          "i": 2,
+          "word[i]": "d"
         },
         "cond": {},
         "out": {},
@@ -1710,7 +1720,8 @@
       {
         "line": 2,
         "vars": {
-          "i": 3
+          "i": 3,
+          "word[i]": "e"
         },
         "cond": {},
         "out": {},
@@ -1791,7 +1802,8 @@
       {
         "line": 2,
         "vars": {
-          "i": 0
+          "i": 0,
+          "numbers[i]": 4
         },
         "cond": {},
         "out": {},
@@ -1817,7 +1829,8 @@
       {
         "line": 2,
         "vars": {
-          "i": 1
+          "i": 1,
+          "numbers[i]": 2
         },
         "cond": {},
         "out": {},
@@ -1843,7 +1856,8 @@
       {
         "line": 2,
         "vars": {
-          "i": 2
+          "i": 2,
+          "numbers[i]": 7
         },
         "cond": {},
         "out": {},
@@ -1869,7 +1883,8 @@
       {
         "line": 2,
         "vars": {
-          "i": 3
+          "i": 3,
+          "numbers[i]": 1
         },
         "cond": {},
         "out": {},
