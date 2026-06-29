@@ -1317,17 +1317,22 @@
     "badge": "J277 2.1 Algorithms",
     "code": [
       "numbers = [3, 1, 2]",
+      "passCount = 0",
       "for i = 1 to 2:",
+      "    passCount = passCount + 1",
       "    key = numbers[i]",
       "    j = i - 1",
       "    while j >= 0 and numbers[j] > key:",
       "        numbers[j+1] = numbers[j]",
       "        j = j - 1",
-      "    numbers[j+1] = key"
+      "    numbers[j+1] = key",
+      "print(numbers)",
+      "print(\"passes =\", passCount)"
     ],
     "cols": [
       "line",
       "i",
+      "passCount",
       "key",
       "j",
       "numbers",
@@ -1335,7 +1340,7 @@
     ],
     "steps": [
       {
-        "line": 1,
+        "line": 2,
         "vars": {
           "i": 1
         },
@@ -1344,11 +1349,24 @@
         "changed": [
           "i"
         ],
-        "msg": "i=1: next item to sort",
+        "msg": "i=1: next item to sort (pass 1)",
         "done": false
       },
       {
-        "line": 2,
+        "line": 3,
+        "vars": {
+          "passCount": 1
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "passCount"
+        ],
+        "msg": "passCount increases to 1",
+        "done": false
+      },
+      {
+        "line": 4,
         "vars": {
           "key": 1
         },
@@ -1361,7 +1379,7 @@
         "done": false
       },
       {
-        "line": 3,
+        "line": 5,
         "vars": {
           "j": 0
         },
@@ -1374,7 +1392,7 @@
         "done": false
       },
       {
-        "line": 4,
+        "line": 6,
         "vars": {},
         "cond": {
           "j>=0 and numbers[j]>key": "True"
@@ -1385,7 +1403,7 @@
         "done": false
       },
       {
-        "line": 5,
+        "line": 7,
         "vars": {
           "numbers": "[3, 3, 2]"
         },
@@ -1398,7 +1416,7 @@
         "done": false
       },
       {
-        "line": 6,
+        "line": 8,
         "vars": {
           "j": -1
         },
@@ -1411,7 +1429,7 @@
         "done": false
       },
       {
-        "line": 4,
+        "line": 6,
         "vars": {},
         "cond": {
           "j>=0 and numbers[j]>key": "False"
@@ -1422,7 +1440,7 @@
         "done": false
       },
       {
-        "line": 7,
+        "line": 9,
         "vars": {
           "numbers": "[1, 3, 2]"
         },
@@ -1435,7 +1453,7 @@
         "done": false
       },
       {
-        "line": 1,
+        "line": 2,
         "vars": {
           "i": 2
         },
@@ -1444,11 +1462,24 @@
         "changed": [
           "i"
         ],
-        "msg": "i=2: next item to sort",
+        "msg": "i=2: next item to sort (pass 2)",
         "done": false
       },
       {
-        "line": 2,
+        "line": 3,
+        "vars": {
+          "passCount": 2
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "passCount"
+        ],
+        "msg": "passCount increases to 2",
+        "done": false
+      },
+      {
+        "line": 4,
         "vars": {
           "key": 2
         },
@@ -1461,7 +1492,7 @@
         "done": false
       },
       {
-        "line": 3,
+        "line": 5,
         "vars": {
           "j": 1
         },
@@ -1474,7 +1505,7 @@
         "done": false
       },
       {
-        "line": 4,
+        "line": 6,
         "vars": {},
         "cond": {
           "j>=0 and numbers[j]>key": "True"
@@ -1485,7 +1516,7 @@
         "done": false
       },
       {
-        "line": 5,
+        "line": 7,
         "vars": {
           "numbers": "[1, 3, 3]"
         },
@@ -1498,7 +1529,7 @@
         "done": false
       },
       {
-        "line": 6,
+        "line": 8,
         "vars": {
           "j": 0
         },
@@ -1511,7 +1542,7 @@
         "done": false
       },
       {
-        "line": 4,
+        "line": 6,
         "vars": {},
         "cond": {
           "j>=0 and numbers[j]>key": "False"
@@ -1522,18 +1553,38 @@
         "done": false
       },
       {
-        "line": 7,
+        "line": 9,
         "vars": {
           "numbers": "[1, 2, 3]"
         },
         "cond": {},
-        "out": {
-          "OUTPUT": "[1, 2, 3]"
-        },
+        "out": {},
         "changed": [
           "numbers"
         ],
-        "msg": "insert key (2) at position 1 \u2014 sorted!",
+        "msg": "insert key (2) at position 1",
+        "done": false
+      },
+      {
+        "line": 10,
+        "vars": {},
+        "cond": {},
+        "out": {
+          "OUTPUT": "[1, 2, 3]"
+        },
+        "changed": [],
+        "msg": "all items sorted",
+        "done": false
+      },
+      {
+        "line": 11,
+        "vars": {},
+        "cond": {},
+        "out": {
+          "OUTPUT": "passes = 2"
+        },
+        "changed": [],
+        "msg": "print passes = 2",
         "done": true
       }
     ]
