@@ -931,7 +931,7 @@
       "high = 3",
       "found = False",
       "while low <= high AND found == False:",
-      "    mid = (low + high) // 2",
+      "    mid = (low + high) DIV 2",
       "    if numbers[mid] == target:",
       "        print(\"Found at index\", mid)",
       "        found = True",
@@ -1012,7 +1012,7 @@
         "changed": [
           "mid"
         ],
-        "msg": "mid = (0+3)//2 = 1",
+        "msg": "mid = (0+3)DIV2 = 1",
         "done": false
       },
       {
@@ -1071,7 +1071,7 @@
         "changed": [
           "mid"
         ],
-        "msg": "mid = (2+3)//2 = 2",
+        "msg": "mid = (2+3)DIV2 = 2",
         "done": false
       },
       {
@@ -1328,7 +1328,7 @@
       "    passCount = passCount + 1",
       "    key = numbers[i]",
       "    j = i - 1",
-      "    while j >= 0 and numbers[j] > key:",
+      "    while j >= 0 AND numbers[j] > key:",
       "        numbers[j+1] = numbers[j]",
       "        j = j - 1",
       "    numbers[j+1] = key",
@@ -1341,7 +1341,7 @@
       "passCount",
       "key",
       "j",
-      "j>=0 and numbers[j]>key",
+      "j>=0 AND numbers[j]>key",
       "numbers",
       "OUTPUT"
     ],
@@ -1402,7 +1402,7 @@
         "line": 6,
         "vars": {},
         "cond": {
-          "j>=0 and numbers[j]>key": "True"
+          "j>=0 AND numbers[j]>key": "True"
         },
         "out": {},
         "changed": [],
@@ -1439,7 +1439,7 @@
         "line": 6,
         "vars": {},
         "cond": {
-          "j>=0 and numbers[j]>key": "False"
+          "j>=0 AND numbers[j]>key": "False"
         },
         "out": {},
         "changed": [],
@@ -1515,7 +1515,7 @@
         "line": 6,
         "vars": {},
         "cond": {
-          "j>=0 and numbers[j]>key": "True"
+          "j>=0 AND numbers[j]>key": "True"
         },
         "out": {},
         "changed": [],
@@ -1552,7 +1552,7 @@
         "line": 6,
         "vars": {},
         "cond": {
-          "j>=0 and numbers[j]>key": "False"
+          "j>=0 AND numbers[j]>key": "False"
         },
         "out": {},
         "changed": [],
@@ -2123,11 +2123,11 @@
     "badge": "J277 2.1 Algorithms",
     "code": [
       "for i = 1 to 8:",
-      "    if i % 15 == 0:",
+      "    if i MOD 15 == 0:",
       "        print(\"FizzBuzz\")",
-      "    elif i % 3 == 0:",
+      "    elif i MOD 3 == 0:",
       "        print(\"Fizz\")",
-      "    elif i % 5 == 0:",
+      "    elif i MOD 5 == 0:",
       "        print(\"Buzz\")",
       "    else:",
       "        print(i)"
