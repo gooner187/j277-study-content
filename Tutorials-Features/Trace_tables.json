@@ -376,7 +376,7 @@
     "title": "Factorial",
     "badge": "J277 2.1 Algorithms",
     "code": [
-      "n = 4",
+      "n = 3",
       "result = 1",
       "idx = 1",
       "while idx <= n:",
@@ -396,14 +396,14 @@
       {
         "line": 0,
         "vars": {
-          "n": 4
+          "n": 3
         },
         "cond": {},
         "out": {},
         "changed": [
           "n"
         ],
-        "msg": "n is set to 4",
+        "msg": "n is set to 3",
         "done": false
       },
       {
@@ -440,7 +440,7 @@
         },
         "out": {},
         "changed": [],
-        "msg": "1 <= 4 is True, loop continues",
+        "msg": "1 <= 3 is True, loop continues",
         "done": false
       },
       {
@@ -448,7 +448,9 @@
         "vars": {
           "result": 1
         },
-        "cond": {},
+        "cond": {
+          "idx <= n": "True"
+        },
         "out": {},
         "changed": [
           "result"
@@ -461,7 +463,9 @@
         "vars": {
           "idx": 2
         },
-        "cond": {},
+        "cond": {
+          "idx <= n": "True"
+        },
         "out": {},
         "changed": [
           "idx"
@@ -477,7 +481,7 @@
         },
         "out": {},
         "changed": [],
-        "msg": "2 <= 4 is True, loop continues",
+        "msg": "2 <= 3 is True, loop continues",
         "done": false
       },
       {
@@ -485,7 +489,9 @@
         "vars": {
           "result": 2
         },
-        "cond": {},
+        "cond": {
+          "idx <= n": "True"
+        },
         "out": {},
         "changed": [
           "result"
@@ -498,7 +504,9 @@
         "vars": {
           "idx": 3
         },
-        "cond": {},
+        "cond": {
+          "idx <= n": "True"
+        },
         "out": {},
         "changed": [
           "idx"
@@ -514,7 +522,7 @@
         },
         "out": {},
         "changed": [],
-        "msg": "3 <= 4 is True, loop continues",
+        "msg": "3 <= 3 is True, loop continues",
         "done": false
       },
       {
@@ -522,7 +530,9 @@
         "vars": {
           "result": 6
         },
-        "cond": {},
+        "cond": {
+          "idx <= n": "True"
+        },
         "out": {},
         "changed": [
           "result"
@@ -535,7 +545,9 @@
         "vars": {
           "idx": 4
         },
-        "cond": {},
+        "cond": {
+          "idx <= n": "True"
+        },
         "out": {},
         "changed": [
           "idx"
@@ -547,48 +559,11 @@
         "line": 3,
         "vars": {},
         "cond": {
-          "idx <= n": "True"
-        },
-        "out": {},
-        "changed": [],
-        "msg": "4 <= 4 is True, loop continues",
-        "done": false
-      },
-      {
-        "line": 4,
-        "vars": {
-          "result": 24
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "result"
-        ],
-        "msg": "result = 6 x 4 = 24",
-        "done": false
-      },
-      {
-        "line": 5,
-        "vars": {
-          "idx": 5
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "idx"
-        ],
-        "msg": "idx increases to 5",
-        "done": false
-      },
-      {
-        "line": 3,
-        "vars": {},
-        "cond": {
           "idx <= n": "False"
         },
         "out": {},
         "changed": [],
-        "msg": "5 <= 4 is False, loop ends",
+        "msg": "4 <= 3 is False, loop ends",
         "done": false
       },
       {
@@ -596,10 +571,10 @@
         "vars": {},
         "cond": {},
         "out": {
-          "OUTPUT": 24
+          "OUTPUT": 6
         },
         "changed": [],
-        "msg": "print result \u2014 4! = 24",
+        "msg": "print result \u2014 3! = 6",
         "done": true
       }
     ]
@@ -946,10 +921,10 @@
     "title": "Binary Search",
     "badge": "J277 2.1 Algorithms",
     "code": [
-      "numbers = [1, 3, 5, 7, 9, 11]",
-      "target = 7",
+      "numbers = [2, 4, 6, 8]",
+      "target = 6",
       "low = 0",
-      "high = 5",
+      "high = 3",
       "found = False",
       "while low <= high AND found == False:",
       "    mid = (low + high) // 2",
@@ -987,14 +962,14 @@
       {
         "line": 3,
         "vars": {
-          "high": 5
+          "high": 3
         },
         "cond": {},
         "out": {},
         "changed": [
           "high"
         ],
-        "msg": "high starts at 5 (last index)",
+        "msg": "high starts at 3 (last index)",
         "done": false
       },
       {
@@ -1018,7 +993,66 @@
         },
         "out": {},
         "changed": [],
-        "msg": "0 <= 5 and not found \u2014 loop continues",
+        "msg": "0 <= 3 and not found \u2014 loop continues",
+        "done": false
+      },
+      {
+        "line": 6,
+        "vars": {
+          "mid": 1
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "mid"
+        ],
+        "msg": "mid = (0+3)//2 = 1",
+        "done": false
+      },
+      {
+        "line": 7,
+        "vars": {},
+        "cond": {
+          "numbers[mid] == target": "False"
+        },
+        "out": {},
+        "changed": [],
+        "msg": "numbers[1]=4, 4 == 6 is False",
+        "done": false
+      },
+      {
+        "line": 10,
+        "vars": {},
+        "cond": {
+          "numbers[mid] < target": "True"
+        },
+        "out": {},
+        "changed": [],
+        "msg": "4 < 6 is True",
+        "done": false
+      },
+      {
+        "line": 11,
+        "vars": {
+          "low": 2
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "low"
+        ],
+        "msg": "low updates to mid+1 = 2",
+        "done": false
+      },
+      {
+        "line": 5,
+        "vars": {},
+        "cond": {
+          "low <= high": "True"
+        },
+        "out": {},
+        "changed": [],
+        "msg": "2 <= 3 and not found \u2014 loop continues",
         "done": false
       },
       {
@@ -1031,125 +1065,7 @@
         "changed": [
           "mid"
         ],
-        "msg": "mid = (0+5)//2 = 2",
-        "done": false
-      },
-      {
-        "line": 7,
-        "vars": {},
-        "cond": {
-          "numbers[mid] == target": "False"
-        },
-        "out": {},
-        "changed": [],
-        "msg": "numbers[2]=5, 5 == 7 is False",
-        "done": false
-      },
-      {
-        "line": 10,
-        "vars": {},
-        "cond": {
-          "numbers[mid] < target": "True"
-        },
-        "out": {},
-        "changed": [],
-        "msg": "5 < 7 is True",
-        "done": false
-      },
-      {
-        "line": 11,
-        "vars": {
-          "low": 3
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "low"
-        ],
-        "msg": "low updates to mid+1 = 3",
-        "done": false
-      },
-      {
-        "line": 5,
-        "vars": {},
-        "cond": {
-          "low <= high": "True"
-        },
-        "out": {},
-        "changed": [],
-        "msg": "3 <= 5 and not found \u2014 loop continues",
-        "done": false
-      },
-      {
-        "line": 6,
-        "vars": {
-          "mid": 4
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "mid"
-        ],
-        "msg": "mid = (3+5)//2 = 4",
-        "done": false
-      },
-      {
-        "line": 7,
-        "vars": {},
-        "cond": {
-          "numbers[mid] == target": "False"
-        },
-        "out": {},
-        "changed": [],
-        "msg": "numbers[4]=9, 9 == 7 is False",
-        "done": false
-      },
-      {
-        "line": 10,
-        "vars": {},
-        "cond": {
-          "numbers[mid] < target": "False"
-        },
-        "out": {},
-        "changed": [],
-        "msg": "9 < 7 is False",
-        "done": false
-      },
-      {
-        "line": 13,
-        "vars": {
-          "high": 3
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "high"
-        ],
-        "msg": "high updates to mid-1 = 3",
-        "done": false
-      },
-      {
-        "line": 5,
-        "vars": {},
-        "cond": {
-          "low <= high": "True"
-        },
-        "out": {},
-        "changed": [],
-        "msg": "3 <= 3 and not found \u2014 loop continues",
-        "done": false
-      },
-      {
-        "line": 6,
-        "vars": {
-          "mid": 3
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "mid"
-        ],
-        "msg": "mid = (3+3)//2 = 3",
+        "msg": "mid = (2+3)//2 = 2",
         "done": false
       },
       {
@@ -1160,7 +1076,7 @@
         },
         "out": {},
         "changed": [],
-        "msg": "numbers[3]=7, 7 == 7 is True",
+        "msg": "numbers[2]=6, 6 == 6 is True",
         "done": false
       },
       {
@@ -1168,10 +1084,10 @@
         "vars": {},
         "cond": {},
         "out": {
-          "OUTPUT": "Found at index 3"
+          "OUTPUT": "Found at index 2"
         },
         "changed": [],
-        "msg": "print Found at index 3",
+        "msg": "print Found at index 2",
         "done": false
       },
       {
@@ -1202,11 +1118,11 @@
     "title": "Bubble Sort",
     "badge": "J277 2.1 Algorithms",
     "code": [
-      "numbers = [5, 2, 4, 1]",
-      "for pass = 1 to 3:",
-      "    for i = 0 to 2-pass:",
-      "        if numbers[i] > numbers[i+1]:",
-      "            swap(numbers[i], numbers[i+1])",
+      "numbers = [3, 1, 2]",
+      "for pass = 1 to 2:",
+      "    for i = 0 to 1-pass:",
+      "    if numbers[i] > numbers[i+1]:",
+      "        swap(numbers[i], numbers[i+1])",
       "print(numbers)"
     ],
     "cols": [
@@ -1252,20 +1168,20 @@
         },
         "out": {},
         "changed": [],
-        "msg": "5 > 2 is True",
+        "msg": "3 > 1 is True",
         "done": false
       },
       {
         "line": 4,
         "vars": {
-          "numbers": "[2, 5, 4, 1]"
+          "numbers": "[1, 3, 2]"
         },
         "cond": {},
         "out": {},
         "changed": [
           "numbers"
         ],
-        "msg": "swap \u2014 numbers becomes [2,5,4,1]",
+        "msg": "swap \u2014 numbers becomes [1, 3, 2]",
         "done": false
       },
       {
@@ -1289,57 +1205,20 @@
         },
         "out": {},
         "changed": [],
-        "msg": "5 > 4 is True",
+        "msg": "3 > 2 is True",
         "done": false
       },
       {
         "line": 4,
         "vars": {
-          "numbers": "[2, 4, 5, 1]"
+          "numbers": "[1, 2, 3]"
         },
         "cond": {},
         "out": {},
         "changed": [
           "numbers"
         ],
-        "msg": "swap \u2014 numbers becomes [2,4,5,1]",
-        "done": false
-      },
-      {
-        "line": 2,
-        "vars": {
-          "i": 2
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "i"
-        ],
-        "msg": "i=2: compare numbers[2] and numbers[3]",
-        "done": false
-      },
-      {
-        "line": 3,
-        "vars": {},
-        "cond": {
-          "numbers[i] > numbers[i+1]": "True"
-        },
-        "out": {},
-        "changed": [],
-        "msg": "5 > 1 is True",
-        "done": false
-      },
-      {
-        "line": 4,
-        "vars": {
-          "numbers": "[2, 4, 1, 5]"
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "numbers"
-        ],
-        "msg": "swap \u2014 numbers becomes [2,4,1,5]",
+        "msg": "swap \u2014 numbers becomes [1, 2, 3]",
         "done": false
       },
       {
@@ -1376,94 +1255,7 @@
         },
         "out": {},
         "changed": [],
-        "msg": "2 > 4 is False, no swap",
-        "done": false
-      },
-      {
-        "line": 2,
-        "vars": {
-          "i": 1
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "i"
-        ],
-        "msg": "i=1: compare numbers[1] and numbers[2]",
-        "done": false
-      },
-      {
-        "line": 3,
-        "vars": {},
-        "cond": {
-          "numbers[i] > numbers[i+1]": "True"
-        },
-        "out": {},
-        "changed": [],
-        "msg": "4 > 1 is True",
-        "done": false
-      },
-      {
-        "line": 4,
-        "vars": {
-          "numbers": "[2, 1, 4, 5]"
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "numbers"
-        ],
-        "msg": "swap \u2014 numbers becomes [2,1,4,5]",
-        "done": false
-      },
-      {
-        "line": 1,
-        "vars": {
-          "pass": 3
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "pass"
-        ],
-        "msg": "Pass 3 begins",
-        "done": false
-      },
-      {
-        "line": 2,
-        "vars": {
-          "i": 0
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "i"
-        ],
-        "msg": "i=0: compare numbers[0] and numbers[1]",
-        "done": false
-      },
-      {
-        "line": 3,
-        "vars": {},
-        "cond": {
-          "numbers[i] > numbers[i+1]": "True"
-        },
-        "out": {},
-        "changed": [],
-        "msg": "2 > 1 is True",
-        "done": false
-      },
-      {
-        "line": 4,
-        "vars": {
-          "numbers": "[1, 2, 4, 5]"
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "numbers"
-        ],
-        "msg": "swap \u2014 numbers becomes [1,2,4,5]",
+        "msg": "1 > 2 is False, no swap",
         "done": false
       },
       {
@@ -1471,7 +1263,7 @@
         "vars": {},
         "cond": {},
         "out": {
-          "OUTPUT": "[1, 2, 4, 5]"
+          "OUTPUT": "[1, 2, 3]"
         },
         "changed": [],
         "msg": "all passes done \u2014 list is sorted",
@@ -1483,8 +1275,8 @@
     "title": "Insertion Sort",
     "badge": "J277 2.1 Algorithms",
     "code": [
-      "numbers = [4, 2, 5, 1]",
-      "for i = 1 to 3:",
+      "numbers = [3, 1, 2]",
+      "for i = 1 to 2:",
       "    key = numbers[i]",
       "    j = i - 1",
       "    while j >= 0 and numbers[j] > key:",
@@ -1517,14 +1309,14 @@
       {
         "line": 2,
         "vars": {
-          "key": 2
+          "key": 1
         },
         "cond": {},
         "out": {},
         "changed": [
           "key"
         ],
-        "msg": "key = numbers[1] = 2",
+        "msg": "key = numbers[1] = 1",
         "done": false
       },
       {
@@ -1548,20 +1340,20 @@
         },
         "out": {},
         "changed": [],
-        "msg": "numbers[0]=4 > 2, shift needed",
+        "msg": "numbers[0]=3 > 1, shift needed",
         "done": false
       },
       {
         "line": 5,
         "vars": {
-          "numbers": "[4, 4, 5, 1]"
+          "numbers": "[3, 3, 2]"
         },
         "cond": {},
         "out": {},
         "changed": [
           "numbers"
         ],
-        "msg": "shift 4 one place right",
+        "msg": "shift 3 one place right",
         "done": false
       },
       {
@@ -1591,14 +1383,14 @@
       {
         "line": 7,
         "vars": {
-          "numbers": "[2, 4, 5, 1]"
+          "numbers": "[1, 3, 2]"
         },
         "cond": {},
         "out": {},
         "changed": [
           "numbers"
         ],
-        "msg": "insert key (2) at position 0",
+        "msg": "insert key (1) at position 0",
         "done": false
       },
       {
@@ -1617,14 +1409,14 @@
       {
         "line": 2,
         "vars": {
-          "key": 5
+          "key": 2
         },
         "cond": {},
         "out": {},
         "changed": [
           "key"
         ],
-        "msg": "key = numbers[2] = 5",
+        "msg": "key = numbers[2] = 2",
         "done": false
       },
       {
@@ -1644,124 +1436,24 @@
         "line": 4,
         "vars": {},
         "cond": {
-          "j>=0 and numbers[j]>key": "False"
-        },
-        "out": {},
-        "changed": [],
-        "msg": "numbers[1]=4 is not > 5, already in place",
-        "done": false
-      },
-      {
-        "line": 7,
-        "vars": {
-          "numbers": "[2, 4, 5, 1]"
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "numbers"
-        ],
-        "msg": "insert key (5) at position 2",
-        "done": false
-      },
-      {
-        "line": 1,
-        "vars": {
-          "i": 3
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "i"
-        ],
-        "msg": "i=3: next item to sort",
-        "done": false
-      },
-      {
-        "line": 2,
-        "vars": {
-          "key": 1
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "key"
-        ],
-        "msg": "key = numbers[3] = 1",
-        "done": false
-      },
-      {
-        "line": 3,
-        "vars": {
-          "j": 2
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "j"
-        ],
-        "msg": "j = i-1 = 2",
-        "done": false
-      },
-      {
-        "line": 4,
-        "vars": {},
-        "cond": {
           "j>=0 and numbers[j]>key": "True"
         },
         "out": {},
         "changed": [],
-        "msg": "numbers[2]=5 > 1, shift needed",
+        "msg": "numbers[1]=3 > 2, shift needed",
         "done": false
       },
       {
         "line": 5,
         "vars": {
-          "numbers": "[2, 4, 5, 5]"
+          "numbers": "[1, 3, 3]"
         },
         "cond": {},
         "out": {},
         "changed": [
           "numbers"
         ],
-        "msg": "shift 5 one place right",
-        "done": false
-      },
-      {
-        "line": 6,
-        "vars": {
-          "j": 1
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "j"
-        ],
-        "msg": "j decreases to 1",
-        "done": false
-      },
-      {
-        "line": 4,
-        "vars": {},
-        "cond": {
-          "j>=0 and numbers[j]>key": "True"
-        },
-        "out": {},
-        "changed": [],
-        "msg": "numbers[1]=4 > 1, shift needed",
-        "done": false
-      },
-      {
-        "line": 5,
-        "vars": {
-          "numbers": "[2, 4, 4, 5]"
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "numbers"
-        ],
-        "msg": "shift 4 one place right",
+        "msg": "shift 3 one place right",
         "done": false
       },
       {
@@ -1781,63 +1473,26 @@
         "line": 4,
         "vars": {},
         "cond": {
-          "j>=0 and numbers[j]>key": "True"
-        },
-        "out": {},
-        "changed": [],
-        "msg": "numbers[0]=2 > 1, shift needed",
-        "done": false
-      },
-      {
-        "line": 5,
-        "vars": {
-          "numbers": "[2, 2, 4, 5]"
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "numbers"
-        ],
-        "msg": "shift 2 one place right",
-        "done": false
-      },
-      {
-        "line": 6,
-        "vars": {
-          "j": -1
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "j"
-        ],
-        "msg": "j decreases to -1",
-        "done": false
-      },
-      {
-        "line": 4,
-        "vars": {},
-        "cond": {
           "j>=0 and numbers[j]>key": "False"
         },
         "out": {},
         "changed": [],
-        "msg": "j=-1, stop shifting",
+        "msg": "numbers[0]=1 is not > 2, already in place",
         "done": false
       },
       {
         "line": 7,
         "vars": {
-          "numbers": "[1, 2, 4, 5]"
+          "numbers": "[1, 2, 3]"
         },
         "cond": {},
         "out": {
-          "OUTPUT": "[1, 2, 4, 5]"
+          "OUTPUT": "[1, 2, 3]"
         },
         "changed": [
           "numbers"
         ],
-        "msg": "insert key (1) at position 0 \u2014 sorted!",
+        "msg": "insert key (2) at position 1 \u2014 sorted!",
         "done": true
       }
     ]
@@ -2010,268 +1665,6 @@
       }
     ]
   },
-  "FizzBuzz (1 to 10)": {
-    "title": "FizzBuzz",
-    "badge": "J277 2.1 Algorithms",
-    "code": [
-      "for i = 1 to 10:",
-      "    if i % 15 == 0:",
-      "        print(\"FizzBuzz\")",
-      "    elif i % 3 == 0:",
-      "        print(\"Fizz\")",
-      "    elif i % 5 == 0:",
-      "        print(\"Buzz\")",
-      "    else:",
-      "        print(i)"
-    ],
-    "cols": [
-      "line",
-      "i",
-      "OUTPUT"
-    ],
-    "steps": [
-      {
-        "line": 0,
-        "vars": {
-          "i": 1
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "i"
-        ],
-        "msg": "i=1",
-        "done": false
-      },
-      {
-        "line": 8,
-        "vars": {},
-        "cond": {},
-        "out": {
-          "OUTPUT": 1
-        },
-        "changed": [],
-        "msg": "not divisible by 3 or 5 \u2014 print 1",
-        "done": false
-      },
-      {
-        "line": 0,
-        "vars": {
-          "i": 2
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "i"
-        ],
-        "msg": "i=2",
-        "done": false
-      },
-      {
-        "line": 8,
-        "vars": {},
-        "cond": {},
-        "out": {
-          "OUTPUT": 2
-        },
-        "changed": [],
-        "msg": "not divisible by 3 or 5 \u2014 print 2",
-        "done": false
-      },
-      {
-        "line": 0,
-        "vars": {
-          "i": 3
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "i"
-        ],
-        "msg": "i=3",
-        "done": false
-      },
-      {
-        "line": 4,
-        "vars": {},
-        "cond": {},
-        "out": {
-          "OUTPUT": "Fizz"
-        },
-        "changed": [],
-        "msg": "3 is divisible by 3 \u2014 print Fizz",
-        "done": false
-      },
-      {
-        "line": 0,
-        "vars": {
-          "i": 4
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "i"
-        ],
-        "msg": "i=4",
-        "done": false
-      },
-      {
-        "line": 8,
-        "vars": {},
-        "cond": {},
-        "out": {
-          "OUTPUT": 4
-        },
-        "changed": [],
-        "msg": "not divisible by 3 or 5 \u2014 print 4",
-        "done": false
-      },
-      {
-        "line": 0,
-        "vars": {
-          "i": 5
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "i"
-        ],
-        "msg": "i=5",
-        "done": false
-      },
-      {
-        "line": 6,
-        "vars": {},
-        "cond": {},
-        "out": {
-          "OUTPUT": "Buzz"
-        },
-        "changed": [],
-        "msg": "5 is divisible by 5 \u2014 print Buzz",
-        "done": false
-      },
-      {
-        "line": 0,
-        "vars": {
-          "i": 6
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "i"
-        ],
-        "msg": "i=6",
-        "done": false
-      },
-      {
-        "line": 4,
-        "vars": {},
-        "cond": {},
-        "out": {
-          "OUTPUT": "Fizz"
-        },
-        "changed": [],
-        "msg": "6 is divisible by 3 \u2014 print Fizz",
-        "done": false
-      },
-      {
-        "line": 0,
-        "vars": {
-          "i": 7
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "i"
-        ],
-        "msg": "i=7",
-        "done": false
-      },
-      {
-        "line": 8,
-        "vars": {},
-        "cond": {},
-        "out": {
-          "OUTPUT": 7
-        },
-        "changed": [],
-        "msg": "not divisible by 3 or 5 \u2014 print 7",
-        "done": false
-      },
-      {
-        "line": 0,
-        "vars": {
-          "i": 8
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "i"
-        ],
-        "msg": "i=8",
-        "done": false
-      },
-      {
-        "line": 8,
-        "vars": {},
-        "cond": {},
-        "out": {
-          "OUTPUT": 8
-        },
-        "changed": [],
-        "msg": "not divisible by 3 or 5 \u2014 print 8",
-        "done": false
-      },
-      {
-        "line": 0,
-        "vars": {
-          "i": 9
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "i"
-        ],
-        "msg": "i=9",
-        "done": false
-      },
-      {
-        "line": 4,
-        "vars": {},
-        "cond": {},
-        "out": {
-          "OUTPUT": "Fizz"
-        },
-        "changed": [],
-        "msg": "9 is divisible by 3 \u2014 print Fizz",
-        "done": false
-      },
-      {
-        "line": 0,
-        "vars": {
-          "i": 10
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "i"
-        ],
-        "msg": "i=10",
-        "done": false
-      },
-      {
-        "line": 6,
-        "vars": {},
-        "cond": {},
-        "out": {
-          "OUTPUT": "Buzz"
-        },
-        "changed": [],
-        "msg": "10 is divisible by 5 \u2014 print Buzz, loop ends",
-        "done": true
-      }
-    ]
-  },
   "Sum of a list": {
     "title": "Sum of a List",
     "badge": "J277 2.1 Algorithms",
@@ -2426,7 +1819,7 @@
     "code": [
       "a = 0",
       "b = 1",
-      "for i = 1 to 5:",
+      "for i = 1 to 3:",
       "    print(a)",
       "    temp = a + b",
       "    a = b",
@@ -2434,7 +1827,6 @@
     ],
     "cols": [
       "line",
-      "i",
       "a",
       "b",
       "temp",
@@ -2465,19 +1857,6 @@
           "b"
         ],
         "msg": "b starts at 1",
-        "done": false
-      },
-      {
-        "line": 2,
-        "vars": {
-          "i": 1
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "i"
-        ],
-        "msg": "i=1",
         "done": false
       },
       {
@@ -2531,19 +1910,6 @@
         "done": false
       },
       {
-        "line": 2,
-        "vars": {
-          "i": 2
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "i"
-        ],
-        "msg": "i=2",
-        "done": false
-      },
-      {
         "line": 3,
         "vars": {},
         "cond": {},
@@ -2594,19 +1960,6 @@
         "done": false
       },
       {
-        "line": 2,
-        "vars": {
-          "i": 3
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "i"
-        ],
-        "msg": "i=3",
-        "done": false
-      },
-      {
         "line": 3,
         "vars": {},
         "cond": {},
@@ -2653,11 +2006,105 @@
         "changed": [
           "b"
         ],
-        "msg": "b becomes temp (3)",
+        "msg": "b becomes temp (3) \u2014 loop ends after this",
+        "done": true
+      }
+    ]
+  },
+  "FizzBuzz (1 to 8)": {
+    "title": "FizzBuzz",
+    "badge": "J277 2.1 Algorithms",
+    "code": [
+      "for i = 1 to 8:",
+      "    if i % 15 == 0:",
+      "        print(\"FizzBuzz\")",
+      "    elif i % 3 == 0:",
+      "        print(\"Fizz\")",
+      "    elif i % 5 == 0:",
+      "        print(\"Buzz\")",
+      "    else:",
+      "        print(i)"
+    ],
+    "cols": [
+      "line",
+      "i",
+      "OUTPUT"
+    ],
+    "steps": [
+      {
+        "line": 0,
+        "vars": {
+          "i": 1
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "i"
+        ],
+        "msg": "i=1",
         "done": false
       },
       {
-        "line": 2,
+        "line": 8,
+        "vars": {},
+        "cond": {},
+        "out": {
+          "OUTPUT": 1
+        },
+        "changed": [],
+        "msg": "print 1",
+        "done": false
+      },
+      {
+        "line": 0,
+        "vars": {
+          "i": 2
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "i"
+        ],
+        "msg": "i=2",
+        "done": false
+      },
+      {
+        "line": 8,
+        "vars": {},
+        "cond": {},
+        "out": {
+          "OUTPUT": 2
+        },
+        "changed": [],
+        "msg": "print 2",
+        "done": false
+      },
+      {
+        "line": 0,
+        "vars": {
+          "i": 3
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "i"
+        ],
+        "msg": "i=3",
+        "done": false
+      },
+      {
+        "line": 4,
+        "vars": {},
+        "cond": {},
+        "out": {
+          "OUTPUT": "Fizz"
+        },
+        "changed": [],
+        "msg": "print Fizz",
+        "done": false
+      },
+      {
+        "line": 0,
         "vars": {
           "i": 4
         },
@@ -2670,57 +2117,18 @@
         "done": false
       },
       {
-        "line": 3,
+        "line": 8,
         "vars": {},
         "cond": {},
         "out": {
-          "OUTPUT": 2
+          "OUTPUT": 4
         },
         "changed": [],
-        "msg": "print a (2)",
+        "msg": "print 4",
         "done": false
       },
       {
-        "line": 4,
-        "vars": {
-          "temp": 5
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "temp"
-        ],
-        "msg": "temp = 2 + 3 = 5",
-        "done": false
-      },
-      {
-        "line": 5,
-        "vars": {
-          "a": 3
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "a"
-        ],
-        "msg": "a becomes b (3)",
-        "done": false
-      },
-      {
-        "line": 6,
-        "vars": {
-          "b": 5
-        },
-        "cond": {},
-        "out": {},
-        "changed": [
-          "b"
-        ],
-        "msg": "b becomes temp (5)",
-        "done": false
-      },
-      {
-        "line": 2,
+        "line": 0,
         "vars": {
           "i": 5
         },
@@ -2733,14 +2141,86 @@
         "done": false
       },
       {
-        "line": 3,
+        "line": 6,
         "vars": {},
         "cond": {},
         "out": {
-          "OUTPUT": 3
+          "OUTPUT": "Buzz"
         },
         "changed": [],
-        "msg": "print a (3) \u2014 loop ends after this",
+        "msg": "print Buzz",
+        "done": false
+      },
+      {
+        "line": 0,
+        "vars": {
+          "i": 6
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "i"
+        ],
+        "msg": "i=6",
+        "done": false
+      },
+      {
+        "line": 4,
+        "vars": {},
+        "cond": {},
+        "out": {
+          "OUTPUT": "Fizz"
+        },
+        "changed": [],
+        "msg": "print Fizz",
+        "done": false
+      },
+      {
+        "line": 0,
+        "vars": {
+          "i": 7
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "i"
+        ],
+        "msg": "i=7",
+        "done": false
+      },
+      {
+        "line": 8,
+        "vars": {},
+        "cond": {},
+        "out": {
+          "OUTPUT": 7
+        },
+        "changed": [],
+        "msg": "print 7",
+        "done": false
+      },
+      {
+        "line": 0,
+        "vars": {
+          "i": 8
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "i"
+        ],
+        "msg": "i=8",
+        "done": false
+      },
+      {
+        "line": 8,
+        "vars": {},
+        "cond": {},
+        "out": {
+          "OUTPUT": 8
+        },
+        "changed": [],
+        "msg": "print 8 \u2014 loop ends",
         "done": true
       }
     ]
