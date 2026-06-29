@@ -784,7 +784,8 @@
       "    if numbers[idx] == target:",
       "        print(\"Found at index\", idx)",
       "        found = True",
-      "    idx = idx + 1"
+      "    else:",
+      "        idx = idx + 1"
     ],
     "cols": [
       "line",
@@ -1510,7 +1511,7 @@
         "changed": [
           "i"
         ],
-        "msg": "i=1: start sorting from index 1",
+        "msg": "i=1: next item to sort",
         "done": false
       },
       {
@@ -1657,8 +1658,10 @@
         },
         "cond": {},
         "out": {},
-        "changed": [],
-        "msg": "insert key (5) at position 2 \u2014 no change",
+        "changed": [
+          "numbers"
+        ],
+        "msg": "insert key (5) at position 2",
         "done": false
       },
       {
@@ -1738,6 +1741,91 @@
         "done": false
       },
       {
+        "line": 4,
+        "vars": {},
+        "cond": {
+          "j>=0 and numbers[j]>key": "True"
+        },
+        "out": {},
+        "changed": [],
+        "msg": "numbers[1]=4 > 1, shift needed",
+        "done": false
+      },
+      {
+        "line": 5,
+        "vars": {
+          "numbers": "[2, 4, 4, 5]"
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "numbers"
+        ],
+        "msg": "shift 4 one place right",
+        "done": false
+      },
+      {
+        "line": 6,
+        "vars": {
+          "j": 0
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "j"
+        ],
+        "msg": "j decreases to 0",
+        "done": false
+      },
+      {
+        "line": 4,
+        "vars": {},
+        "cond": {
+          "j>=0 and numbers[j]>key": "True"
+        },
+        "out": {},
+        "changed": [],
+        "msg": "numbers[0]=2 > 1, shift needed",
+        "done": false
+      },
+      {
+        "line": 5,
+        "vars": {
+          "numbers": "[2, 2, 4, 5]"
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "numbers"
+        ],
+        "msg": "shift 2 one place right",
+        "done": false
+      },
+      {
+        "line": 6,
+        "vars": {
+          "j": -1
+        },
+        "cond": {},
+        "out": {},
+        "changed": [
+          "j"
+        ],
+        "msg": "j decreases to -1",
+        "done": false
+      },
+      {
+        "line": 4,
+        "vars": {},
+        "cond": {
+          "j>=0 and numbers[j]>key": "False"
+        },
+        "out": {},
+        "changed": [],
+        "msg": "j=-1, stop shifting",
+        "done": false
+      },
+      {
         "line": 7,
         "vars": {
           "numbers": "[1, 2, 4, 5]"
@@ -1804,7 +1892,7 @@
         "line": 3,
         "vars": {},
         "cond": {
-          "word[i] in \"aeiou\"": "True"
+          "word[i] in \"aeiou\"": "False"
         },
         "out": {},
         "changed": [],
