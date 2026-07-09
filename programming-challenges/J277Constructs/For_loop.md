@@ -1,3 +1,16 @@
+# For Loop
+
+**Description:** A for loop repeats a block of code a fixed, known number of times, often using range() to control how many times it runs. It suits tasks where the number of repetitions is known in advance.
+
+## Example
+```python
+total = 0
+for i in range(1, 6):   # runs 5 times: 1,2,3,4,5
+    total = total + i
+    print("Added", i)
+print("Total:", total)
+```
+
 # For Loop — Challenges
 
 ## Challenge 1
