@@ -2,7 +2,7 @@
 
 **Description:** Passing is the act of sending an argument into a subroutine when it is called, so the value becomes available inside as the matching parameter. Values can be passed directly, or via a variable.
 
-## Example
+## Example 1
 ```python
 def showScore(points):   # points receives the passed value
     print("Score:", points)
@@ -12,6 +12,24 @@ showScore(total)            # passing the variable's value
 showScore(100)                # passing a value directly
 ```
 
+## Example 2
+```python
+def shout(word):
+    print(word.upper())
+
+shout(input("Type a word: "))   # input() passed straight in
+```
+
+## Example 3
+```python
+def double(n):
+    return n * 2
+
+def displayResult(value):
+    print("Result:", value)
+
+displayResult(double(6))        # the returned value is passed on
+```
 # Passing — Challenges
 
 ## Challenge 1
