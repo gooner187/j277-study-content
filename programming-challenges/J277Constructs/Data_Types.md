@@ -2,7 +2,7 @@
 
 **Description:** A data type defines what kind of value a variable holds - integer, real (float), string or Boolean - and what can be done with it. Using the correct type matters, since mixing types incorrectly causes errors.
 
-## Example
+## Example 1
 ```python
 name = "Zara"      # str
 age = 15            # int
@@ -11,6 +11,21 @@ isMember = True      # bool
 print(type(age))
 ```
 
+## Example 2
+```python
+a = 7          # int
+b = 2.5        # float
+c = a + b      # adding int + float gives float
+print(c, type(c))
+```
+
+## Example 3
+```python
+isRaining = False        # bool
+temperature = 14         # int
+description = "cloudy"   # str
+print(isRaining, temperature, description)
+```
 # Data Types — Challenges
 
 ## Challenge 1
