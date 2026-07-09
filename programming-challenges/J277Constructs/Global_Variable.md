@@ -2,7 +2,7 @@
 
 **Description:** A global variable is declared outside all functions and can be read anywhere in the program, but a function must use the global keyword before it can change its value. Overusing them makes code harder to trace.
 
-## Example
+## Example 1
 ```python
 score = 0            # global variable
 
@@ -14,6 +14,30 @@ addPoint()
 print(score)          # 1
 ```
 
+## Example 2
+```python
+highScore = 100          # global variable
+
+def showHighScore():
+    print("High score:", highScore)   # reading only - no global needed
+
+showHighScore()
+```
+
+## Example 3
+```python
+lives = 3                # global, shared by both functions
+
+def loseLife():
+    global lives
+    lives = lives - 1
+
+def showLives():
+    print("Lives:", lives)
+
+loseLife()
+showLives()
+```
 # Global Variable — Challenges
 
 ## Challenge 1
