@@ -1,3 +1,16 @@
+# Function
+
+**Description:** A function is a named, reusable block of code that carries out a task and sends a value back using the return keyword. Unlike a procedure, its result can be stored in a variable or used in an expression.
+
+## Example
+```python
+def square(number):   # a function - has return
+    return number * number
+
+result = square(6)      # store the returned value
+print(result)
+```
+
 # Function — Challenges
 
 ## Challenge 1
