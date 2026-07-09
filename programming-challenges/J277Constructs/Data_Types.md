@@ -1,3 +1,16 @@
+# Data Types
+
+**Description:** A data type defines what kind of value a variable holds - integer, real (float), string or Boolean - and what can be done with it. Using the correct type matters, since mixing types incorrectly causes errors.
+
+## Example
+```python
+name = "Zara"      # str
+age = 15            # int
+height = 1.62        # float (real)
+isMember = True      # bool
+print(type(age))
+```
+
 # Data Types — Challenges
 
 ## Challenge 1
