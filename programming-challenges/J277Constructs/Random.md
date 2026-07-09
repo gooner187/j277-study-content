@@ -1,3 +1,18 @@
+# Random
+
+**Description:** The random module lets a program generate unpredictable values, such as a random integer between two numbers using randint() - useful for games, quizzes and simulations. It must be imported before use.
+
+## Example
+```python
+import random                       # must import first
+
+dice = random.randint(1, 6)        # random int 1 to 6
+print("You rolled:", dice)
+
+choice = random.choice(["Y", "N"])   # random pick from list
+print(choice)
+```
+
 # Random — Challenges
 
 ## Challenge 1
