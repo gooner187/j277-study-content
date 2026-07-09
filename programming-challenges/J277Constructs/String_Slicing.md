@@ -1,3 +1,15 @@
+# String Slicing
+
+**Description:** String slicing extracts part of a string using index positions in the form string[start:end], where the end index is not included. It is useful for tasks like getting initials or a file extension.
+
+## Example
+```python
+word = "Computing"
+print(word[0:4])   # "Comp" - indices 0 to 3
+print(word[-3:])    # "ing" - last 3 characters
+print(word[0])       # "C" - single character
+```
+
 # String Slicing — Challenges
 
 ## Challenge 1
