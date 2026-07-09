@@ -1,3 +1,16 @@
+# Procedure
+
+**Description:** A procedure is a named, reusable block of code that performs a task but does not send a value back to where it was called. In J277 it is written with def like a function, but has no return statement.
+
+## Example
+```python
+def greetUser(name):   # a procedure - no return
+    print("Hello,", name)
+    print("Welcome!")
+
+greetUser("Priya")       # calling the procedure
+```
+
 # Procedure — Challenges
 
 ## Challenge 1
