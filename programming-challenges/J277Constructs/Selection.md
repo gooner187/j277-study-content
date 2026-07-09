@@ -1,3 +1,19 @@
+# Selection
+
+**Description:** Selection uses if, elif and else to make a program choose between different paths depending on whether a condition is True or False. It lets a program respond differently to different inputs.
+
+## Example
+```python
+mark = 72
+if mark >= 70:
+    grade = "A"
+elif mark >= 50:
+    grade = "B"
+else:
+    grade = "C"
+print(grade)
+```
+
 # Selection — Challenges
 
 ## Challenge 1
