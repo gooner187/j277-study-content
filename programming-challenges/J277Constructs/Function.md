@@ -2,7 +2,7 @@
 
 **Description:** A function is a named, reusable block of code that carries out a task and sends a value back using the return keyword. Unlike a procedure, its result can be stored in a variable or used in an expression.
 
-## Example
+## Example 1
 ```python
 def square(number):   # a function - has return
     return number * number
@@ -11,6 +11,23 @@ result = square(6)      # store the returned value
 print(result)
 ```
 
+## Example 2
+```python
+def isEven(n):              # returns a Boolean
+    return n % 2 == 0
+
+print(isEven(4))
+print(isEven(7))
+```
+
+## Example 3
+```python
+def addTax(price):
+    return price * 1.2      # returns price plus 20% tax
+
+finalPrice = addTax(10)
+print(finalPrice)
+```
 # Function — Challenges
 
 ## Challenge 1
