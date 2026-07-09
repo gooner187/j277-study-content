@@ -1,3 +1,16 @@
+# Concatenation
+
+**Description:** Concatenation joins two or more strings together, usually with the + operator, to build a single piece of text for output. Non-string values must be cast with str() first, or Python raises a TypeError.
+
+## Example
+```python
+first = "Sam"
+last = "Jones"
+fullName = first + " " + last   # joining strings
+score = 42
+print(fullName + " scored " + str(score))
+```
+
 # Concatenation — Challenges
 
 ## Challenge 1
