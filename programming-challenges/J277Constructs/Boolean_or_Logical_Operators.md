@@ -2,7 +2,7 @@
 
 **Description:** Logical operators - and, or and not - combine or reverse Boolean conditions to build more complex logic. 'and' needs both sides True, 'or' needs only one side True, and 'not' reverses a Boolean value.
 
-## Example
+## Example 1
 ```python
 age = 16
 hasTicket = True
@@ -12,6 +12,21 @@ if not hasTicket:               # reverses the Boolean
     print("Buy a ticket")
 ```
 
+## Example 2
+```python
+hasKey = False
+hasCode = True
+if hasKey or hasCode:      # only one needs to be True
+    print("Door unlocked")
+```
+
+## Example 3
+```python
+age = 20
+isMember = True
+if age >= 18 and (isMember or age >= 21):
+    print("Entry allowed")
+```
 # Boolean / Logical Operators — Challenges
 
 ## Challenge 1
