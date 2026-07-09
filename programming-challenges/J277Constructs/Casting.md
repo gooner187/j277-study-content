@@ -2,7 +2,7 @@
 
 **Description:** Casting converts a value from one data type to another, such as turning text into an integer with int() or a number into text with str(). It matters because input() always returns a string, even for numbers.
 
-## Example
+## Example 1
 ```python
 age = input("Enter your age: ")   # input() always gives a str
 age = int(age)                       # cast str to int
@@ -10,6 +10,18 @@ nextYear = age + 1
 print("Next year you'll be", nextYear)
 ```
 
+## Example 2
+```python
+score = 95
+print("Your score is " + str(score))   # cast int to str to join
+```
+
+## Example 3
+```python
+value = input("Enter a decimal number: ")
+value = float(value)          # cast str to float
+print(value * 2)
+```
 # Casting — Challenges
 
 ## Challenge 1
