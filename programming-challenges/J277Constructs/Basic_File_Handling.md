@@ -2,7 +2,7 @@
 
 **Description:** File handling lets a program open a file to read from or write to it, then close it to save changes and free it up safely. Python typically uses open(), .read() or .write(), and .close().
 
-## Example
+## Example 1
 ```python
 file = open("scores.txt", "w")   # open for writing
 file.write("Level 1: 42")
@@ -13,6 +13,32 @@ print(file.read())
 file.close()
 ```
 
+## Example 2
+```python
+file = open("log.txt", "w")        # start fresh
+file.write("Log started\n")
+file.close()
+
+file = open("log.txt", "a")        # "a" adds on, keeps old content
+file.write("New entry added\n")
+file.close()
+
+file = open("log.txt", "r")
+print(file.read())                  # shows both lines are there
+file.close()
+```
+
+## Example 3
+```python
+file = open("diary.txt", "w")       # create it first, self-contained
+file.write("Day 1: sunny\nDay 2: rain\n")
+file.close()
+
+file = open("diary.txt", "r")
+line = file.readline()               # reads just the first line
+print(line)
+file.close()
+```
 # Basic File Handling — Challenges
 
 ## Challenge 1
