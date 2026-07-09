@@ -1,3 +1,16 @@
+# While Loop
+
+**Description:** A while loop repeats a block of code for as long as a condition stays True, used when the number of repetitions is not known in advance. It must eventually make the condition False, or it never stops.
+
+## Example
+```python
+count = 0
+while count < 5:      # repeats while condition is True
+    print("Count is", count)
+    count = count + 1   # must change, or infinite loop!
+print("Finished")
+```
+
 # While Loop — Challenges
 
 ## Challenge 1
