@@ -2,7 +2,7 @@
 
 **Description:** A variable is a named location in memory that stores a value which can change while the program runs. Every algorithm in J277 relies on variables to store, update and reuse data as a program executes.
 
-## Example
+## Example 1
 ```python
 name = "Ada"          # store some text
 age = 16              # store a number
@@ -10,6 +10,21 @@ age = age + 1         # update the value
 print(name, "is", age)
 ```
 
+## Example 2
+```python
+temperature = 18          # store today's temperature
+print("It is", temperature, "degrees")
+temperature = 21          # the variable's value changes
+print("Now it is", temperature, "degrees")
+```
+
+## Example 3
+```python
+score = 0                 # a variable used as a running total
+score = score + 10        # variables can be updated using their own value
+score = score + 5
+print("Final score:", score)
+```
 # Variable — Challenges
 
 ## Challenge 1
