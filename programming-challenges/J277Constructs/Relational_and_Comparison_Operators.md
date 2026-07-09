@@ -2,7 +2,7 @@
 
 **Description:** Relational operators compare two values and produce a Boolean result of True or False, using symbols like ==, !=, >, < , >= and <=. They are the building blocks of every condition used in selection and loops.
 
-## Example
+## Example 1
 ```python
 age = 15
 print(age == 15)   # equal to -> True
@@ -10,6 +10,19 @@ print(age != 16)   # not equal to -> True
 print(age >= 18)   # greater or equal -> False
 ```
 
+## Example 2
+```python
+print("apple" == "apple")    # True
+print("apple" == "Apple")    # False - case sensitive
+```
+
+## Example 3
+```python
+mark = 45
+print(mark < 50)     # used directly in a condition
+if mark < 50:
+    print("Below pass mark")
+```
 # Relational / Comparison Operators — Challenges
 
 ## Challenge 1
