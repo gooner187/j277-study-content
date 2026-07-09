@@ -1,3 +1,18 @@
+# Local Variable
+
+**Description:** A local variable is created inside a function or procedure and only exists while that subroutine is running - it cannot be accessed from outside it. This stops different parts of a program interfering.
+
+## Example
+```python
+def calculateArea():
+    length = 5   # local variable
+    width = 3     # local variable
+    return length * width
+
+print(calculateArea())
+# length and width don't exist out here
+```
+
 # Local Variable — Challenges
 
 ## Challenge 1
