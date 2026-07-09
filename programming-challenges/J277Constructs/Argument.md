@@ -2,7 +2,7 @@
 
 **Description:** An argument is the actual value sent into a function or procedure when it is called, matching the parameter in the definition. The parameter is the placeholder name; the argument is the real value supplied.
 
-## Example
+## Example 1
 ```python
 def convertToPounds(pence):
     return pence / 100
@@ -11,6 +11,23 @@ print(convertToPounds(250))   # 250 is the argument
 print(convertToPounds(99))     # 99 is a different argument
 ```
 
+## Example 2
+```python
+def double(n):
+    return n * 2
+
+myNumber = 9
+print(double(myNumber))     # myNumber's value is the argument
+```
+
+## Example 3
+```python
+def area(length, width):
+    return length * width
+
+print(area(4, 5))            # 4 and 5 are two arguments
+print(area(10, 2))           # different arguments, different result
+```
 # Argument — Challenges
 
 ## Challenge 1
