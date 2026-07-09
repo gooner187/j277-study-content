@@ -2,7 +2,7 @@
 
 **Description:** A local variable is created inside a function or procedure and only exists while that subroutine is running - it cannot be accessed from outside it. This stops different parts of a program interfering.
 
-## Example
+## Example 1
 ```python
 def calculateArea():
     length = 5   # local variable
@@ -13,6 +13,29 @@ print(calculateArea())
 # length and width don't exist out here
 ```
 
+## Example 2
+```python
+def makeDrink():
+    drink = "tea"       # local to makeDrink
+    print(drink)
+
+def makeSnack():
+    drink = "juice"     # a completely separate local variable
+    print(drink)
+
+makeDrink()
+makeSnack()
+```
+
+## Example 3
+```python
+def setPassword():
+    password = "kebab"   # local variable
+    print("Password set")
+
+setPassword()
+# password does not exist here - it only existed inside the function
+```
 # Local Variable — Challenges
 
 ## Challenge 1
