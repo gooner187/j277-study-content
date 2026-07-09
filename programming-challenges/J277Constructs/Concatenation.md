@@ -2,7 +2,7 @@
 
 **Description:** Concatenation joins two or more strings together, usually with the + operator, to build a single piece of text for output. Non-string values must be cast with str() first, or Python raises a TypeError.
 
-## Example
+## Example 1
 ```python
 first = "Sam"
 last = "Jones"
@@ -11,6 +11,20 @@ score = 42
 print(fullName + " scored " + str(score))
 ```
 
+## Example 2
+```python
+greeting = "Hello"
+place = "world"
+message = greeting + ", " + place + "!"
+print(message)
+```
+
+## Example 3
+```python
+item = "apple"
+price = 0.5
+print("Price of " + item + ": £" + str(price))
+```
 # Concatenation — Challenges
 
 ## Challenge 1
