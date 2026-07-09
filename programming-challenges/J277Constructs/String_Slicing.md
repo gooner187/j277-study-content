@@ -2,7 +2,7 @@
 
 **Description:** String slicing extracts part of a string using index positions in the form string[start:end], where the end index is not included. It is useful for tasks like getting initials or a file extension.
 
-## Example
+## Example 1
 ```python
 word = "Computing"
 print(word[0:4])   # "Comp" - indices 0 to 3
@@ -10,6 +10,20 @@ print(word[-3:])    # "ing" - last 3 characters
 print(word[0])       # "C" - single character
 ```
 
+## Example 2
+```python
+name = "Ada Lovelace"
+initial = name[0]          # first letter
+surname = name[4:]         # everything from index 4 onward
+print(initial, surname)
+```
+
+## Example 3
+```python
+filename = "photo.jpg"
+extension = filename[-3:]     # last 3 characters
+print("File type:", extension)
+```
 # String Slicing — Challenges
 
 ## Challenge 1
