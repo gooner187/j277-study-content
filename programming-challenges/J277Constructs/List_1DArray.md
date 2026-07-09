@@ -1,3 +1,15 @@
+# List
+
+**Description:** A 1D array (list) stores multiple related values together under one variable name, accessed using an index starting at 0. It lets a program handle many pieces of data without a separate variable for each one.
+
+## Example
+```python
+scores = [45, 78, 62, 90]   # a 1D array of 4 values
+print(scores[0])            # first item, index 0
+scores[1] = 80               # update an item
+print(scores)
+```
+
 # List / 1D Array — Challenges
 
 ## Challenge 1
