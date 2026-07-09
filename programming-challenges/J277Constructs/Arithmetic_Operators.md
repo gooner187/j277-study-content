@@ -2,7 +2,7 @@
 
 **Description:** Arithmetic operators perform maths on numeric values: + - * / for the basics, // for integer division, % for remainder (modulus), and ** for powers. They are used constantly for totals, averages and scores.
 
-## Example
+## Example 1
 ```python
 a = 17
 b = 5
@@ -11,6 +11,18 @@ print(a // b)   # integer division -> 3
 print(a % b)    # remainder -> 2
 ```
 
+## Example 2
+```python
+base = 2
+power = 8
+print(base ** power)   # 2 to the power of 8
+```
+
+## Example 3
+```python
+print(2 + 3 * 4)          # BODMAS: * before + -> 14
+print((2 + 3) * 4)        # brackets change the order -> 20
+```
 # Arithmetic Operators — Challenges
 
 ## Challenge 1
