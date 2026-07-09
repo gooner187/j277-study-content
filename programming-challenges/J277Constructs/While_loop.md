@@ -2,7 +2,7 @@
 
 **Description:** A while loop repeats a block of code for as long as a condition stays True, used when the number of repetitions is not known in advance. It must eventually make the condition False, or it never stops.
 
-## Example
+## Example 1
 ```python
 count = 0
 while count < 5:      # repeats while condition is True
@@ -11,6 +11,22 @@ while count < 5:      # repeats while condition is True
 print("Finished")
 ```
 
+## Example 2
+```python
+password = ""
+while password != "kebab":
+    password = input("Enter password: ")
+print("Access granted")
+```
+
+## Example 3
+```python
+countdown = 5
+while countdown > 0:
+    print(countdown)
+    countdown = countdown - 1
+print("Go!")
+```
 # While Loop — Challenges
 
 ## Challenge 1
