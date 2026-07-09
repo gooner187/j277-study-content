@@ -1,3 +1,16 @@
+# Argument
+
+**Description:** An argument is the actual value sent into a function or procedure when it is called, matching the parameter in the definition. The parameter is the placeholder name; the argument is the real value supplied.
+
+## Example
+```python
+def convertToPounds(pence):
+    return pence / 100
+
+print(convertToPounds(250))   # 250 is the argument
+print(convertToPounds(99))     # 99 is a different argument
+```
+
 # Argument — Challenges
 
 ## Challenge 1
