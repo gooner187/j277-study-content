@@ -1,3 +1,16 @@
+# Returning
+
+**Description:** Returning is when a function sends a value back to the line that called it, using the return keyword, ending the function at that point. The returned value can then be stored, printed or reused.
+
+## Example
+```python
+def doubleIt(n):
+    return n * 2      # sends the result back
+
+answer = doubleIt(21)   # store what is returned
+print(answer)
+```
+
 # Returning — Challenges
 
 ## Challenge 1
