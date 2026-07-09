@@ -2,7 +2,7 @@
 
 **Description:** A parameter is the name given to a piece of data inside a function or procedure's brackets when it is defined - a placeholder for the value it will receive. It only describes what the subroutine expects.
 
-## Example
+## Example 1
 ```python
 def convertToPounds(pence):   # 'pence' is the parameter
     pounds = pence / 100
@@ -11,6 +11,24 @@ def convertToPounds(pence):   # 'pence' is the parameter
 print(convertToPounds(250))
 ```
 
+## Example 2
+```python
+def introduce(name, age):    # two parameters
+    print(name, "is", age, "years old")
+
+introduce("Sam", 15)
+```
+
+## Example 3
+```python
+def checkAge(age):          # 'age' is the parameter
+    if age >= 18:
+        print("Adult")
+    else:
+        print("Minor")
+
+checkAge(16)
+```
 # Parameter — Challenges
 
 ## Challenge 1
