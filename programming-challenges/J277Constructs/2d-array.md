@@ -2,7 +2,7 @@
 
 **Description:** A 2D array is a list of lists, used to store data in a grid of rows and columns, such as a seating plan or a game board. Each item is accessed using two indices - one for the row, one for the column.
 
-## Example
+## Example 1
 ```python
 grid = [[1, 2, 3], [4, 5, 6]]   # 2 rows, 3 columns
 print(grid[0][1])                # row 0, column 1 -> 2
@@ -10,6 +10,19 @@ grid[1][2] = 99                   # update row 1, column 2
 print(grid)
 ```
 
+## Example 2
+```python
+seats = [["Ada", "Sam"], ["Raj", "Amy"]]   # 2 rows, 2 seats each
+print(seats[0][0])    # Ada
+print(seats[1][1])    # Amy
+```
+
+## Example 3
+```python
+scores = [["Ada", 85], ["Sam", 62]]
+for row in scores:                # loop through each row
+    print(row[0], "scored", row[1])
+```
 # 2D Array — Challenges
 
 ## Challenge 1
