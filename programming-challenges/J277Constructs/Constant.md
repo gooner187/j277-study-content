@@ -1,3 +1,15 @@
+# Constant
+
+**Description:** A constant is a named value that is set once and never changes while the program runs, unlike a variable. Using constants for fixed values like a VAT rate makes code easier to read and update in one place.
+
+## Example
+```python
+VAT_RATE = 0.20        # a constant - never changes
+price = 50
+total = price + (price * VAT_RATE)
+print("Total:", total)
+```
+
 # Constant — Challenges
 
 ## Challenge 1
