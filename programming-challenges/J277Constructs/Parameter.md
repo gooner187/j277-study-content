@@ -1,3 +1,16 @@
+# Parameter
+
+**Description:** A parameter is the name given to a piece of data inside a function or procedure's brackets when it is defined - a placeholder for the value it will receive. It only describes what the subroutine expects.
+
+## Example
+```python
+def convertToPounds(pence):   # 'pence' is the parameter
+    pounds = pence / 100
+    return pounds
+
+print(convertToPounds(250))
+```
+
 # Parameter — Challenges
 
 ## Challenge 1
