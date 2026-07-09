@@ -1,3 +1,16 @@
+# Arithmetic Operators
+
+**Description:** Arithmetic operators perform maths on numeric values: + - * / for the basics, // for integer division, % for remainder (modulus), and ** for powers. They are used constantly for totals, averages and scores.
+
+## Example
+```python
+a = 17
+b = 5
+print(a + b, a - b, a * b)
+print(a // b)   # integer division -> 3
+print(a % b)    # remainder -> 2
+```
+
 # Arithmetic Operators — Challenges
 
 ## Challenge 1
