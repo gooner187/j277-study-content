@@ -1,0 +1,453 @@
+
+{
+  "topic": "1.1.1",
+  "spec_ref": "J277 1.1.1 Architecture of the CPU",
+  "mcqs": {
+    "1.1-01": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What is the key feature of the Von Neumann architecture?",
+        "options": [
+          "Both programs and data are held in the same memory",
+          "Programs are set using switches",
+          "Data and programs are stored in separate memories",
+          "There is no memory at all"
+        ],
+        "correct": 0
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "What is the key feature of the Von Neumann architecture called? (type in 3 words)",
+        "acceptable_answers": [
+          "stored program concept"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "Which architecture introduced the idea of holding both programs and data together in memory?",
+        "options": [
+          "Harvard architecture",
+          "Von Neumann architecture",
+          "RISC architecture",
+          "Client-server architecture"
+        ],
+        "correct": 1
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "Which architecture introduced the stored program concept? (type in 2 words)",
+        "acceptable_answers": [
+          "von neumann"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "In the Von Neumann model, which component sits directly between Cache and Main Memory in terms of connection?",
+        "options": [
+          "Input devices",
+          "Output devices",
+          "The Processor connects to both directly; Cache sits between CPU and Main Memory",
+          "Storage"
+        ],
+        "correct": 2
+      }
+    ],
+    "1.1-02": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "Which of these is NOT one of the Control Unit's four functions?",
+        "options": [
+          "Decoding instructions",
+          "Regulating processor timing",
+          "Performing arithmetic calculations",
+          "Sending/receiving control signals"
+        ],
+        "correct": 2
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "What does the Control Unit use to regulate processor timing? (type in one word)",
+        "acceptable_answers": [
+          "clock"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "Which CPU component decodes instructions and regulates processor timing using the system clock?",
+        "options": [
+          "Arithmetic Logic Unit",
+          "Control Unit",
+          "Memory Address Register",
+          "Accumulator"
+        ],
+        "correct": 1
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "Which CPU component decodes instructions? (type in 2 words)",
+        "acceptable_answers": [
+          "control unit"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What does the Control Unit use to regulate processor timing?",
+        "options": [
+          "The accumulator",
+          "Regular pulses from the system clock",
+          "The memory address register",
+          "Cache memory"
+        ],
+        "correct": 1
+      }
+    ],
+    "1.1-03": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "Which of these is one of the ALU's three types of operation?",
+        "options": [
+          "Decoding",
+          "Fetching",
+          "Shift operations",
+          "Storing addresses"
+        ],
+        "correct": 2
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "AND, OR and NOT are examples of which type of ALU operation? (type in one word)",
+        "acceptable_answers": [
+          "logical",
+          "logic"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "Which CPU component carries out arithmetic, logical and shift operations?",
+        "options": [
+          "Control Unit",
+          "Arithmetic Logic Unit",
+          "Memory Data Register",
+          "Program Counter"
+        ],
+        "correct": 1
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "Which CPU component carries out arithmetic, logical and shift operations? (type in 3 words)",
+        "acceptable_answers": [
+          "arithmetic logic unit"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "AND, OR and NOT are examples of which type of ALU operation?",
+        "options": [
+          "Arithmetic operations",
+          "Shift operations",
+          "Logical operations",
+          "Decode operations"
+        ],
+        "correct": 2
+      }
+    ],
+    "1.1-03b": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What is the correct order of the three stages of the FDE cycle?",
+        "options": [
+          "Decode, Fetch, Execute",
+          "Fetch, Decode, Execute",
+          "Execute, Fetch, Decode",
+          "Fetch, Execute, Decode"
+        ],
+        "correct": 1
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "Which CPU component carries out the Decode stage? (type in 2 words)",
+        "acceptable_answers": [
+          "control unit"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "The address of the next instruction is loaded into the Memory Address Register \u2014 from which register does this value come?",
+        "options": [
+          "Accumulator",
+          "Memory Data Register",
+          "Program Counter",
+          "None, the MAR is set directly"
+        ],
+        "correct": 2
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "Where are ALU results stored during the Execute stage? (type in one word)",
+        "acceptable_answers": [
+          "accumulator"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What happens to the Program Counter during the Fetch stage?",
+        "options": [
+          "It is deleted",
+          "It increments to point to the next instruction",
+          "It moves into the ALU",
+          "It stores the fetched data"
+        ],
+        "correct": 1
+      }
+    ],
+    "1.1-04a": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What does the MAR store?",
+        "options": [
+          "An address",
+          "An instruction",
+          "A CPU",
+          "A clock signal"
+        ],
+        "correct": 0
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "What does the MAR store? (type in one word)",
+        "acceptable_answers": [
+          "address"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "Which register stores the address of the instruction or data to be fetched?",
+        "options": [
+          "Memory Data Register",
+          "Memory Address Register",
+          "Program Counter",
+          "Accumulator"
+        ],
+        "correct": 1
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "Which register stores an address? (type in 3 words) (not abbreviated answers)",
+        "acceptable_answers": [
+          "memory address register"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "MAR stands for which of these?",
+        "options": [
+          "Memory Address Register",
+          "Main Address Register",
+          "Memory Allocation Register",
+          "Multiple Address Register"
+        ],
+        "correct": 0
+      }
+    ],
+    "1.1-04b": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What does the MDR store?",
+        "options": [
+          "The data or instruction itself",
+          "An address",
+          "A clock signal",
+          "A core count"
+        ],
+        "correct": 0
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "What does the MDR store? (type in one word)",
+        "acceptable_answers": [
+          "data"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "Which register temporarily holds data or an instruction once it has been fetched from memory?",
+        "options": [
+          "Memory Address Register",
+          "Memory Data Register",
+          "Program Counter",
+          "Accumulator"
+        ],
+        "correct": 1
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "Which register stores fetched data? (type in 3 words) (not abbreviated answers)",
+        "acceptable_answers": [
+          "memory data register"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "MDR stands for which of these?",
+        "options": [
+          "Memory Direct Register",
+          "Main Data Register",
+          "Memory Data Register",
+          "Memory Decode Register"
+        ],
+        "correct": 2
+      }
+    ],
+    "1.1-04c": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What does the PC (Program Counter) store?",
+        "options": [
+          "The address of the next instruction to be processed",
+          "The current instruction itself",
+          "The result of the last calculation",
+          "The clock speed"
+        ],
+        "correct": 0
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "What TYPE of value does the Program Counter initially store? (type in one word)",
+        "acceptable_answers": [
+          "address"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "Which register initially holds the memory address of the next instruction to be processed?",
+        "options": [
+          "Accumulator",
+          "Memory Data Register",
+          "Program Counter",
+          "Memory Address Register"
+        ],
+        "correct": 2
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "Which register initially stores the address of the next instruction? (type in 2 words)",
+        "acceptable_answers": [
+          "program counter"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "In the CPU, what does \"PC\" stand for? (type in 2 words)",
+        "acceptable_answers": [
+          "program counter"
+        ],
+        "spelling_strict": false
+      }
+    ],
+    "1.1-04d": [
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "What does the ACC (Accumulator) store?",
+        "options": [
+          "The results of ALU operations",
+          "The address of the next instruction",
+          "The instruction currently being decoded",
+          "The clock signal"
+        ],
+        "correct": 0
+      },
+      {
+        "format": "free_text",
+        "direction": "component_to_property",
+        "question": "What is the missing word - The Accumulator temporarily stores the .... of calculations. (type in 1 word)",
+        "acceptable_answers": [
+          "results"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "property_to_component",
+        "question": "Which register temporarily stores the results of operations carried out by the ALU?",
+        "options": [
+          "Memory Data Register",
+          "Program Counter",
+          "Accumulator",
+          "Memory Address Register"
+        ],
+        "correct": 2
+      },
+      {
+        "format": "free_text",
+        "direction": "property_to_component",
+        "question": "Which register stores ALU results? (type in one word)",
+        "acceptable_answers": [
+          "accumulator"
+        ],
+        "spelling_strict": false
+      },
+      {
+        "format": "mcq",
+        "direction": "component_to_property",
+        "question": "Which register is most directly linked to the ALU's output?",
+        "options": [
+          "Program Counter",
+          "Memory Address Register",
+          "Accumulator",
+          "Memory Data Register"
+        ],
+        "correct": 2
+      }
+    ]
+  }
+}
