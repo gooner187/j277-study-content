@@ -1,1 +1,66 @@
-#content
+{
+  "topic": "1.1.1",
+  "spec_ref": "J277 1.1.1 Architecture of the CPU",
+  "cards": {
+    "1.1-01": {
+      "front": "What is the fetch-execute cycle?",
+      "back": "The repeating process by which the CPU fetches an instruction from Main memory (RAM), decodes it to work out what to do, then executes it — one instruction at a time, for as long as a program runs."
+    },
+    "1.1-02a": {
+      "front": "What happens during the Fetch stage?",
+      "back": "The CPU fetches (retrieves) the next instruction from a specific location in memory (RAM). The instruction is held in the Memory Data Register (MDR)."
+    },
+    "1.1-02b": {
+      "front": "What happens during the Decode stage?",
+      "back": "The CPU decodes the instruction using the Control Unit (CU) — working out what it means and what needs to be done."
+    },
+    "1.1-02c": {
+      "front": "What happens during the Execute stage?",
+      "back": "The CPU executes the instruction — carries it out. This may include the Arithmetic Logic Unit (ALU) carrying out Maths or logic."
+    },
+    "1.1-03-alu": {
+      "front": "What is the role of the ALU during the fetch-execute cycle?",
+      "back": "It carries out arithmetic and logical operations."
+    },
+    "1.1-03-cu": {
+      "front": "What is the role of the CU (Control Unit) during the fetch-execute cycle?",
+      "back": "Controls the execution of instructions in the correct sequence. It decodes instructions. It sends and receives control signals to and from other devices within the computer."
+    },
+    "1.1-03-cache-what": {
+      "front": "What is Cache?",
+      "back": "Super-fast memory."
+    },
+    "1.1-03-cache-where": {
+      "front": "Where is cache located?",
+      "back": "In the CPU."
+    },
+    "1.1-03-cache": {
+      "front": "What is the role of Cache during the fetch-execute cycle?",
+      "back": "It stores frequently-used instructions and data close to the CPU, so they can be accessed faster than fetching from main memory."
+    },
+    "1.1-03-reg": {
+      "front": "What is a register?",
+      "back": "Temporary storage location in the CPU."
+    },
+    "1.1-04": {
+      "front": "What is Von Neumann Architecture?",
+      "back": "An architecture where both program instructions and data are held together in the same main memory (RAM), and are fetched, decoded and executed by the CPU."
+    },
+    "1.1-04a": {
+      "front": "What does the MAR (Memory Address Register) store?",
+      "back": "The address of the instruction or data to be fetched or stored."
+    },
+    "1.1-04b": {
+      "front": "What does the MDR (Memory Data Register) store?",
+      "back": "The data or instruction itself, once it's been fetched from memory."
+    },
+    "1.1-04c": {
+      "front": "What does the Program Counter do?",
+      "back": "Stores the address of the next instruction to be processed. Increments every cycle."
+    },
+    "1.1-04d": {
+      "front": "What does the Accumulator store?",
+      "back": "The results of operations carried out by the CPU."
+    }
+  }
+}
