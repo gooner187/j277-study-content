@@ -46,10 +46,6 @@
       "front": "What is Von Neumann Architecture?",
       "back": "An architecture where both program instructions and data are held together in the same main memory (RAM), and are fetched, decoded and executed by the CPU."
     },
-    "1.1-04-diff": {
-      "front": "What's the difference between what the MDR stores and what the MAR stores?",
-      "back": "MDR stores the actual data fetched from memory. MAR stores the address of where that data is located in memory — one holds the content, the other holds the location."
-    },
     "1.1-04a": {
       "front": "What does the MAR (Memory Address Register) store?",
       "back": "The address of the instruction or data to be fetched or stored."
@@ -57,6 +53,10 @@
     "1.1-04b": {
       "front": "What does the MDR (Memory Data Register) store?",
       "back": "The data or instruction itself, once it's been fetched from memory."
+    },
+    "1.1-04-diff": {
+      "front": "What's the difference between what the MDR stores and what the MAR stores?",
+      "back": "MDR stores the actual data fetched from memory. MAR stores the address of where that data is located in memory — one holds the content, the other holds the location."
     },
     "1.1-04c": {
       "front": "What does the Program Counter do?",
