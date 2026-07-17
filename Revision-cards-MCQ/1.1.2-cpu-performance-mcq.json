@@ -4,6 +4,7 @@
   "mcqs": {
     "1.1-06": [
       {
+        "id": "1.1-06_q1",
         "format": "mcq",
         "direction": "component_to_property",
         "question": "Which three factors directly affect CPU performance?",
@@ -16,6 +17,7 @@
         "correct": 0
       },
       {
+        "id": "1.1-06_q2",
         "format": "free_text",
         "direction": "component_to_property",
         "question": "Besides cache size and number of cores, what is the third CPU performance factor? (type in 2 words)",
@@ -25,6 +27,7 @@
         "spelling_strict": false
       },
       {
+        "id": "1.1-06_q3",
         "format": "mcq",
         "direction": "property_to_component",
         "question": "Which of these is NOT one of the three main CPU performance factors?",
@@ -37,6 +40,7 @@
         "correct": 3
       },
       {
+        "id": "1.1-06_q4",
         "format": "free_text",
         "direction": "property_to_component",
         "question": "Besides clock speed and cache size, the third CPU performance factor is the number of .... (type in 1 word)",
@@ -46,6 +50,7 @@
         "spelling_strict": false
       },
       {
+        "id": "1.1-06_q5",
         "format": "mcq",
         "direction": "component_to_property",
         "question": "Is secondary storage capacity one of the three main CPU performance factors?",
@@ -58,6 +63,7 @@
     ],
     "1.1-07": [
       {
+        "id": "1.1-07_q1",
         "format": "mcq",
         "direction": "component_to_property",
         "question": "What unit is clock speed measured in?",
@@ -70,6 +76,7 @@
         "correct": 1
       },
       {
+        "id": "1.1-07_q2",
         "format": "free_text",
         "direction": "component_to_property",
         "question": "What unit is clock speed measured in? (type in one word)",
@@ -79,6 +86,7 @@
         "spelling_strict": false
       },
       {
+        "id": "1.1-07_q3",
         "format": "mcq",
         "direction": "property_to_component",
         "question": "Which performance factor is measured in GHz and represents cycles per second?",
@@ -91,6 +99,7 @@
         "correct": 2
       },
       {
+        "id": "1.1-07_q4",
         "format": "free_text",
         "direction": "property_to_component",
         "question": "Which performance factor is measured in GHz? (type in 2 words)",
@@ -100,6 +109,7 @@
         "spelling_strict": false
       },
       {
+        "id": "1.1-07_q5",
         "format": "mcq",
         "direction": "component_to_property",
         "question": "Why might a 4 GHz processor NOT run exactly twice as fast as a 2 GHz one in practice?",
@@ -112,6 +122,7 @@
         "correct": 1
       },
       {
+        "id": "1.1-07_q6",
         "format": "mcq",
         "direction": "component_to_property",
         "question": "What does \"hertz\" actually mean?",
@@ -124,6 +135,7 @@
         "correct": 0
       },
       {
+        "id": "1.1-07_q7",
         "format": "mcq",
         "direction": "component_to_property",
         "question": "What is a kilohertz (kHz)?",
@@ -136,6 +148,7 @@
         "correct": 3
       },
       {
+        "id": "1.1-07_q8",
         "format": "mcq",
         "direction": "component_to_property",
         "question": "If my computer has an Intel Core i7 CPU with a clock speed of 4.9 GHz, what does this actually mean?",
@@ -150,6 +163,7 @@
     ],
     "1.1-08": [
       {
+        "id": "1.1-08_q1",
         "format": "mcq",
         "direction": "component_to_property",
         "question": "What is cache memory used for?",
@@ -162,6 +176,7 @@
         "correct": 0
       },
       {
+        "id": "1.1-08_q2",
         "format": "free_text",
         "direction": "component_to_property",
         "question": "The CPU will need to access .... memory less often when the cache is larger. (type in 1 word)",
@@ -171,6 +186,7 @@
         "spelling_strict": false
       },
       {
+        "id": "1.1-08_q3",
         "format": "mcq",
         "direction": "property_to_component",
         "question": "Which type of memory sits between RAM and the CPU, holding frequently used data?",
@@ -183,6 +199,7 @@
         "correct": 1
       },
       {
+        "id": "1.1-08_q4",
         "format": "free_text",
         "direction": "property_to_component",
         "question": "Which type of memory sits between RAM and the CPU and is super-fast memory? (type in one word)",
@@ -192,6 +209,7 @@
         "spelling_strict": false
       },
       {
+        "id": "1.1-08_q5",
         "format": "mcq",
         "direction": "component_to_property",
         "question": "Roughly how does the size of cache compare to the size of RAM in a typical computer?",
@@ -204,6 +222,7 @@
         "correct": 2
       },
       {
+        "id": "1.1-08_q6",
         "format": "mcq",
         "direction": "component_to_property",
         "question": "Where is Cache located?",
@@ -216,6 +235,7 @@
         "correct": 0
       },
       {
+        "id": "1.1-08_q7",
         "format": "mcq",
         "direction": "component_to_property",
         "question": "What is Cache?",
@@ -230,6 +250,7 @@
     ],
     "1.1-09": [
       {
+        "id": "1.1-09_q1",
         "format": "mcq",
         "direction": "component_to_property",
         "question": "What does a quad-core processor have?",
@@ -242,6 +263,7 @@
         "correct": 0
       },
       {
+        "id": "1.1-09_q2",
         "format": "mcq",
         "direction": "property_to_component",
         "question": "What allows multiple instructions to be executed simultaneously?",
@@ -254,6 +276,7 @@
         "correct": 1
       },
       {
+        "id": "1.1-09_q3",
         "format": "free_text",
         "direction": "property_to_component",
         "question": "A CPU that is able to simultaneously execute two or more instructions at the same time will have multiple .... (type in 1 word)",
@@ -263,6 +286,7 @@
         "spelling_strict": false
       },
       {
+        "id": "1.1-09_q4",
         "format": "mcq",
         "direction": "component_to_property",
         "question": "When is a multi-core processor most beneficial?",
@@ -275,6 +299,7 @@
         "correct": 1
       },
       {
+        "id": "1.1-09_q5",
         "format": "true_false",
         "direction": "component_to_property",
         "question": "True or False: a CPU with multiple cores will always work faster than a CPU with one core.",
