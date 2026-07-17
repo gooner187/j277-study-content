@@ -1,0 +1,11 @@
+{
+  "description": "Maps each spec pill to the MCQ question IDs that test it. The revision tool reads this to know which questions to show after a student memorises a pill's card. The audit script reads it to find questions in the MCQ files that aren't assigned to any pill.",
+  "subtopics": {
+    "1.1.2": {
+      "mcq_file": "https://raw.githubusercontent.com/gooner187/j277-study-content/refs/heads/main/Revision-cards-MCQ/1.1.2-cpu-performance-mcq.json",
+      "pills": {
+        "Cache": ["1.1-06_q1", "1.1-08_q1", "1.1-08_q2", "1.1-08_q3", "1.1-08_q4", "1.1-08_q5", "1.1-08_q6", "1.1-08_q7", "1.1-09_q1"]
+      }
+    }
+  }
+}
