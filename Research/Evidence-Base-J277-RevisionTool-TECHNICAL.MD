@@ -1,4 +1,7 @@
-# Evidence Base — J277 Revision Tool
+# Evidence Base — J277 Revision Tool — TECHNICAL
+
+*Internal working document. For the version to share with students, parents and
+colleagues, see the CUSTOMER FACING edition.*
 
 A running record of the research behind the tool's design decisions.
 
@@ -235,6 +238,57 @@ Cepeda et al.'s meta-analysis of 254 studies found spaced practice beat massed
 practice for long-term retention. Spacing decides *when* to study; retrieval decides
 *how*. The tool now records the data needed to act on this.
 
+### 2.5 The binary/hex games as procedural fluency practice
+**Where:** five games unlocked via the dashboard — Binary Count, Binary Blitz,
+Binary Addition, Binary Shifts, HexSmash. All drill J277 1.2.4 (binary and
+hexadecimal representation).
+
+**These are not "gamification" and should not be filed with it.** The gamification
+research (see 3.4) concerns *motivation layers* — points and badges bolted onto
+otherwise unchanged learning. In these games the retrieval **is** the game
+mechanic: converting binary to denary under time pressure is retrieval practice
+with a scoreboard, not a reward for doing something else.
+
+**Why they earn a separate entry:** they do a job the revision cards structurally
+cannot. Binary conversion is a **procedural** skill, not a declarative fact. A card
+can state what a binary shift does; only repeated practice makes a student *fluent*
+at performing one. This matters for exam performance in a specific way — a student
+still laboriously working out that 1011 = 11 has spent their working memory on the
+conversion and has none left for the question being asked. Building the sub-skill
+to automaticity frees capacity for the actual problem.
+
+**Evidence:** rests on the same retrieval-practice base as 2.1–2.3, plus the
+cognitive-load argument that automating component skills frees working memory for
+higher-order work. Timed drilling is appropriate *here* precisely because the goal
+is speed and accuracy on a mechanical conversion — it would be the wrong tool for
+conceptual material like "what does the MAR store", where speed pressure adds
+nothing.
+
+**Unlock levels — a design decision with a pedagogical cost (now fixed).**
+Originally these ran from level 3 to level 36. Given the XP economy (one pill
+session ≈ 205 XP; level 36 ≈ several subtopics of work), **HexSmash was effectively
+unreachable** for content typically taught in the first term. The gating was
+backwards relative to need: the student who most needs binary practice is the one
+with the least XP.
+
+Revised to front-load, following the skill dependency (count → convert →
+add/shift → hex):
+
+| Game | Level | XP | Roughly |
+|---|---|---|---|
+| Binary Count | 2 | 17 | during the first quiz |
+| Binary Blitz | 4 | 154 | end of first pill |
+| Binary Addition | 6 | 429 | ~2 pills |
+| Binary Shifts | 8 | 840 | ~4 pills |
+| HexSmash | 10 | 1,389 | ~7 pills |
+
+Plus a **topic override**: any student who begins writing cards for 1.2 unlocks all
+of these immediately, regardless of level. Need beats progression.
+
+**The general principle worth keeping:** it is fine to lock *cosmetic* rewards
+behind progression. Locking *curriculum content* behind it has a real cost, and
+should be done only where the content genuinely depends on prior skill.
+
 ---
 
 ## Tier 3 — Judgement calls (no strong evidence, or contested)
@@ -271,13 +325,43 @@ A round number chosen for classroom practicality, and skippable. Not derived fro
 evidence on optimal study duration. Worth revisiting if it proves too long or short
 in practice.
 
-### 3.4 Gamification (XP, ranks, badges, unlockable games)
-**Status: mixed evidence — treat with care.** Extrinsic rewards can support
-engagement, but the research on gamification in education is inconsistent, and there
-is a long-standing concern that extrinsic rewards can undermine intrinsic motivation
-for tasks students would otherwise do willingly. This was included because the
-existing chatbot had it and it motivates *these* students, which is a legitimate
-teacher judgement — but it is not claimed as evidence-based.
+### 3.4 Gamification: XP, ranks, badges and skins
+**Scope note:** this entry covers the *motivation layer only* — experience points,
+the 55 ranks, badges, and cosmetic backgrounds. The **games themselves have moved
+to 2.5**, because they teach spec content rather than reward it, and the evidence
+for them is substantially stronger.
+
+**Status: mixed evidence, and weaker for retention than for engagement.**
+Meta-analyses do find positive average effects on learning outcomes, but two
+findings caution against filing gamification alongside retrieval practice and
+spacing:
+
+1. **Effects shrink as interventions lengthen.** Gamified interventions of 1–3
+   months average around g = 0.906, while those running beyond a semester fall to
+   about g = 0.392 — a pattern attributed to the **novelty effect**, where
+   engagement spikes because something is new and then isn't sustained. A GCSE
+   course runs on exactly the timescale where the effect decays.
+2. **Heterogeneity is extreme** (I² approaching 99% in one meta-analysis), meaning
+   results depend enormously on design and context. An average effect size across
+   studies that inconsistent is a weak basis for prediction.
+
+On long-term retention specifically — the outcome this tool cares about — effects
+are reported as positive but variable, particularly where the game layer is
+competitive or poorly aligned to the learning objectives.
+
+**There is also a motivational risk** worth naming: extrinsic rewards can undermine
+intrinsic interest in tasks students would otherwise do willingly.
+
+**Why it's still in the tool:** it gets students to open it, and a tool nobody opens
+has an effect size of zero. That is a legitimate reason. It is not, however, a
+claim that XP helps anyone remember what a MAR does — and it should not be
+presented to students or colleagues as an evidence-based *learning* feature.
+
+> Sailer, M., & Homner, L. (2020). The gamification of learning: A meta-analysis.
+> *Educational Psychology Review*, 32, 77–112.
+>
+> Huang, R., et al. Meta-analytic work on gamification duration and novelty effects
+> in educational contexts.
 
 ### 3.5 Abbreviations not accepted as free-text answers
 Exam-technique judgement: OCR mark schemes generally expect full terms, so accepting
