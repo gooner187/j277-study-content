@@ -145,7 +145,8 @@
           "100 Cycles per second",
           "1000 Cycles per second"
         ],
-        "correct": 3
+        "correct": 3,
+        "shuffle": false
       },
       {
         "id": "1.1-07_q8",
@@ -158,7 +159,8 @@
           "4,900,000 clock cycles per second",
           "4,900,000,000 clock cycles per second"
         ],
-        "correct": 3
+        "correct": 3,
+        "shuffle": false
       }
     ],
     "1.1-08": [
