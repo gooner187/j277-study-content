@@ -146,6 +146,26 @@ almost everyone has: we're bad at judging what we know. Re-reading notes makes y
 truth. That gap — between feeling ready and being ready — is what catches people
 out in exams.
 
+### Why the binary and hex games exist
+
+The games aren't a treat for doing your revision. They're a different *kind* of
+revision, for a different kind of thing.
+
+Knowing what a binary shift does and being *fast* at doing one are two separate
+skills. A revision card can teach you the first. Only practice makes you quick at
+the second — and speed genuinely matters in an exam. If you're still carefully
+working out that 1011 is 11, you've used up your concentration on the conversion
+and have none left for the actual question. Drilling it until it's automatic frees
+up your head for the hard part.
+
+That's why these are timed and repetitive, which would be a terrible way to learn
+what a Memory Address Register does, but is exactly right for converting numbers.
+
+They unlock early on purpose. Locking away binary practice until you've earned
+thousands of points would mean the person who most needs it can't get to it. And if
+you start working on Memory and Storage — the topic these games cover — they all
+open up straight away, whatever level you are.
+
 ### Why it nags you to come back
 
 Spreading revision over time beats doing it all at once. This is one of the two
@@ -184,13 +204,22 @@ Purely practical. More than five and a card becomes cramped and hard to read.
 A round number that fits a lesson, and you can skip it whenever you're ready. Not
 based on research into ideal study length.
 
-### Points, ranks, badges and unlockable games
+### Points, ranks, badges and backgrounds
 
-Included because they motivate students, and because the previous version of this
-tool had them. The research on gamification in education is **mixed** — rewards can
-boost engagement, but there's a long-standing concern that they can undermine
-genuine interest in a subject. This is a judgement call, not an evidence-based
-feature.
+*(The games themselves are different — see above. They teach content. This is about
+the points and rewards around them.)*
+
+These exist to make the tool worth opening, and because the previous version had
+them. The honest position: research on gamification in education shows real but
+**inconsistent** effects, and — importantly — the benefits tend to **fade the
+longer a gamified system runs**, as the novelty wears off. A GCSE course is
+long. There's also a well-established concern that rewards can chip away at genuine
+interest in a subject.
+
+So: earning XP will not help you remember what a Memory Address Register does.
+Writing the card and testing yourself does that. The points are there to keep you
+coming back, which matters — a revision tool you never open helps nobody — but
+they're motivation, not learning.
 
 ### Not accepting abbreviations in typed answers
 
