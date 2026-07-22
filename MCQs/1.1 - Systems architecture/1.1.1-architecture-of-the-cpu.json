@@ -15,7 +15,8 @@
       "correct_index": 0,
       "explanation": "Von Neumann architecture stores both data and instructions in the same main memory, where they are fetched, decoded and executed by the CPU.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "von-neumann"
     },
     {
       "id": "fde_002",
@@ -27,9 +28,10 @@
         "All of these are correct"
       ],
       "correct_index": 0,
-      "explanation": "The CPU processes both data and instructions \u2014 this includes arithmetic, logic, and control operations.",
+      "explanation": "The CPU processes both data and instructions — this includes arithmetic, logic, and control operations.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "cpu-purpose"
     },
     {
       "id": "fde_003",
@@ -43,7 +45,8 @@
       "correct_index": 0,
       "explanation": "Clock speed measures how many times per second the system clock switches transistors on and off, driving the CPU's operations.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "cpu-performance"
     },
     {
       "id": "fde_004",
@@ -55,9 +58,10 @@
         "Bits per second"
       ],
       "correct_index": 0,
-      "explanation": "Clock speed is measured in Hertz (Hz), typically GHz for modern CPUs \u2014 representing the number of cycles per second.",
+      "explanation": "Clock speed is measured in Hertz (Hz), typically GHz for modern CPUs — representing the number of cycles per second.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "cpu-performance"
     },
     {
       "id": "fde_005",
@@ -71,7 +75,8 @@
       "correct_index": 0,
       "explanation": "Hertz (Hz) means cycles per second. A CPU running at 3 GHz completes 3 billion cycles every second.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "cpu-performance"
     },
     {
       "id": "fde_006",
@@ -83,9 +88,10 @@
         "1000 cycles per second"
       ],
       "correct_index": 0,
-      "explanation": "100 Hz means exactly 100 cycles per second \u2014 Hertz is simply another way of saying cycles per second.",
+      "explanation": "100 Hz means exactly 100 cycles per second — Hertz is simply another way of saying cycles per second.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "cpu-performance"
     },
     {
       "id": "fde_007",
@@ -99,7 +105,8 @@
       "correct_index": 0,
       "explanation": "GHz = billion cycles per second; MHz = million cycles per second. All three statements correctly apply these units.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "cpu-performance"
     },
     {
       "id": "fde_008",
@@ -113,7 +120,8 @@
       "correct_index": 0,
       "explanation": "In the fetch stage, the CPU fetches the next instruction from main memory using the address held in the Program Counter.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "fde-cycle"
     },
     {
       "id": "fde_009",
@@ -127,7 +135,8 @@
       "correct_index": 0,
       "explanation": "Instructions are fetched from main memory (RAM). The Program Counter holds the address of the next instruction to fetch.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "fde-cycle"
     },
     {
       "id": "fde_010",
@@ -141,7 +150,8 @@
       "correct_index": 0,
       "explanation": "Instructions are decoded inside the CPU by the Control Unit, which interprets what the instruction means and signals the appropriate components.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "fde-cycle"
     },
     {
       "id": "fde_011",
@@ -155,7 +165,8 @@
       "correct_index": 0,
       "explanation": "Instructions are executed inside the CPU. Depending on the instruction, the ALU or other components carry out the required operation.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "fde-cycle"
     },
     {
       "id": "fde_012",
@@ -169,7 +180,9 @@
       "correct_index": 0,
       "explanation": "Registers are small, fast storage locations found inside the CPU itself, used to hold data and instructions currently being processed.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "",
+      "_book_ref_review": "NO MATCH - please set manually"
     },
     {
       "id": "fde_013",
@@ -183,7 +196,9 @@
       "correct_index": 0,
       "explanation": "The Control Unit is a component of the CPU, not a register. It controls the fetch-decode-execute cycle. The others (ACC, MAR, PC) are all registers.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "cpu-components",
+      "_book_ref_review": "AMBIGUOUS - matched ['cpu-components', 'arithmetic-operators'], picked first"
     },
     {
       "id": "fde_014",
@@ -197,7 +212,9 @@
       "correct_index": 0,
       "explanation": "The MAR holds the memory address of the data or instruction that the CPU needs to read from or write to in main memory.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "fde-cycle",
+      "_book_ref_review": "AMBIGUOUS - matched ['fde-cycle', 'cpu-components'], picked first"
     },
     {
       "id": "fde_015",
@@ -209,9 +226,11 @@
         "Results from a calculation"
       ],
       "correct_index": 0,
-      "explanation": "The MDR (also called MBR \u2014 Memory Buffer Register) holds the data that has just been read from or is about to be written to main memory.",
+      "explanation": "The MDR (also called MBR — Memory Buffer Register) holds the data that has just been read from or is about to be written to main memory.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "fde-cycle",
+      "_book_ref_review": "AMBIGUOUS - matched ['fde-cycle', 'cpu-components'], picked first"
     },
     {
       "id": "fde_016",
@@ -223,9 +242,11 @@
         "Memory address register"
       ],
       "correct_index": 0,
-      "explanation": "The ALU (Arithmetic and Logic Unit) is a component of the CPU that performs calculations \u2014 it is not a register. The others are all registers.",
+      "explanation": "The ALU (Arithmetic and Logic Unit) is a component of the CPU that performs calculations — it is not a register. The others are all registers.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "cpu-components",
+      "_book_ref_review": "AMBIGUOUS - matched ['cpu-components', 'arithmetic-operators'], picked first"
     },
     {
       "id": "fde_017",
@@ -239,7 +260,8 @@
       "correct_index": 0,
       "explanation": "The Accumulator holds the results of arithmetic and logic operations performed by the ALU.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "fde-cycle"
     },
     {
       "id": "fde_018",
@@ -251,9 +273,10 @@
         "Sends and receives control signals to and from other devices in a computer"
       ],
       "correct_index": 0,
-      "explanation": "The Control Unit manages all CPU operations \u2014 it sequences instructions, decodes them, and sends/receives control signals to coordinate the rest of the computer.",
+      "explanation": "The Control Unit manages all CPU operations — it sequences instructions, decodes them, and sends/receives control signals to coordinate the rest of the computer.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "cpu-components"
     },
     {
       "id": "fde_019",
@@ -265,9 +288,10 @@
         "Arithmetic and Law Unit"
       ],
       "correct_index": 0,
-      "explanation": "ALU stands for Arithmetic and Logic Unit \u2014 it carries out all arithmetic operations (e.g. addition) and logical operations (e.g. comparisons).",
+      "explanation": "ALU stands for Arithmetic and Logic Unit — it carries out all arithmetic operations (e.g. addition) and logical operations (e.g. comparisons).",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "cpu-components"
     },
     {
       "id": "fde_020",
@@ -281,7 +305,8 @@
       "correct_index": 0,
       "explanation": "The Program Counter (PC) is an incrementing counter that holds the memory address of the next instruction to be fetched and executed.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "cpu-components"
     },
     {
       "id": "fde_021",
@@ -295,7 +320,8 @@
       "correct_index": 0,
       "explanation": "The correct order is always Fetch (get the instruction from memory), Decode (work out what it means), Execute (carry it out).",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "fde-cycle"
     },
     {
       "id": "fde_022",
@@ -307,9 +333,10 @@
         "Memory AND register"
       ],
       "correct_index": 0,
-      "explanation": "MAR stands for Memory Address Register \u2014 it holds the address in main memory that the CPU wants to read from or write to.",
+      "explanation": "MAR stands for Memory Address Register — it holds the address in main memory that the CPU wants to read from or write to.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "fde-cycle"
     },
     {
       "id": "fde_023",
@@ -321,9 +348,10 @@
         "Arithmetic and logic unit"
       ],
       "correct_index": 0,
-      "explanation": "ACC stands for Accumulator \u2014 the register that stores the results of arithmetic and logic operations performed by the ALU.",
+      "explanation": "ACC stands for Accumulator — the register that stores the results of arithmetic and logic operations performed by the ALU.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "fde-cycle"
     },
     {
       "id": "fde_024",
@@ -335,9 +363,10 @@
         "Arithmetic and cache unit"
       ],
       "correct_index": 0,
-      "explanation": "ALU stands for Arithmetic and Logic Unit \u2014 the part of the CPU that performs all arithmetic calculations and logical comparisons.",
+      "explanation": "ALU stands for Arithmetic and Logic Unit — the part of the CPU that performs all arithmetic calculations and logical comparisons.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "cpu-components"
     },
     {
       "id": "fde_025",
@@ -349,9 +378,10 @@
         "Program unit"
       ],
       "correct_index": 0,
-      "explanation": "PC stands for Program Counter \u2014 the register that holds the memory address of the next instruction to be fetched.",
+      "explanation": "PC stands for Program Counter — the register that holds the memory address of the next instruction to be fetched.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "fde-cycle"
     },
     {
       "id": "fde_026",
@@ -363,9 +393,10 @@
         "Memory drum region"
       ],
       "correct_index": 0,
-      "explanation": "MDR stands for Memory Data Register \u2014 it temporarily holds data that has just been read from or is about to be written to main memory.",
+      "explanation": "MDR stands for Memory Data Register — it temporarily holds data that has just been read from or is about to be written to main memory.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "fde-cycle"
     },
     {
       "id": "fde_027",
@@ -377,9 +408,10 @@
         "Acute"
       ],
       "correct_index": 0,
-      "explanation": "The 'A' in MAR stands for Address \u2014 MAR = Memory Address Register, which stores the address of a memory location.",
+      "explanation": "The 'A' in MAR stands for Address — MAR = Memory Address Register, which stores the address of a memory location.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "fde-cycle"
     },
     {
       "id": "fde_028",
@@ -391,9 +423,10 @@
         "Current unit"
       ],
       "correct_index": 0,
-      "explanation": "CU stands for Control Unit \u2014 the component that directs the operation of the CPU, controlling the fetch-decode-execute cycle.",
+      "explanation": "CU stands for Control Unit — the component that directs the operation of the CPU, controlling the fetch-decode-execute cycle.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "cpu-components"
     },
     {
       "id": "fde_029",
@@ -405,9 +438,10 @@
         "Denote"
       ],
       "correct_index": 0,
-      "explanation": "The 'D' in MDR stands for Data \u2014 MDR = Memory Data Register, which holds the data being transferred to or from main memory.",
+      "explanation": "The 'D' in MDR stands for Data — MDR = Memory Data Register, which holds the data being transferred to or from main memory.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "fde-cycle"
     },
     {
       "id": "fde_030",
@@ -419,9 +453,10 @@
         "Label"
       ],
       "correct_index": 0,
-      "explanation": "The 'L' in ALU stands for Logic \u2014 ALU = Arithmetic and Logic Unit, which handles both arithmetic operations and logical comparisons.",
+      "explanation": "The 'L' in ALU stands for Logic — ALU = Arithmetic and Logic Unit, which handles both arithmetic operations and logical comparisons.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "cpu-components"
     },
     {
       "id": "fde_031",
@@ -435,7 +470,8 @@
       "correct_index": 0,
       "explanation": "The Program Counter (PC) increments after each fetch so it points to the next instruction in sequence, ensuring instructions are executed in order.",
       "difficulty": "foundation",
-      "type": "mcq"
+      "type": "mcq",
+      "book_ref": "cpu-components"
     },
     {
       "id": "fde_032",
@@ -448,8 +484,9 @@
         "Central kebab unit"
       ],
       "correct_index": 0,
-      "explanation": "CPU stands for Central Processing Unit \u2014 the main chip in a computer that carries out instructions.",
-      "difficulty": "foundation"
+      "explanation": "CPU stands for Central Processing Unit — the main chip in a computer that carries out instructions.",
+      "difficulty": "foundation",
+      "book_ref": "cpu-purpose"
     },
     {
       "id": "fde_033",
@@ -459,8 +496,9 @@
       "accept": [
         "central"
       ],
-      "explanation": "The 'C' in CPU stands for Central \u2014 CPU = Central Processing Unit.",
-      "difficulty": "foundation"
+      "explanation": "The 'C' in CPU stands for Central — CPU = Central Processing Unit.",
+      "difficulty": "foundation",
+      "book_ref": "cpu-purpose"
     },
     {
       "id": "fde_034",
@@ -470,8 +508,9 @@
       "accept": [
         "processing"
       ],
-      "explanation": "The 'P' in CPU stands for Processing \u2014 CPU = Central Processing Unit.",
-      "difficulty": "foundation"
+      "explanation": "The 'P' in CPU stands for Processing — CPU = Central Processing Unit.",
+      "difficulty": "foundation",
+      "book_ref": "cpu-purpose"
     },
     {
       "id": "fde_035",
@@ -484,8 +523,9 @@
         "On the ROM"
       ],
       "correct_index": 0,
-      "explanation": "The CPU is mounted directly on the motherboard \u2014 the main circuit board that connects all components of the computer.",
-      "difficulty": "foundation"
+      "explanation": "The CPU is mounted directly on the motherboard — the main circuit board that connects all components of the computer.",
+      "difficulty": "foundation",
+      "book_ref": "cpu-purpose"
     },
     {
       "id": "fde_036",
@@ -500,8 +540,10 @@
         "Arithmetic Logic Unit"
       ],
       "correct_index": 0,
-      "explanation": "Structure 4 is the CPU \u2014 the central processing unit that fetches, decodes and executes instructions.",
-      "difficulty": "foundation"
+      "explanation": "Structure 4 is the CPU — the central processing unit that fetches, decodes and executes instructions.",
+      "difficulty": "foundation",
+      "book_ref": "",
+      "_book_ref_review": "NO MATCH - please set manually"
     }
   ]
 }
