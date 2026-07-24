@@ -36,7 +36,7 @@
       "description": "The fetch-decode-execute cycle and CPU registers (PC, MAR, MDR, ACC)",
       "keywords": ["fetch", "decode", "execute", "fde", "fetch-decode-execute", "fetch decode execute", "pc", "program counter", "mar", "memory address register", "mdr", "memory data register", "acc", "accumulator"],
       "books": {
-        "Robson & Heathcote": "page 3",
+        "Robson & Heathcote": "page 4",
         "Rouse, Pearcey & Craddock": "page 4"
       }
     },
