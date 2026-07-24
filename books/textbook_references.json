@@ -41,13 +41,33 @@
       }
     },
     {
-      "id": "cpu-performance",
+      "id": "cpu-clock-speed",
       "topic": "1.1 System architecture",
-      "description": "How CPU characteristics affect performance: clock speed, cache size, number of cores",
-      "keywords": ["clock speed", "clock", "hertz", "ghz", "mhz", "cycles per second", "cores", "core", "multicore", "multi-core", "parallel processing", "cpu performance"],
+      "description": "Clock speed and how it affects CPU performance",
+      "keywords": ["clock speed", "clock", "hertz", "ghz", "mhz", "cycles per second"],
       "books": {
-        "Robson & Heathcote": "pages 5–6",
-        "Rouse, Pearcey & Craddock": "pages 3, 6 & 7"
+        "Robson & Heathcote": "page 5",
+        "Rouse, Pearcey & Craddock": "page 6"
+      }
+    },
+    {
+      "id": "cpu-cache-size",
+      "topic": "1.1 System architecture",
+      "description": "Cache size and how it affects CPU performance",
+      "keywords": ["cache size", "cache memory", "larger cache", "l1 cache", "l2 cache", "l3 cache"],
+      "books": {
+        "Robson & Heathcote": "pages 5 & 6",
+        "Rouse, Pearcey & Craddock": "pages 6 & 7"
+      }
+    },
+    {
+      "id": "cpu-cores",
+      "topic": "1.1 System architecture",
+      "description": "Number of cores and how it affects CPU performance",
+      "keywords": ["cores", "core", "multicore", "multi-core", "dual core", "quad core", "parallel processing"],
+      "books": {
+        "Robson & Heathcote": "page 6",
+        "Rouse, Pearcey & Craddock": "page 7"
       }
     },
     {
